@@ -1,0 +1,14 @@
+persistent maximum(int i);
+persistent keep(int i);
+system peers(char[128] node, char[64] relationship);
+input start(int i);
+
+
+keep(3) if peers(*,"Self");
+keep(4) if peers(*,"Self");
+keep(2) if peers(*,"Self");
+keep(6) if peers(*,"Self");
+keep(7) if peers(*,"Self");
+keep(10) if peers(*,"Self");
+block;
+maximum(MAX(i)) if keep(i);

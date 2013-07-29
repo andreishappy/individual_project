@@ -1,0 +1,21 @@
+//Declarations
+//========================
+system peers(char[128] node, char[64] relationship);
+input add_neighbour(char [128] to_add);
+persistent neighbour(char[128] neighbour);
+persistent candidate(char[128] Dest, char[128] NextHop, char[128]Path);
+transport advertise(char[128] Dest, char[128] Path);
+
+//Rules
+//========================
+neighbour(N) if add_neighbour(N);
+neighbour(N) if prev neighbour(N);
+
+candidate(Dest, NextHop, Path) if advertise(Dest,Path)@NextHop;
+
+advertise(Self, Self)@N if add_neighbour(N), peers(Self,"Self");
+advertise(Dest, Self+Path)@N if 
+      candidate(Dest,*,Path), 
+      neighbour(N),
+      peers(Self,"Self");
+

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+2013-07-29 08:26:19.313 GMT:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.2 - (1396889): instance a816c00e-0140-2989-00ff-00000621adf8 
+on database directory memory:/homes/ap3012/individual_project/home/andreia  with class loader sun.misc.Launcher$AppClassLoader@53372a1a 
+Loaded from file:/homes/ap3012/individual_project/unzipped13/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_27-b27
+user.dir=/homes/ap3012/individual_project/home
+os.name=Linux
+os.arch=amd64
+os.version=3.6.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

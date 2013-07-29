@@ -1,0 +1,15 @@
+system peers(char[128] node, char[64] relationship);
+
+input start(int payload);
+transport tran(int payload);
+persistent keep(int i);
+persistent hello(int i);
+action actions(int synchronous, char[128] method, char[128] str, int x, double y);
+
+tran(i)@dest if peers(dest,"Neighbor"), start(i);
+keep(i) if tran(i)@dest;
+keep(i) if prev keep(i);
+
+//actions(1,"com.ibm.watson.dsm.samples.RuleActionExample.action2","Hello",2,2.0) if  peers(*,Self);
+actions(1,"com.ibm.watson.dsm.samples.RuleActionExample.action2","Transport",i,2.0)
+if tran(i)@source;

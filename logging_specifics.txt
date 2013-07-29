@@ -1,0 +1,25 @@
+Messages:
+
+Routine Messages:
+
+24-Jul-2013 14:15:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform$Listeners.newMessageArrived(AbstractSharedDataPlatform.java:221) 
+----------===========-----------
+FINE: app andrei/a received from andrei/g msg : DataQueryMessage: uuid/resp#=4b228e20-70e4-4296-afc8-b50435ea287b/0, type=CreateSubscription, data=g
+----------===========-----------
+
+Trasport tuples SENT:
+
+FINE: Completed evaluation over tuples. Sending transport tuples..
+{talk=TupleSet:TupleSetDescriptor: appDesc=andrei/a, name=talk, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=PAYLOAD, type=Integer, ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=cd49f16d-7549-4b80-a6f4-1f822f9a7074, TupleEntry: value=a, TupleEntry: value=1, TupleEntry: value=2013-07-26 17:34:10.591]
+Tuple[TupleEntry: value=cd49f16d-7549-4b80-a6f4-1f822f9a7074, TupleEntry: value=a, TupleEntry: value=2, TupleEntry: value=2013-07-26 17:34:10.591]
+Tuple[TupleEntry: value=cd49f16d-7549-4b80-a6f4-1f822f9a7074, TupleEntry: value=a, TupleEntry: value=3, TupleEntry: value=2013-07-26 17:34:10.591]
+Tuple[TupleEntry: value=b, TupleEntry: value=a, TupleEntry: value=1, TupleEntry: value=2013-07-26 17:34:10.591]
+Tuple[TupleEntry: value=b, TupleEntry: value=a, TupleEntry: value=2, TupleEntry: value=2013-07-26 17:34:10.591]
+Tuple[TupleEntry: value=b, TupleEntry: value=a, TupleEntry: value=3, TupleEntry: value=2013-07-26 17:34:10.591]
+]}
+
+!!!Watch out for weird destination 
+
+Transport tuples RECEIVED:
+

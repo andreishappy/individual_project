@@ -1,0 +1,15 @@
+system peers(char[128] node, char[64] relationship);
+
+input start(int payload);
+transport talk(int payload);
+transport do(int payload);
+persistent keep_talk(int i);
+persistent keep_do(int i);
+
+
+talk(i)@dest if keep_do(i), peers(dest,"Neighbor");
+do(i)@dest if start(i), peers(dest,"Neighbor");
+keep_talk(i) if talk(i)@dest;
+keep_do(i) if do(i)@dest;
+keep_talk(i) if prev keep_talk(i);
+keep_do(i) if prev keep_do(i);

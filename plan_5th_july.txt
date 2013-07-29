@@ -1,0 +1,20 @@
+Things to do:
+
+       - check if tuple insert works on CORE on my project machine
+       - research Threading in Python
+
+       - write a script which picks up the output of the engine,
+         writes it to log and also pulls it in as native python
+	 types
+       - wrap that script in an object with methods:
+       	      - start_engine(string instance) which returns a handle on the output
+	        of an engine and the engine itself
+              - stop_engine(string instance) kills a specific instance
+	      - stop_engines() kills all engines
+	      - tuple_insert(string instance, string table)
+	      - tuple_read(string instance, string table)
+	      
+	      After dsmdir is fixed
+	      - display_engines() show all the engines that are on
+	      	in a user-friendly way
+

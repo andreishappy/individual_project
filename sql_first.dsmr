@@ -1,0 +1,14 @@
+system peers(char[128] node, char[64] relationship);
+
+input start(int payload);
+transport announce(char[128] path);
+persistent path(char[128] path);
+persistent fnd(int fount);
+
+path(P) if start(*),peers(P,"Self");
+path(P) if prev path(P);
+path(P) if announce(P)@source;
+
+announce("dudehelloduehell")@dest if start(*),peers(P,"Self"),peers(dest,"Neighbor"); 
+
+fnd(LOCATE("hello",P)) if path(P);

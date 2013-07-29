@@ -1,0 +1,18 @@
+Messages:
+
+Routine Messages:
+
+24-Jul-2013 14:15:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform$Listeners.newMessageArrived(AbstractSharedDataPlatform.java:221) 
+----------===========-----------
+FINE: app andrei/a received from andrei/g msg : DataQueryMessage: uuid/resp#=4b228e20-70e4-4296-afc8-b50435ea287b/0, type=CreateSubscription, data=g
+----------===========-----------
+
+Transport tuples SENT:
+
+24-Jul-2013 14:20:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.processDataQueryMessage(AbstractSharedDataPlatform.java:1064) 
+FINE: Sending message from andrei/a to andrei/b : msg type = com.ibm.watson.dsm.platform.DataResultMessage
+
+Transport tuples received:
+
+
+State after rule evaluation:

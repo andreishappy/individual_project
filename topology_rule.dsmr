@@ -1,0 +1,12 @@
+input add_neighbour(char [128] to_add);
+persistent neighbour(char[128] neighbour);
+transport tran(int payload);
+input start(int payload);
+persistent keep(int to_keep);
+
+neighbour(n) if add_neighbour(n);
+neighbour(n) if prev neighbour(n);
+
+keep(a) if start(a);
+keep(a) if tran(a)@dest;
+tran(a)@dest if keep(a), neighbour(dest);
