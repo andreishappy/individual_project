@@ -1,0 +1,1005 @@
+30-Jul-2013 16:03:13 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:13 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Running rules over tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id6, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.645]
+]
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #1 evaluation over tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #1 evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.645]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 1 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Storing tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table candidate the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.85]
+]
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #2 evaluation over tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #2 evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.85]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.645]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent choose clauses of block 0
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Before transport appends...
+Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.85]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.645]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Evaluating TRANSPORT APPEND clauses
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, 'id7' as SRC_INTERNAL_, peers.NODE as DEST, peers.NODE as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 0 tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT neighbour.NEIGHBOUR as DEST_INTERNAL_, 'id7' as SRC_INTERNAL_, candidate.DEST as DEST, peers.NODE || candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate, neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 0 tuples
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Transport results...
+{}
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINE: Completed evaluation over tuples. No tuples to send.
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing TRANSPORT tables:[advertise]
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing INPUT tables:[add_neighbour, peers]
+30-Jul-2013 16:03:14 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: After complete evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+null
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.85]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:18 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:18 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Running rules over tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/3b077197-2f00-437d-85f8-e35347e2b765, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String][
+Tuple[TupleEntry: value=id8]
+]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #1 evaluation over tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #1 evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.85]
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+Tuple[TupleEntry: value=id8]
+]
+
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 1 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 1 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Storing tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table candidate the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:19.475]
+]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table neighbour the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:19.473]
+]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #2 evaluation over tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #2 evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:19.475]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:14.85]
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:19.473]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+Tuple[TupleEntry: value=id8]
+]
+
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating periodic persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent choose clauses of block 0
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating periodic persistent choose clauses of block 0
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Before transport appends...
+Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:19.475]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:19.473]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+Tuple[TupleEntry: value=id8]
+]
+
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Evaluating TRANSPORT APPEND clauses
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, 'id7' as SRC_INTERNAL_, peers.NODE as DEST, peers.NODE as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 1 tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT neighbour.NEIGHBOUR as DEST_INTERNAL_, 'id7' as SRC_INTERNAL_, candidate.DEST as DEST, peers.NODE || candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate, neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 1 tuples
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Transport results...
+{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id7, TupleEntry: value=id7, TupleEntry: value=2013-07-30 16:03:19.496]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id7id6, TupleEntry: value=2013-07-30 16:03:19.497]
+]}
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINE: Completed evaluation over tuples. Sending transport tuples..
+{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id7, TupleEntry: value=id7, TupleEntry: value=2013-07-30 16:03:19.496]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id7id6, TupleEntry: value=2013-07-30 16:03:19.497]
+]}
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:991) 
+FINEST: Appending to table advertise the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id7, TupleEntry: value=id7, TupleEntry: value=2013-07-30 16:03:19.496]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id7id6, TupleEntry: value=2013-07-30 16:03:19.497]
+]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing TRANSPORT tables:[advertise]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing INPUT tables:[add_neighbour, peers]
+30-Jul-2013 16:03:19 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: After complete evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+null
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:19.475]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:19.473]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:23 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:23 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Running rules over tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id6, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id5, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.548]
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id4, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.548]
+]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #1 evaluation over tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #1 evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:19.473]
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:19.475]
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id5, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.548]
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id4, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.548]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 1 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 2 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 1 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Storing tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table candidate the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id5, TupleEntry: value=id6, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id4, TupleEntry: value=id6, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:29.622]
+]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table neighbour the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:29.62]
+]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #2 evaluation over tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #2 evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id5, TupleEntry: value=id6, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id4, TupleEntry: value=id6, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:29.622]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:19.473]
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:19.475]
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id5, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.548]
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id4, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.548]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:29.62]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating periodic persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent choose clauses of block 0
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating periodic persistent choose clauses of block 0
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Before transport appends...
+Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e25abe25-d8a6-406f-b5aa-8ed33bfe71cd, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3b077197-2f00-437d-85f8-e35347e2b765, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=6f3b64c2-3248-4673-bab3-9d188a605d42, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=8be3407d-b3a1-43aa-b6fb-35abf5b5ac35, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=a9a99220-77e1-45a1-8219-e1e72d242f79, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id5, TupleEntry: value=id6, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id4, TupleEntry: value=id6, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:29.622]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id5, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.548]
+Tuple[TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id4, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.548]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:29.62]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Evaluating TRANSPORT APPEND clauses
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, 'id7' as SRC_INTERNAL_, peers.NODE as DEST, peers.NODE as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 0 tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT neighbour.NEIGHBOUR as DEST_INTERNAL_, 'id7' as SRC_INTERNAL_, candidate.DEST as DEST, peers.NODE || candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate, neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 3 tuples
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Transport results...
+{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id5, TupleEntry: value=id7id6id5, TupleEntry: value=2013-07-30 16:03:29.663]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id4, TupleEntry: value=id7id6id5id4, TupleEntry: value=2013-07-30 16:03:29.663]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id7id6, TupleEntry: value=2013-07-30 16:03:29.663]
+]}
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINE: Completed evaluation over tuples. Sending transport tuples..
+{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id5, TupleEntry: value=id7id6id5, TupleEntry: value=2013-07-30 16:03:29.663]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id4, TupleEntry: value=id7id6id5id4, TupleEntry: value=2013-07-30 16:03:29.663]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id7id6, TupleEntry: value=2013-07-30 16:03:29.663]
+]}
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:991) 
+FINEST: Appending to table advertise the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id5, TupleEntry: value=id7id6id5, TupleEntry: value=2013-07-30 16:03:29.663]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id4, TupleEntry: value=id7id6id5id4, TupleEntry: value=2013-07-30 16:03:29.663]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id7, TupleEntry: value=id6, TupleEntry: value=id7id6, TupleEntry: value=2013-07-30 16:03:29.663]
+]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing TRANSPORT tables:[advertise]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing INPUT tables:[add_neighbour, peers]
+30-Jul-2013 16:03:29 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: After complete evaluation...Application andrei/id7 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+null
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id5, TupleEntry: value=id6, TupleEntry: value=id6id5, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id4, TupleEntry: value=id6, TupleEntry: value=id6id5id4, TupleEntry: value=2013-07-30 16:03:29.621]
+Tuple[TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=id6, TupleEntry: value=2013-07-30 16:03:29.622]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id8, TupleEntry: value=2013-07-30 16:03:29.62]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id7, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:03:34 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:34 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:34 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:34 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:34 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40404 : Connection refused
+30-Jul-2013 16:03:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37104 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40404 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50115 : Connection refused
+30-Jul-2013 16:03:49 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:49 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:49 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37104 : Connection refused
+30-Jul-2013 16:03:49 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:49 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40404 : Connection refused
+30-Jul-2013 16:03:49 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:53 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:59788 : Connection refused
+30-Jul-2013 16:03:53 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:53 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37104 : Connection refused
+30-Jul-2013 16:03:53 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:53 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40404 : Connection refused
+30-Jul-2013 16:03:53 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37104 : Connection refused
+30-Jul-2013 16:03:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40404 : Connection refused
+30-Jul-2013 16:03:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47659 : Connection refused
+30-Jul-2013 16:03:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused
+30-Jul-2013 16:03:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55017 : Connection refused
+30-Jul-2013 16:03:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37104 : Connection refused
+30-Jul-2013 16:03:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:50431 : Connection refused
+30-Jul-2013 16:03:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40404 : Connection refused
+30-Jul-2013 16:03:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47659 : Connection refused
+30-Jul-2013 16:03:58 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40340 : Connection refused

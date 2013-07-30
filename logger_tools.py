@@ -16,6 +16,8 @@ st2 ='''FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id4, 
 Tuple[TupleEntry: value=id5, TupleEntry: value=id4, TupleEntry: value=id4, TupleEntry: value=id4, TupleEntry: value=2013-07-28 19:00:56.832]
 ]'''
 
+st3 ='''2013-07-29 16:18:53.015'''
+
 #Takes instance name at initialization
 
 class TupleEntry:
@@ -203,8 +205,8 @@ def received_messages_to_list(line,state_nr):
 
     index_start = line.find('name=') + 5
     index_finish = line.find(', [')
-    name = line[index_start:index_finish]
-    print name
+    table_name = line[index_start:index_finish]
+
 
     #Make a list of the column names and types [(name,type),....]
     column_name_and_type_list = []
@@ -249,11 +251,12 @@ def received_messages_to_list(line,state_nr):
         
             #takes out nodes that are not part of the network
         if len(dest) <10:
-            message = Message(state_nr,name,src,dest,timestamp,content)
+            message = Message(state_nr,table_name,src,dest,timestamp,content)
             result.append(message)
             print message
         
     return result
+
 
 if __name__ == "__main__":
     

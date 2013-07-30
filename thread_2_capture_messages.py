@@ -3,6 +3,7 @@ import paramiko
 import select
 import time
 from logger_tools import *
+import signal
 
 class Controller():
 
@@ -39,11 +40,8 @@ class Controller():
 
     def hit_limit(self):
         with self.evaluation_lock:
-            if self.evaluations >= self.limit:
-                return True
-            else:
-                return False
-
+            return self.evaluations >= self.limit
+    
     def get_evaluations(self):
         with self.evaluation_lock:
             return self.evaluations
@@ -93,6 +91,10 @@ class PhysicalNodeController(Thread):
         #Next 2 used to signal to controller when engines are up
         self.started = 0
         self.to_start = len(instances)
+        self.thread_started = {}
+        for instance in instances:
+            self.thread_started[instance] = False
+
 
         self.instances = instances
 
@@ -137,6 +139,13 @@ class PhysicalNodeController(Thread):
         #Terminates the infinite work loop
         self.stopped = False
 
+        #Put the logs in files
+        self.open_files = {}
+        for instance in instances:
+            self.open_files[instance] = open("engine-{0}".format(instance),'w')
+
+        self.start_engines()
+
 
 #Need to find a way to kill the engines AFTER all the states have been captured
 #Idea: boolean for each instance to tell that the final state has been captured
@@ -150,27 +159,9 @@ class PhysicalNodeController(Thread):
         return client
 
     def run(self):
-        print "in run"
-        #Start the SSH session
-        #client = self.start_ssh_session()
-        #Transport object is multiplexed across multiple channels
-        #(one for each engine)
-        transport = self.client.get_transport()
-
-        for instance in self.instances:
-            print "starting instance {0} in {1}".format(instance, self.hostname)
-            channel = transport.open_session()
-            channel.set_combine_stderr(True)
-            #Add it to the dict
-            self.channels[instance] = channel
-            
-            cmd = 'dsmengine -namespace {0} -instance {1} {2}'.format(self.namespace,instance,self.rule)
-            #print "before command"
-            channel.exec_command(cmd)
-            #print 'after command'
-
         try:
             while not self.stopped:
+               
                 for instance in self.channels:
                     channel = self.channels[instance]
                     
@@ -180,9 +171,8 @@ class PhysicalNodeController(Thread):
                         # Must be stdout
                         
                         line = channel.recv(1024)
-                        #print line
                         lines = line.splitlines(True)
-                        
+                     
                         #Check if there is any partial line left from before
                         if self.line_buffer[instance] is not '':
                             lines[0] = self.line_buffer[instance] + lines[0]
@@ -194,10 +184,23 @@ class PhysicalNodeController(Thread):
                             #Full Line - can do a check on it
                             if l.find('\n') != -1:
                                 
+                                self.open_files[instance].write(l)
+                                self.open_files[instance].flush()
+                                
+                                
                                 #TESTING
-                                '''if instance == 'id5':
+                                
+                                if instance == 'id3' and "AbstractClientServer" not in l\
+                                                   and "mcast" not in l\
+                                                   and 'topology info' not in l\
+                                                   and 'Refreshed registration' not in l\
+                                                   and 'AbstractRouteTable' not in l:
                                     print l
-                                '''
+                                    print "Controller is at {0}".format(self.controller.get_evaluations())
+
+                                '''if self.thread_started[instance] == True and instance == 'id2':
+                                    channel.send('^C')
+                                    '''
                                 if self.sending[instance]:
                                     self.send_buffer[instance] += l
 
@@ -206,25 +209,25 @@ class PhysicalNodeController(Thread):
 
                                 if self.receiving[instance]:
                                     self.receive_buffer[instance] += l
-
+ 
                                 #State lock is not released if 
-                                if 'After complete evaluation...Application' in l:
-                                    with self.controller.state_lock:
-                                        print 'Instance {0} has done an evaluation'.format(instance)
-                                        self.controller.evaluation_done()
-                                        print "So far there have been {0} evaluations".\
-                                            format(self.controller.get_evaluations())
-                                        if not self.controller.hit_limit():
-                                            self.logging_state[instance] = True
+                                if 'After complete evaluation...Application' in l and not self.controller.hit_limit():
+                                    print 'Instance {0} has done an evaluation'.format(instance)
+                                 
+                                    print "So far there have been {0} evaluations".\
+                                        format(self.controller.get_evaluations())
+
+                                    self.logging_state[instance] = True
 
                                 #Logging the state has finished
-                                elif self.logging_state[instance] and l == '\n':
+                                elif self.logging_state[instance] and l == '\n' and not self.controller.hit_limit():
                                     self.logging_state[instance] = False
                                     new_state = state_log_to_tables(self.state_buffer[instance],instance,self.state_nr[instance])
                                     self.states[instance].append(new_state)
-
-                                    self.state_buffer[instance] = ''
+                                    self.controller.evaluation_done()
                                     self.state_nr[instance] += 1
+                                    self.state_buffer[instance] = ''
+                                   
                                     #DEBUG
                                     '''if instance == 'id4':
                                         print "States for {0} are: {1}".format(instance,self.states[instance])
@@ -234,7 +237,7 @@ class PhysicalNodeController(Thread):
                                 elif 'Sending transport tuples' in l and not self.controller.hit_limit():
                                     self.sending[instance] = True
                                 
-                                elif self.sending[instance] and ']}' in l:
+                                elif self.sending[instance] and ']}' in l and not self.controller.hit_limit():
                                     self.sending[instance] = False
                                     if self.send_buffer != '':
                                         print self.state_nr[instance]
@@ -257,7 +260,7 @@ class PhysicalNodeController(Thread):
                                     self.receive_buffer[instance] += l
                                 
                                 #Logging received messages ENDED
-                                elif self.receiving[instance] == True and l == ']\n':
+                                elif self.receiving[instance] == True and l == ']\n' and not self.controller.hit_limit():
                                     self.receiving[instance] = False
                                     print self.state_nr[instance]
                                     if self.receive_buffer != '':
@@ -266,21 +269,118 @@ class PhysicalNodeController(Thread):
                                                                       self.state_nr[instance])
                                         self.received_messages[instance] += current_transition_messages
                                     self.receive_buffer[instance] = ''
-                                                                      
+                                '''                                      
                                 #Check if the engine has started and signal controller
                                 elif 'Engine andrei/{0} started'.format(instance) in l:
                                     print 'Host: {0} | Node: {1} STARTED'.format(self.hostname,instance)
+                                    self.thread_started[instance] = True
                                     self.started += 1
                                     if self.started == self.to_start:
                                         'All engines started on: {0}'.format(self.hostname)
                                         self.controller.signal_start()
-
+                                        '''
                             #Partial line - need to pass it into the next loop
                             else:
                                 self.line_buffer[instance] = l
 
+    
+
+
         except KeyboardInterrupt:
             raise KeyboardInterrupt
+
+    def start_engines(self):
+        transport = self.client.get_transport()
+
+        for instance in self.instances:
+            #Open a channel for each instance
+            channel = transport.open_session()
+            channel.set_combine_stderr(True)
+            #Add it to the dict
+            self.channels[instance] = channel
+
+            
+            fail = True
+
+            while fail:
+                print "Trying to start instance {0}".format(instance)
+                #Close the channel if it exits
+                try:
+                    self.channels[instance].close()
+                except KeyError:
+                    pass
+
+                #Open a channel for the instance
+                channel = transport.open_session()
+                channel.set_combine_stderr(True)
+                #Add it to the dict
+                self.channels[instance] = channel
+
+                cmd = 'dsmengine -namespace {0} -instance {1} {2}'.format(self.namespace,instance,self.rule)
+                #print "before command"
+                channel.exec_command(cmd)
+                #print 'after command'
+
+                #Loop until "engine started" is seen
+                started = False
+                listener_exited = False
+                while not started:
+                    
+                    r1, w1, x1 = select.select([channel],[],[],0.0)
+                    
+                    if len(r1) > 0:
+                        # Must be stdout
+                        
+                        line = channel.recv(1024)
+                        #print line
+                        lines = line.splitlines(True)
+                        
+                        #Check if there is any partial line left from before
+                        if self.line_buffer[instance] is not '':
+                            lines[0] = self.line_buffer[instance] + lines[0]
+                            self.line_buffer[instance] = ''
+                        
+
+                        for l in lines:                    
+
+                            #Full Line - can do a check on it
+                            if l.find('\n') != -1:
+                                
+                                
+                                if instance == 'a':
+                                    print l
+
+                                if 'Engine andrei/{0} started'.format(instance) in l:
+                                    print l
+                                    started = True
+
+                                    #Engine FAILED TO START
+                                    if listener_exited:
+                                        print "Failed"
+                                        fail = True
+                                        self.kill_instance(instance)
+                                        listener_exited = False
+                                    #Engine SUCCESSFULLY STARTED
+                                    else:
+                                        print 'Host: {0} | Node: {1} STARTED'.format(self.hostname,instance)
+                                        self.thread_started[instance] = True
+                                        self.started += 1
+                                        if self.started == self.to_start:
+                                            'All engines started on: {0}'.format(self.hostname)
+                                            self.controller.signal_start()
+                                        fail = False
+
+                                if 'McastTopologyMonitor:Listener exiting' in l:
+                                    print l
+                                    listener_exited = True 
+                                        
+                            
+
+                            #Partial line - need to pass it into the next loop
+                            else:
+                                self.line_buffer[instance] = l 
+
+
 
     def stop(self):
         print "Thread for {0} has stopped".format(self.hostname)
@@ -289,7 +389,13 @@ class PhysicalNodeController(Thread):
         return self.states,self.sent_messages,self.received_messages
     
                             
-
+    def kill_instance(self,instance):
+        cmd = "$PROJECT_HOME/clear_instance.sh {0}".format(instance)
+        stdin,stdout,stderr = self.client.exec_command(cmd)
+        print stderr.readlines()
+        print stdout.readlines()
+        for line in stdout:
+            print line
 
 if __name__ == "__main__":
     monitor = Controller(2,2)

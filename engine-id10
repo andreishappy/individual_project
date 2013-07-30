@@ -1,0 +1,1351 @@
+30-Jul-2013 15:59:14 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:19 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:19 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Running rules over tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id9, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id7, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:26.916]
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id8, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:26.916]
+]
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #1 evaluation over tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #1 evaluation...Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id7, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:26.916]
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id8, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:26.916]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 2 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Storing tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table candidate the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:27.751]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:27.751]
+]
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #2 evaluation over tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #2 evaluation...Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:27.751]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:27.751]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id7, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:26.916]
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id8, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:26.916]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent choose clauses of block 0
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Before transport appends...
+Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=0ca38cd9-bb3b-4964-94a8-c5f7b706464b, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=d2cb03c9-e6e0-4d76-8b0a-2fdda523f5b7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=fac99b11-f580-4827-87f5-95ad00fc8844, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:27.751]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:27.751]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id7, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:26.916]
+Tuple[TupleEntry: value=id10, TupleEntry: value=id9, TupleEntry: value=id8, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:26.916]
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Evaluating TRANSPORT APPEND clauses
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, 'id10' as SRC_INTERNAL_, peers.NODE as DEST, peers.NODE as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 0 tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT neighbour.NEIGHBOUR as DEST_INTERNAL_, 'id10' as SRC_INTERNAL_, candidate.DEST as DEST, peers.NODE || candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate, neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 0 tuples
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Transport results...
+{}
+30-Jul-2013 15:59:27 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINE: Completed evaluation over tuples. No tuples to send.
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing TRANSPORT tables:[advertise]
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing INPUT tables:[add_neighbour, peers]
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: After complete evaluation...Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+null
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:27.751]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:27.751]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 15:59:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:38 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:43 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56417 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:48 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:38590 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:52 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:42274 : Connection refused
+30-Jul-2013 15:59:54 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 16:00:00 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:00 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:00 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 16:00:00 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:00 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 16:00:00 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 16:00:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 16:00:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 16:00:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37638 : Connection refused
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Running rules over tuples
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/588a9858-e03b-41e4-9669-fdf351533805, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String][
+Tuple[TupleEntry: value=id11]
+]
+30-Jul-2013 16:00:02 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #1 evaluation over tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #1 evaluation...Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:27.751]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:27.751]
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+Tuple[TupleEntry: value=id11]
+]
+
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 1 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 2 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Storing tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table candidate the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 16:00:03.047]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 16:00:03.047]
+]
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1089) 
+FINEST: Appending to table neighbour the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=2013-07-30 16:00:03.043]
+]
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Pass #2 evaluation over tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINEST: Before pass #2 evaluation...Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 16:00:03.047]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 16:00:03.047]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 15:59:27.751]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 15:59:27.751]
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=2013-07-30 16:00:03.043]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+Tuple[TupleEntry: value=id11]
+]
+
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:537) 
+FINER: Evaluating block 0 APPEND clauses
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running neighbour clause: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause neighbour returned 0 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINER: Running candidate clause: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateBlock(AbstractRuleEngine.java:1083) 
+FINEST: Clause candidate returned 0 new tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating periodic persistent non-choose clauses of block 0 until steady state is achieved.
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating persistent choose clauses of block 0
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: Evaluating periodic persistent choose clauses of block 0
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Before transport appends...
+Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+Tuple[TupleEntry: value=id29, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id29, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id16, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id21, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3bb8cd49-766e-4463-851b-d10c4e03071e, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id12, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=e7a358c6-ddce-4f84-8320-273d678bd2c8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id26, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id24, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id7, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id4, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id17, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id2, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id19, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=3519d37b-29a9-487a-b900-d3f620f91fba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id28, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=462049c8-f035-4a24-bc48-0bc7074895ba, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=588a9858-e03b-41e4-9669-fdf351533805, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id15, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id30, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=00e4631d-8651-465f-b5a2-23c41ad52ef9, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id22, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id13, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id20, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id1, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id23, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id25, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id8, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id5, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id6, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id27, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=71a70c4c-fd34-4b2c-8d57-7a77cadb7f92, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id18, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Reachable]
+Tuple[TupleEntry: value=id3, TupleEntry: value=Neighbor]
+Tuple[TupleEntry: value=id10, TupleEntry: value=Self]
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 16:00:03.047]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 16:00:03.047]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=2013-07-30 16:00:03.043]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+Tuple[TupleEntry: value=id11]
+]
+
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Evaluating TRANSPORT APPEND clauses
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, 'id10' as SRC_INTERNAL_, peers.NODE as DEST, peers.NODE as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 1 tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINER: Running advertise clause: SELECT neighbour.NEIGHBOUR as DEST_INTERNAL_, 'id10' as SRC_INTERNAL_, candidate.DEST as DEST, peers.NODE || candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate, neighbour, peers WHERE peers.RELATIONSHIP = 'Self'
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:964) 
+FINEST: Clause advertise returned 2 tuples
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINEST: Transport results...
+{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id10, TupleEntry: value=id10, TupleEntry: value=2013-07-30 16:00:03.093]
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id7, TupleEntry: value=id10id9id8id7, TupleEntry: value=2013-07-30 16:00:03.094]
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id8, TupleEntry: value=id10id9id8, TupleEntry: value=2013-07-30 16:00:03.094]
+]}
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINE: Completed evaluation over tuples. Sending transport tuples..
+{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id10, TupleEntry: value=id10, TupleEntry: value=2013-07-30 16:00:03.093]
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id7, TupleEntry: value=id10id9id8id7, TupleEntry: value=2013-07-30 16:00:03.094]
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id8, TupleEntry: value=id10id9id8, TupleEntry: value=2013-07-30 16:00:03.094]
+]}
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluatePostBlocks(AbstractRuleEngine.java:991) 
+FINEST: Appending to table advertise the following tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id10, TupleEntry: value=id10, TupleEntry: value=2013-07-30 16:00:03.093]
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id7, TupleEntry: value=id10id9id8id7, TupleEntry: value=2013-07-30 16:00:03.094]
+Tuple[TupleEntry: value=id11, TupleEntry: value=id10, TupleEntry: value=id8, TupleEntry: value=id10id9id8, TupleEntry: value=2013-07-30 16:00:03.094]
+]
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing TRANSPORT tables:[advertise]
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.AbstractRuleEngine.evaluateTupleRules(AbstractRuleEngine.java:576) 
+FINER: Clearing INPUT tables:[add_neighbour, peers]
+30-Jul-2013 16:00:03 com.ibm.watson.dsm.engine.app.DSMEngine.evaluateTupleRules(DSMEngine.java:114) 
+FINE: After complete evaluation...Application andrei/id10 contains the following tables...
+Table: peers, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=peers, [ColumnDescriptor: name=NODE, type=String[128], ColumnDescriptor: name=RELATIONSHIP, type=String[64]][
+null
+]
+Table: candidate, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id7, TupleEntry: value=id9, TupleEntry: value=id9id8id7, TupleEntry: value=2013-07-30 16:00:03.047]
+Tuple[TupleEntry: value=id8, TupleEntry: value=id9, TupleEntry: value=id9id8, TupleEntry: value=2013-07-30 16:00:03.047]
+]
+Table: neighbour_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour_PREV_INTERNAL_, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: candidate_PREV_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=candidate_PREV_INTERNAL_, [ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=NEXTHOP, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: advertise, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+null
+]
+Table: neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=neighbour, [ColumnDescriptor: name=NEIGHBOUR, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=id11, TupleEntry: value=2013-07-30 16:00:03.043]
+]
+Table: DUMMIE_INTERNAL_, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=DUMMIE_INTERNAL_, [ColumnDescriptor: name=X, type=Integer][
+Tuple[TupleEntry: value=1]
+]
+Table: add_neighbour, TupleSet:TupleSetDescriptor: appDesc=andrei/id10, name=add_neighbour, [ColumnDescriptor: name=TO_ADD, type=String[128]][
+null
+]
+
+30-Jul-2013 16:00:04 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:04 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:04 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 16:00:04 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:04 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:04 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 16:00:06 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:06 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:06 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:47718 : Connection refused
+30-Jul-2013 16:00:06 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:06 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:06 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 16:00:10 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:10 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:10 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:10 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:10 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:40700 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:15 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:48582 : Connection refused
+30-Jul-2013 16:00:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:19 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:19 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:36665 : Connection refused
+30-Jul-2013 16:00:19 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:19 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34718 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:24 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:28 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:49078 : Connection refused
+30-Jul-2013 16:00:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:33 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:42 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:00:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:58109 : Connection refused
+30-Jul-2013 16:00:46 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:00:51 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:44067 : Connection refused
+30-Jul-2013 16:00:56 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:00:56 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:00:56 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:56 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:00:59 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:00:59 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:00:59 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:00:59 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:01:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:56516 : Connection refused
+30-Jul-2013 16:01:01 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:08 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:45457 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:16 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:17 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:17 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:17 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:17 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:26 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:26 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:26 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:26 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37184 : Connection refused
+30-Jul-2013 16:01:26 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37705 : Connection refused
+30-Jul-2013 16:01:27 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:27 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:27 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:27 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37705 : Connection refused
+30-Jul-2013 16:01:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:57605 : Connection refused
+30-Jul-2013 16:01:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34340 : Connection refused
+30-Jul-2013 16:01:31 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37705 : Connection refused
+30-Jul-2013 16:01:32 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:46687 : Connection refused
+30-Jul-2013 16:01:32 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:55391 : Connection refused
+30-Jul-2013 16:01:32 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:34340 : Connection refused
+30-Jul-2013 16:01:32 com.ibm.watson.dsm.platform.AbstractSharedDataPlatform.sendMessage(AbstractSharedDataPlatform.java:750) 
+WARNING: Could not send data to network://146.169.52.17:37705 : Connection refused

@@ -34,16 +34,19 @@ class XML_to_DSM:
                 last = nodes_started + nodes_per_host
                 
             to_start = instances[first:last]
-            #print "contructing for {0} with instances {1}".format(host,to_start)
+            print "contructing for {0} with instances {1}".format(host,to_start)
             t = PhysicalNodeController(host,hosts[host]['username'],'andrei',to_start,rule,monitor)
-            #print "done constructing"
+            print "done constructing"
             nodes_started += nodes_per_host
-            t.start()
+
             #print "started for {0}".format(host)
            
             host_controllers.append(t)
             hosts_done += 1
-        
+
+        #start the threads
+        for thread in host_controllers:
+            thread.start()
         return host_controllers
                 
                 
@@ -73,7 +76,7 @@ class XML_to_DSM:
         config = XMLParser(config_file)
         hosts = config.hosts
         nodes = config.nodes
-    
+        limit = config.limit
         #This is HORRIBLE CODE HERE
         for node in nodes:
             rule = nodes[node]['rule']
@@ -82,7 +85,7 @@ class XML_to_DSM:
 
         print "rule is {0}".format(rule)
 
-        monitor = Controller(100,len(hosts))
+        monitor = Controller(limit,len(hosts))
     
         #Start the nodes and get a LIST of host specific threads
         host_controllers = self.start_nodes(hosts,nodes,rule,monitor)
@@ -99,11 +102,14 @@ class XML_to_DSM:
         except KeyboardInterrupt:
             for thread in host_controllers:
                 thread.stop()
-                exit(0)
-        while not monitor.converged():
+            exit(0)
+        while not monitor.converged() and not monitor.hit_limit():
             pass
 
-        print "convergence reached"
+        if monitor.converged():
+            print "convergence reached"
+        elif monitor.hit_limit():
+            print "hit_limit"
         
 
         thread_states = []
@@ -120,22 +126,25 @@ class XML_to_DSM:
         for thread_state in thread_states:
             for instance in thread_state:
                 print "Instance {0} states:\n===================".format(instance)
-                for state in thread_state[instance]:
-                    print state
+                if instance == "id3":
+                    for state in thread_state[instance]:
+                        print state
 
         print "Messages Sent ========================="
         for thread_message in thread_messages_sent:
             for instance in thread_message:
-                print "Instance {0} messages sent:\n================".format(instance)
-                for mess in thread_message[instance]:
-                    print mess
+                if instance == "id3":
+                    print "Instance {0} messages sent:\n================".format(instance)
+                    for mess in thread_message[instance]:
+                        print mess
                     
         print "Messages Received ====================="
         for thread_message in thread_messages_received:
             for instance in thread_message:
-                print "Instance {0} messages received:\n================".format(instance)
-                for mess in thread_message[instance]:
-                    print mess
+                if instance == "id3":
+                    print "Instance {0} messages received:\n================".format(instance)
+                    for mess in thread_message[instance]:
+                        print mess
             
 
 

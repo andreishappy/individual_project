@@ -1,15 +1,8 @@
 system peers(char[128] node, char[64] relationship);
 
-input start(int payload);
-transport talk(int payload);
-transport do(int payload);
-persistent keep_talk(int i);
-persistent keep_do(int i);
+persistent person(char[128] first_name, char[128] last_name);
+persistent age(char[128] last_name, int age);
+persistent first_age(char[128] first_name, int age);
 
-
-talk(i)@dest if keep_do(i), peers(dest,"Neighbor");
-do(i)@dest if start(i), peers(dest,"Neighbor");
-keep_talk(i) if talk(i)@dest;
-keep_do(i) if do(i)@dest;
-keep_talk(i) if prev keep_talk(i);
-keep_do(i) if prev keep_do(i);
+first_age(first_name,age) if person(first_name, last_name),
+age(last_name, age);

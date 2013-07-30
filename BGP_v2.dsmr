@@ -6,6 +6,8 @@ persistent neighbour(char[128] neighbour);
 persistent candidate(char[128] Dest, char[128] NextHop, char[128]Path);
 transport advertise(char[128] Dest, char[128] Path);
 
+
+
 //Rules
 //========================
 neighbour(N) if add_neighbour(N);

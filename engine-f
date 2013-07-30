@@ -1,0 +1,1104 @@
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=null, localApps=[], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/g
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/b
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/e
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:00 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/d
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/a
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/c
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=null, localApps=[], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=null, localApps=[], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:01 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/f, uri:dual-mode://localhost/?localid=af2b244b-0880-4286-9ef2-351872c6755e&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A46214, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/f, uri:dual-mode://localhost/?localid=af2b244b-0880-4286-9ef2-351872c6755e&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A46214, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/b, uri:dual-mode://localhost/?localid=d5155cf1-fff3-45b2-9341-cefd87bd1307&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A44322, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/b, uri:dual-mode://localhost/?localid=d5155cf1-fff3-45b2-9341-cefd87bd1307&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A44322, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:02 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=null, localApps=[], routes=null
+29-Jul-2013 13:36:03 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=null, localApps=[], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/f, uri:dual-mode://localhost/?localid=af2b244b-0880-4286-9ef2-351872c6755e&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A46214, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/f, uri:dual-mode://localhost/?localid=af2b244b-0880-4286-9ef2-351872c6755e&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A46214, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/b, uri:dual-mode://localhost/?localid=d5155cf1-fff3-45b2-9341-cefd87bd1307&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A44322, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/b, uri:dual-mode://localhost/?localid=d5155cf1-fff3-45b2-9341-cefd87bd1307&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A44322, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=null, localApps=[], routes=null
+29-Jul-2013 13:36:04 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=null, localApps=[], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Added registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=68315f94-14cc-44e3-b582-84bfe513d391&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A42167, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/c, uri:dual-mode://localhost/?localid=1e594316-d203-45e4-8b73-430f2d32773a&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A39943, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/f, uri:dual-mode://localhost/?localid=af2b244b-0880-4286-9ef2-351872c6755e&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A46214, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/f, uri:dual-mode://localhost/?localid=af2b244b-0880-4286-9ef2-351872c6755e&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A46214, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/b, uri:dual-mode://localhost/?localid=d5155cf1-fff3-45b2-9341-cefd87bd1307&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A44322, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/b, uri:dual-mode://localhost/?localid=d5155cf1-fff3-45b2-9341-cefd87bd1307&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A44322, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:05 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/a, uri:dual-mode://localhost/?localid=e7f05bde-8f3f-4e26-92a3-5f535f4f2e26&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A32999, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/d, uri:dual-mode://localhost/?localid=d1092cb7-e121-4f11-afd4-a705d38fdb7c&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A51222, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:06 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:07 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/j, uri:dual-mode://localhost/?localid=7611dbef-3122-4c81-b22c-9244785bf2b0&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A50641, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/j
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.17], localApps=[andrei/e, uri:dual-mode://localhost/?localid=20021fec-0805-4c46-96e8-3f62395db998&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.17%3A53631, ip:edge17.doc.ic.ac.uk/146.169.52.17], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=null, localApps=[], routes=null
+29-Jul-2013 13:36:08 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=null, localApps=[], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/a, uri:dual-mode://localhost/?localid=1f413b05-e32e-4ce1-8ad5-6755f6bdb2dd&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A57714, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/a
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/d, uri:dual-mode://localhost/?localid=a11eb8d6-db48-459d-aa8e-a1b52b28f67d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A45718, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/d
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/e, uri:dual-mode://localhost/?localid=1d7ecd46-c633-418a-90ba-5b71f1d51837&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A33799, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/e
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/c, uri:dual-mode://localhost/?localid=2887611c-698c-486c-aa29-e739559ea4db&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A39871, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/c
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Sender.run(AbstractClientServer.java:112) 
+FINEST: Sending mcast packet to 0.0.0.0/0.0.0.0
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/f, uri:dual-mode://localhost/?localid=efb0a029-8729-4ef2-8ba8-a64bf5750c6d&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A58915, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.20], localApps=[andrei/b, uri:dual-mode://localhost/?localid=e6f6058a-2379-4c86-b1bf-f10f70f5e940&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.20%3A51092, ip:edge20.doc.ic.ac.uk/146.169.52.20], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/b
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/g, uri:dual-mode://localhost/?localid=2ff2180f-f79d-4146-8d7d-e6c49d71836f&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A56620, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/g
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/i, uri:dual-mode://localhost/?localid=e8c97ffc-20e5-4cfa-af4e-7d872bbcd7b7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A60145, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/i
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.util.AbstractClientServer$Receiver.run(AbstractClientServer.java:106) 
+FINEST: Receive mcast msg: source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINE: Received new topology info: 
+source=[146.169.52.15], localApps=[andrei/h, uri:dual-mode://localhost/?localid=c20dd099-9dc8-435a-b3c9-ee585e8b89a7&local=memory%3A%2F%2Flocalhost%3A0&remote=network%3A%2F%2F146.169.52.15%3A43886, ip:edge15.doc.ic.ac.uk/146.169.52.15], routes=null
+29-Jul-2013 13:36:09 com.ibm.watson.dsm.platform.topology.physical.internal.AbstractRouteTableDriver.processPacketData(AbstractRouteTableDriver.java:93) 
+FINEST: Refreshed registration andrei/h

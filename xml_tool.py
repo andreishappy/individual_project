@@ -14,12 +14,14 @@ class XMLParser:
         self.tree = self.tree.getroot()
         self.nodes = {}
         self.hosts = {}
-
+        self.limit = 0
         for element in self.tree:
             if element.tag == 'hosts':
                 hosts = element
             if element.tag == 'nodes':
                 nodes = element
+            if element.tag == 'limit':
+                self.limit=int(element.attrib['lim'])
 
         for node in nodes:
             attributes = {}
@@ -45,3 +47,4 @@ if __name__ == '__main__':
     config = XMLParser('topology.xml')
     print 'nodes are \n',config.nodes
     print 'hosts are \n',config.hosts
+    print 'limit is ', config.limit

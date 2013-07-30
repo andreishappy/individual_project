@@ -1,0 +1,33 @@
+<doc>
+  <nodes>
+
+    <node id="id1" links="id2" 
+	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+    </node>
+
+    <node id="id2" links="id3"
+	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+    </node>
+
+    <node id="id3" links="id2" 
+	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+    </node>
+
+  </nodes>
+
+
+  <hosts>
+
+    <host hostname="edge17.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+    <host hostname="edge15.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+  </hosts>
+
+  <limit lim="30"> </limit>
+
+  <inputs
