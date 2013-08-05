@@ -67,6 +67,7 @@ class XML_to_DSM:
                     out,err = process.communicate()
                     out = str.splitlines(out)
                     for line in out:
+                        #print line
                         if 'Tuples sent' in line:
                             success = True
                     time.sleep(3)
@@ -103,6 +104,7 @@ class XML_to_DSM:
             for thread in host_controllers:
                 thread.stop()
             exit(0)
+        
         while not monitor.converged() and not monitor.hit_limit():
             pass
 
@@ -125,26 +127,26 @@ class XML_to_DSM:
         
         for thread_state in thread_states:
             for instance in thread_state:
+                #if instance == "id6":
                 print "Instance {0} states:\n===================".format(instance)
-                if instance == "id3":
-                    for state in thread_state[instance]:
-                        print state
+                for state in thread_state[instance]:
+                    print state
 
         print "Messages Sent ========================="
         for thread_message in thread_messages_sent:
             for instance in thread_message:
-                if instance == "id3":
-                    print "Instance {0} messages sent:\n================".format(instance)
-                    for mess in thread_message[instance]:
-                        print mess
+                #if instance == "id6" or instance == 'id2':
+                print "Instance {0} messages sent:\n================".format(instance)
+                for mess in thread_message[instance]:
+                    print mess
                     
         print "Messages Received ====================="
         for thread_message in thread_messages_received:
             for instance in thread_message:
-                if instance == "id3":
-                    print "Instance {0} messages received:\n================".format(instance)
-                    for mess in thread_message[instance]:
-                        print mess
+                #if instance == "id6" or instance == 'id2':
+                print "Instance {0} messages received:\n================".format(instance)
+                for mess in thread_message[instance]:
+                    print mess
             
 
 

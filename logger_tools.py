@@ -52,7 +52,8 @@ class State:
     def __str__(self):
         title = "State for {0} | NR. {1}:\n".format(self.instance,self.state_nr)
         for table in self.tables:
-            title += '{0}'.format(table) +'\n'
+            if 'PREV' not in table.name:
+                title += '{0}'.format(table) +'\n'
         return title
             
 class Table:
@@ -198,7 +199,7 @@ def has_transport_table(line, tran_names):
     return name in tran_names
 
 def received_messages_to_list(line,state_nr):
-    print 'line =====> ' +line
+    #print 'line =====> ' +line
 
 
     result = []
@@ -223,7 +224,7 @@ def received_messages_to_list(line,state_nr):
         column_name_and_type_list.append((name,typ))
         #Now the (name,type) list is populated
 
-    print column_name_and_type_list
+    #print column_name_and_type_list
     #get the individual messages
     tuples = line[table_descriptor_end+3:len(line)]
     tuples = tuples.replace(', ','').replace('Tuple[','').replace(']','').replace('}','').splitlines()
@@ -253,7 +254,7 @@ def received_messages_to_list(line,state_nr):
         if len(dest) <10:
             message = Message(state_nr,table_name,src,dest,timestamp,content)
             result.append(message)
-            print message
+            #print message
         
     return result
 

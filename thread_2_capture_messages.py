@@ -70,7 +70,7 @@ class PhysicalNodeController(Thread):
         super(PhysicalNodeController,self).__init__()
 
         #Start the ssh session
-        print "in constructor"
+        #print "in constructor"
 
         #Prepare the dict of the channels
         self.channels = {}
@@ -118,7 +118,7 @@ class PhysicalNodeController(Thread):
         self.receiving = {}
         self.receive_buffer = {}
         self.transport_names = get_transport_table_name_list(rule)
-        print "TRANSPORT NAMES {0}".format(self.transport_names)
+        #print "TRANSPORT NAMES {0}".format(self.transport_names)
         for instance in instances:
             self.received_messages[instance] = []
             self.receiving[instance] = False
@@ -187,9 +187,13 @@ class PhysicalNodeController(Thread):
                                 self.open_files[instance].write(l)
                                 self.open_files[instance].flush()
                                 
+                                #CHECK IF THE LISTENER EXITS
+                                if 'exiting' in l:
+                                    print 'Instance {0} listener exited' 
+
                                 
                                 #TESTING
-                                
+                                '''
                                 if instance == 'id3' and "AbstractClientServer" not in l\
                                                    and "mcast" not in l\
                                                    and 'topology info' not in l\
@@ -197,7 +201,7 @@ class PhysicalNodeController(Thread):
                                                    and 'AbstractRouteTable' not in l:
                                     print l
                                     print "Controller is at {0}".format(self.controller.get_evaluations())
-
+                                    '''
                                 '''if self.thread_started[instance] == True and instance == 'id2':
                                     channel.send('^C')
                                     '''
@@ -240,7 +244,7 @@ class PhysicalNodeController(Thread):
                                 elif self.sending[instance] and ']}' in l and not self.controller.hit_limit():
                                     self.sending[instance] = False
                                     if self.send_buffer != '':
-                                        print self.state_nr[instance]
+                                        
                                         current_transition_messages = sent_message_to_list(self.send_buffer[instance],\
                                                                                            self.state_nr[instance])
                                         self.sent_messages[instance] += current_transition_messages
@@ -262,7 +266,7 @@ class PhysicalNodeController(Thread):
                                 #Logging received messages ENDED
                                 elif self.receiving[instance] == True and l == ']\n' and not self.controller.hit_limit():
                                     self.receiving[instance] = False
-                                    print self.state_nr[instance]
+                                    
                                     if self.receive_buffer != '':
                                         current_transition_messages = received_messages_to_list(\
                                                                       self.receive_buffer[instance],\
@@ -345,19 +349,17 @@ class PhysicalNodeController(Thread):
 
                             #Full Line - can do a check on it
                             if l.find('\n') != -1:
-                                
-                                
-                                if instance == 'a':
-                                    print l
-
+                                self.open_files[instance].write(l)
+                                self.open_files[instance].flush()
+                                                                
                                 if 'Engine andrei/{0} started'.format(instance) in l:
-                                    print l
                                     started = True
 
                                     #Engine FAILED TO START
                                     if listener_exited:
                                         print "Failed"
                                         fail = True
+                                        channel.close()
                                         self.kill_instance(instance)
                                         listener_exited = False
                                     #Engine SUCCESSFULLY STARTED

@@ -2,55 +2,38 @@
   <nodes>
 
     <node id="id1" links="id2"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
     </node>
 
-    <node id="id2" links="id3"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+    <node id="id2" links="id1,id3,id4"
+	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
     </node>
 
-    <node id="id3" links="id2"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+    <node id="id3" links="id2,id4"
+	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
     </node>
 
-    <node id="id4" links="id5"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
+    <node id="id4" links="id3,id2"
+	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
     </node>
 
-    <node id="id5" links="id6"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
-    </node>
 
-    <node id="id6" links="id7"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
-    </node>
 
-    <node id="id7" links="id8"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
-    </node>
-
-    <node id="id8" links="id9"
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
-    </node>
-
-    <node id="id9" links=""
-	  rule="/homes/ap3012/individual_project/home/BGP_v1.dsmr">
-    </node>
 
   </nodes>
 
 
   <hosts>
 
-    <host hostname="edge17.doc.ic.ac.uk" username="ap3012"
+    <host hostname="edge19.doc.ic.ac.uk" username="ap3012"
 	  password="">
     </host>
 
-    <host hostname="edge15.doc.ic.ac.uk" username="ap3012"
+    <host hostname="edge18.doc.ic.ac.uk" username="ap3012"
 	  password="">
     </host>
 
   </hosts>
 
-  <limit lim="100"> </limit>
+  <limit lim="200"> </limit>
 </doc>

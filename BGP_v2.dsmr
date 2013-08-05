@@ -3,23 +3,58 @@
 system peers(char[128] node, char[64] relationship);
 input add_neighbour(char [128] to_add);
 persistent neighbour(char[128] neighbour);
+
 persistent candidate(char[128] Dest, char[128] NextHop, char[128]Path);
+persistent best_candidate(char[128] Dest, char[128] Path);
+persistent best_cost(char[128] Dest,int Cost);
+persistent route_updated(char[128] Dest, char[128] NextHop);
+
 transport advertise(char[128] Dest, char[128] Path);
-
-
+transport withdraw(char[128] Dest);
 
 //Rules
 //========================
 neighbour(N) if add_neighbour(N);
 neighbour(N) if prev neighbour(N);
 
-candidate(Dest, NextHop, Path) if advertise(Dest,Path)@NextHop;
-candidate(Dest, NextHop, Path) if prev candidate(Dest, NextHop,Path);
+block;
 
+route_updated(Dest,NextHop) if
+     advertise(Dest,*)@NextHop;
+route_updated(Dest,NextHop) if
+     withdraw(Dest)@NextHop;
 
-advertise(Self, Self)@N if add_neighbour(N), peers(Self,"Self");
-advertise(Dest, Self+Path)@N if 
-      candidate(Dest,*,Path), 
-      neighbour(N),
-      peers(Self,"Self");
+block;
+
+candidate(Dest,NextHop,Path) if
+     advertise(Dest,Path)@NextHop;
+candidate(Dest, NextHop, Path) if 
+     prev candidate(Dest, NextHop, Path),
+     not route_updated(Dest,NextHop);
+
+block;          			       	        
+best_cost(Dest, MIN(LENGTH(Path))) if 
+     candidate(Dest,*,Path);
+
+block;
+best_candidate(Dest,Path) if 
+     best_cost(Dest,Cost),
+     candidate(Dest,NextHop,Path):
+     LENGTH(Path) == Cost;
+block;
+advertise(Self,Self)@N if
+     add_neighbour(N),
+     peers(Self,"Self");
+
+advertise(Dest,Self+Path)@N if
+     best_candidate(Dest,Path),
+     not prev best_candidate(Dest,Path),
+     peers(Self,"Self"),
+     neighbour(N):
+     LOCATE(N,Path) == 0;
+
+withdraw(Dest)@N if
+    prev best_candidate(Dest, *),
+    not candidate(Dest,*,*),
+    peers(N,"Neighbor");
 
