@@ -35,16 +35,25 @@ class Message:
         self.content = content
 
     def __str__(self):
-        result = "Message: Table: {0} State: {1}\nFrom: {2} To: {3} Time: {4}\n"\
+        #If you want to see the full header
+        result = "{0} {2} ==> {3} AT {4}\n"\
                  .format(self.table_name,self.state_nr,self.src,self.dest,self.time)
         result += "Content: {0}".format(self.content)
         return result
+
+    def __eq__(self,other):
+        return self.table_name == other.table_name and \
+               self.src == other.src and \
+               self.dest == other.dest and \
+               self.time == other.time
 
 class State:
     def __init__(self,instance,state_nr):
         self.tables = []
         self.instance = instance
         self.state_nr = state_nr
+        self.received = []
+        self.sent = []
 
     def add_table(self,table):
         self.tables.append(table)
@@ -54,6 +63,15 @@ class State:
         for table in self.tables:
             if 'PREV' not in table.name:
                 title += '{0}'.format(table) +'\n'
+
+        title += "Sent messages=========\n"
+        for mess in self.sent:
+            title += mess.__str__() + '\n'
+
+        title += 'Received messages=========\n'
+        for mess in self.received:
+            title += mess.__str__() + '\n'
+
         return title
             
 class Table:
@@ -72,10 +90,11 @@ class Table:
 
     def __str__(self):
         result = "Table {0}\n".format(self.name)
-        result += "Columns: "
+        '''result += "Columns: "
         for column in self.column_and_type:
             result += "{0} --> {1} || ".format(column[0],column[1])
         result += "\nCONTENT\n"
+        '''
         for row in self.rows:
             result += string.join(row,', ') + '\n'
 
@@ -94,7 +113,8 @@ def get_transport_table_name_list(filename):
 
     return result
 
-def state_log_to_tables(raw_state,instance,state_nr):
+#Returns a state with received and sent messages added
+def state_log_to_state(raw_state,instance,state_nr,sent,received):
     result = State(instance,state_nr)
     tables = string.split(raw_state,'Table: ')
 
@@ -132,6 +152,11 @@ def state_log_to_tables(raw_state,instance,state_nr):
                     columns.append(value)
                 table_result.add_row(columns)
         result.add_table(table_result)
+
+    #Add the messages
+    result.sent = sent
+    result.received = received
+
     return result
 
 #Returns a list of message objects in as many tables as present
@@ -166,7 +191,7 @@ def sent_message_to_list(raw_message,state_nr):
         tuples = tuples.replace(', ','').replace('Tuple[','').replace(']','').replace('}','').splitlines()
         #Each message corresponds to a tup
         for tup in tuples:
-            content = []
+            content = ''
             tup = string.split(tup,'TupleEntry: ')
             if tup == ['']:
         
@@ -182,7 +207,7 @@ def sent_message_to_list(raw_message,state_nr):
                 elif _name == "TOC_INTERNAL_":
                     timestamp = value
                 else:
-                    content.append((_name,_type,value))
+                    content += '{0}, '.format(value)
         
         
             #takes out nodes that are not part of the network
@@ -231,7 +256,7 @@ def received_messages_to_list(line,state_nr):
 
 
     for tup in tuples:
-        content = []
+        content = ''
         tup = string.split(tup,'TupleEntry: ')
         if tup == ['']:
             
@@ -247,7 +272,7 @@ def received_messages_to_list(line,state_nr):
             elif _name == "TOC_INTERNAL_":
                 timestamp = value
             else:
-                content.append((_name,_type,value))
+                 content += '{0}, '.format(value)
         
         
             #takes out nodes that are not part of the network

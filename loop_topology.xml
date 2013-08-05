@@ -25,11 +25,11 @@
 
   <hosts>
 
-    <host hostname="edge19.doc.ic.ac.uk" username="ap3012"
+    <host hostname="edge16.doc.ic.ac.uk" username="ap3012"
 	  password="">
     </host>
 
-    <host hostname="edge18.doc.ic.ac.uk" username="ap3012"
+    <host hostname="edge17.doc.ic.ac.uk" username="ap3012"
 	  password="">
     </host>
 

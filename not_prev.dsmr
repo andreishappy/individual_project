@@ -1,0 +1,12 @@
+//Declarations
+//========================
+system peers(char[128] node, char[64] relationship);
+input add_neighbour(char [128] to_add);
+persistent neighbour(char[128] neighbour);
+
+persistent success(int i);
+
+neighbour(N) if add_neighbour(N);
+neighbour(N) if prev neighbour(N);
+
+success(1) if neighbour(N), not prev neighbour(N);

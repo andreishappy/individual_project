@@ -119,11 +119,11 @@ class XML_to_DSM:
         thread_messages_received = []
         for thread in host_controllers:
             #Returns a dict of id -> list of State objects for each thread
-            states,sent_messages,received_messages = thread.stop()
+            states = thread.stop()
             thread = None
             thread_states.append(states)
-            thread_messages_sent.append(sent_messages)
-            thread_messages_received.append(received_messages)
+            #thread_messages_sent.append(sent_messages)
+            #thread_messages_received.append(received_messages)
         
         for thread_state in thread_states:
             for instance in thread_state:
@@ -131,7 +131,7 @@ class XML_to_DSM:
                 print "Instance {0} states:\n===================".format(instance)
                 for state in thread_state[instance]:
                     print state
-
+        '''
         print "Messages Sent ========================="
         for thread_message in thread_messages_sent:
             for instance in thread_message:
@@ -147,7 +147,7 @@ class XML_to_DSM:
                 print "Instance {0} messages received:\n================".format(instance)
                 for mess in thread_message[instance]:
                     print mess
-            
+        '''    
 
 
 if __name__ == "__main__":

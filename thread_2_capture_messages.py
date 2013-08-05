@@ -105,22 +105,22 @@ class PhysicalNodeController(Thread):
         
         
         #Used to capture the sent messages of a node
-        self.sent_messages = {}
+        self.current_sent_messages = {}
         self.send_buffer = {}
         self.sending = {}
         for instance in instances:
-            self.sent_messages[instance] = []
+            self.current_sent_messages[instance] = []
             self.send_buffer[instance] = ''
             self.sending[instance] = False
 
         #Used to capture received messages by nodes
-        self.received_messages = {}
+        self.current_received_messages = {}
         self.receiving = {}
         self.receive_buffer = {}
         self.transport_names = get_transport_table_name_list(rule)
         #print "TRANSPORT NAMES {0}".format(self.transport_names)
         for instance in instances:
-            self.received_messages[instance] = []
+            self.current_received_messages[instance] = []
             self.receiving[instance] = False
             self.receive_buffer[instance] = ''
 
@@ -225,29 +225,39 @@ class PhysicalNodeController(Thread):
 
                                 #Logging the state has finished
                                 elif self.logging_state[instance] and l == '\n' and not self.controller.hit_limit():
-                                    self.logging_state[instance] = False
-                                    new_state = state_log_to_tables(self.state_buffer[instance],instance,self.state_nr[instance])
+
+                                    #Create the new state and add the messages sent and received to it
+                                    new_state = state_log_to_state(self.state_buffer[instance],instance,self.state_nr[instance],\
+                                                                    self.current_sent_messages[instance],self.current_received_messages[instance])
                                     self.states[instance].append(new_state)
+
+                                    #Signal the controller
                                     self.controller.evaluation_done()
                                     self.state_nr[instance] += 1
                                     self.state_buffer[instance] = ''
-                                   
+                                    #Prepare for next state logging
+                                    self.logging_state[instance] = False      
+
                                     #DEBUG
                                     '''if instance == 'id4':
                                         print "States for {0} are: {1}".format(instance,self.states[instance])
                                         '''
 
-                                #Logging messages - if the limit has been hit, then no more are logged
+                                #Logging sent messages STARTED
                                 elif 'Sending transport tuples' in l and not self.controller.hit_limit():
                                     self.sending[instance] = True
                                 
+                                #Logging sent messages ENDED
                                 elif self.sending[instance] and ']}' in l and not self.controller.hit_limit():
                                     self.sending[instance] = False
                                     if self.send_buffer != '':
-                                        
-                                        current_transition_messages = sent_message_to_list(self.send_buffer[instance],\
+                                        #Get a list of the current transition's sent messages to add
+                                        #to the state when the state transition is done
+                                        self.current_sent_messages[instance] = sent_message_to_list(self.send_buffer[instance],\
                                                                                            self.state_nr[instance])
-                                        self.sent_messages[instance] += current_transition_messages
+
+                                        #Taken out because the return style is changing
+                                        #self.sent_messages[instance] += current_transition_messages
                                     
                                         #DEBUG
                                         '''if instance == "id3":
@@ -268,10 +278,12 @@ class PhysicalNodeController(Thread):
                                     self.receiving[instance] = False
                                     
                                     if self.receive_buffer != '':
-                                        current_transition_messages = received_messages_to_list(\
+                                        #Get a list of the current transitions received messages to add
+                                        #to the state when the state transition is done
+                                        self.current_received_messages[instance] = received_messages_to_list(\
                                                                       self.receive_buffer[instance],\
                                                                       self.state_nr[instance])
-                                        self.received_messages[instance] += current_transition_messages
+                                        #self.received_messages[instance] += current_transition_messages
                                     self.receive_buffer[instance] = ''
                                 '''                                      
                                 #Check if the engine has started and signal controller
@@ -388,7 +400,7 @@ class PhysicalNodeController(Thread):
         print "Thread for {0} has stopped".format(self.hostname)
         stdin, stdout, stderr = self.client.exec_command('$PROJECT_HOME/clear_engines.sh')
         self.stopped = True
-        return self.states,self.sent_messages,self.received_messages
+        return self.states
     
                             
     def kill_instance(self,instance):

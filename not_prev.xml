@@ -1,0 +1,20 @@
+<doc>
+  <nodes>
+
+    <node id="id1" links="id2"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr">
+    </node>
+
+  </nodes>
+
+
+  <hosts>
+
+    <host hostname="edge16.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+  </hosts>
+
+  <limit lim="200"> </limit>
+</doc>
