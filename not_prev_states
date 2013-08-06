@@ -1,0 +1,140 @@
+Instance n002 states:
+===================
+State for n002 | NR. 0:
+Table neighbour
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+Received messages=========
+advertise n001 ==> n002 AT 1375785235857
+Content: 1
+
+State for n002 | NR. 1:
+Table neighbour
+n001
+
+Table add_neighbour
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+advertise n002 ==> n001 AT 1375785237444
+Content: 1
+Received messages=========
+advertise n001 ==> n002 AT 1375785235857
+Content: 1
+
+State for n002 | NR. 2:
+Table neighbour
+n001
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+advertise n002 ==> n001 AT 1375785237585
+Content: 1
+Received messages=========
+advertise n001 ==> n002 AT 1375785237522
+Content: 1
+
+State for n002 | NR. 3:
+Table neighbour
+n001
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+advertise n002 ==> n001 AT 1375785237713
+Content: 1
+Received messages=========
+advertise n001 ==> n002 AT 1375785237653
+Content: 1
+
+Instance n001 states:
+===================
+State for n001 | NR. 0:
+Table neighbour
+n002
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+advertise n001 ==> n002 AT 1375785235857
+Content: 1
+Received messages=========
+
+State for n001 | NR. 1:
+Table neighbour
+n002
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+advertise n001 ==> n002 AT 1375785237522
+Content: 1
+Received messages=========
+advertise n002 ==> n001 AT 1375785237444
+Content: 1
+
+State for n001 | NR. 2:
+Table neighbour
+n002
+
+Table cnt_cost
+
+Table best_cost
+1
+
+Table cost
+2
+1
+
+Sent messages=========
+advertise n001 ==> n002 AT 1375785237653
+Content: 1
+Received messages=========
+advertise n002 ==> n001 AT 1375785237585
+Content: 1

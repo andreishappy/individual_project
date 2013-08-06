@@ -125,7 +125,7 @@ def state_log_to_state(raw_state,instance,state_nr,sent,received,transport_names
         first_comma_index = table.find(',')
         name = table[0:first_comma_index]
         if "DUMMIE" in name or name in transport_names or\
-           "PREV" in name:
+           "PREV" in name or name == 'peers':
            continue
 
         table_result = Table(name)

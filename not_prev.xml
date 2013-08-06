@@ -22,16 +22,10 @@
 
   <topology>
     <link node1="n001" node2="n002" />
-
+    
   </topology>
 
   <post_inputs>
-
-   <input instance="n001" table_name="add_cost" var_name="cost"
-	   value="1" />
-
-   <input instance="n001" table_name="add_cost" var_name="cost"
-	   value="2" />
 
   </post_inputs>
 

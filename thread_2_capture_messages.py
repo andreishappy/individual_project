@@ -24,7 +24,7 @@ class Controller():
         self.state_lock = Lock()
 
         #used to catch convergence
-        self.last_state_transition = None
+        self.last_state_transition = time.time()
 
         #used to tell when all the threads have started all their engines
         self.started_lock = Lock()

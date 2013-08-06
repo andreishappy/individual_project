@@ -148,6 +148,7 @@ class XML_to_DSM:
                 thread.stop()
             exit(0)
         
+        time.sleep(2)
         while not monitor.converged() and not monitor.hit_limit():
             pass
 

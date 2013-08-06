@@ -22,7 +22,7 @@ cost(2) if peers(*,"Self");
 cost(1) if peers(*,"Self");
 block;
 best_cost(MIN(i)) if not cnt_cost(0), cost(i);
-
+block;
 advertise(i)@N if
     best_cost(i), 
     not prev best_cost(i),

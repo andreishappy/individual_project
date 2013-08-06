@@ -1,0 +1,50 @@
+<doc>
+  <nodes>
+
+    <node id="id1"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr" />
+
+    <node id="id2"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr"
+	  />
+
+    <node id="id3"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr"
+	  />
+
+    <node id="id4"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr"
+	  />
+
+    <node id="id5"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr"
+	  />
+
+  </nodes>
+
+  <hosts>
+
+    <host hostname="corona30.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+  </hosts>
+
+  <pre_inputs>
+
+  </pre_inputs>
+
+  <topology>
+    <link node1="id1" node2="id2" />
+    <link node1="id2" node2="id3" />
+    <link node1="id3" node2="id4" />
+    <link node1="id4" node2="id5" />
+  </topology>
+
+  <post_inputs>
+
+  </post_inputs>
+
+  <limit lim="7"> </limit>
+
+</doc>
