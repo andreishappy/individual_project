@@ -15,14 +15,46 @@ class XMLParser:
         self.nodes = {}
         self.hosts = {}
         self.limit = 0
+        self.topology = []
+        self.pre_inputs = []
+        self.post_inputs = []
         for element in self.tree:
             if element.tag == 'hosts':
                 hosts = element
-            if element.tag == 'nodes':
+            elif element.tag == 'nodes':
                 nodes = element
-            if element.tag == 'limit':
+            elif element.tag == 'limit':
                 self.limit=int(element.attrib['lim'])
+            elif element.tag == 'topology':
+                topology = element
+            elif element.tag == 'pre_inputs':
+                pre_inputs = element
+            elif element.tag == 'post_inputs':
+                post_inputs = element
 
+        for inp in post_inputs:
+            input_result = {}
+            input_result['instance'] = inp.attrib['instance']
+            input_result['table_name'] = inp.attrib['table_name']
+            input_result['var_name'] = inp.attrib['var_name']
+            input_result['value'] = inp.attrib['value']
+            self.post_inputs.append(input_result)
+            
+
+
+        for inp in pre_inputs:
+            input_result = {}
+            input_result['instance'] = inp.attrib['instance']
+            input_result['table_name'] = inp.attrib['table_name']
+            input_result['var_name'] = inp.attrib['var_name']
+            input_result['value'] = inp.attrib['value']
+            self.pre_inputs.append(input_result)
+            
+        
+        for link in topology:
+            link_result = (link.attrib['node1'],link.attrib['node2'])
+            self.topology.append(link_result)
+                           
         for node in nodes:
             attributes = {}
             for attr in [a for a in node.attrib if not a == 'name']:

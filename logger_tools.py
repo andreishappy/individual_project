@@ -1,4 +1,6 @@
 import string
+import datetime
+import time
 
 st = '''{talk=TupleSet:TupleSetDescriptor: appDesc=andrei/a, name=talk, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=PAYLOAD, type=Integer, ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
 Tuple[TupleEntry: value=63f59043-468d-4500-b3e2-f6cbaaf12e57, TupleEntry: value=a, TupleEntry: value=1, TupleEntry: value=2013-07-28 16:25:37.893]
@@ -96,7 +98,7 @@ class Table:
         result += "\nCONTENT\n"
         '''
         for row in self.rows:
-            result += string.join(row,', ') + '\n'
+            result += row + '\n'
 
         return result
 
@@ -114,7 +116,7 @@ def get_transport_table_name_list(filename):
     return result
 
 #Returns a state with received and sent messages added
-def state_log_to_state(raw_state,instance,state_nr,sent,received):
+def state_log_to_state(raw_state,instance,state_nr,sent,received,transport_names):
     result = State(instance,state_nr)
     tables = string.split(raw_state,'Table: ')
 
@@ -122,7 +124,10 @@ def state_log_to_state(raw_state,instance,state_nr,sent,received):
                     #Find out the name of the table
         first_comma_index = table.find(',')
         name = table[0:first_comma_index]
-        
+        if "DUMMIE" in name or name in transport_names or\
+           "PREV" in name:
+           continue
+
         table_result = Table(name)
         
         table_descriptor_start = table.find('[') + 1
@@ -147,9 +152,10 @@ def state_log_to_state(raw_state,instance,state_nr,sent,received):
                 
                 columns = []
                 
-                for column in tup[1:len(tup)]:
+                for column in tup[1:len(tup)-1]:
                     value = string.split(column,'=')[1]
                     columns.append(value)
+                columns = ';'.join(columns)
                 table_result.add_row(columns)
         result.add_table(table_result)
 
@@ -196,6 +202,8 @@ def sent_message_to_list(raw_message,state_nr):
             if tup == ['']:
         
                 continue
+
+            content = []
             for i in range(1,len(tup)):
                 _type = column_name_and_type_list[i-1][1]
                 _name = column_name_and_type_list[i-1][0]
@@ -205,9 +213,12 @@ def sent_message_to_list(raw_message,state_nr):
                 elif _name == "SRC_INTERNAL_":
                     src = value
                 elif _name == "TOC_INTERNAL_":
-                    timestamp = value
+                    timestamp = datetime.datetime.strptime(value,'%Y-%m-%d %H:%M:%S.%f')
+                    timestamp = int(float(timestamp.strftime('%s.%f'))*1000)
                 else:
-                    content += '{0}, '.format(value)
+                    content.append(value)
+
+            content = ';'.join(content)
         
         
             #takes out nodes that are not part of the network
@@ -256,7 +267,7 @@ def received_messages_to_list(line,state_nr):
 
 
     for tup in tuples:
-        content = ''
+        content = []
         tup = string.split(tup,'TupleEntry: ')
         if tup == ['']:
             
@@ -270,9 +281,13 @@ def received_messages_to_list(line,state_nr):
             elif _name == "SRC_INTERNAL_":
                 src = value
             elif _name == "TOC_INTERNAL_":
-                timestamp = value
+                timestamp = datetime.datetime.strptime(value,'%Y-%m-%d %H:%M:%S.%f')
+                timestamp = int(float(timestamp.strftime('%s.%f'))*1000)
+                
             else:
-                 content += '{0}, '.format(value)
+                 content.append(value)
+        
+        content = ';'.join(content)
         
         
             #takes out nodes that are not part of the network

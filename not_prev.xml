@@ -1,20 +1,40 @@
 <doc>
   <nodes>
 
-    <node id="id1" links="id2"
-	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr">
-    </node>
+    <node id="n001" links="id2"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr" />
+
+    <node id="n002" links="id2"
+	  rule="/homes/ap3012/individual_project/home/not_prev.dsmr" />
 
   </nodes>
-
-
   <hosts>
 
-    <host hostname="edge16.doc.ic.ac.uk" username="ap3012"
+    <host hostname="corona30.doc.ic.ac.uk" username="ap3012"
 	  password="">
     </host>
 
   </hosts>
 
-  <limit lim="200"> </limit>
+  <pre_inputs>
+
+  </pre_inputs>
+
+  <topology>
+    <link node1="n001" node2="n002" />
+
+  </topology>
+
+  <post_inputs>
+
+   <input instance="n001" table_name="add_cost" var_name="cost"
+	   value="1" />
+
+   <input instance="n001" table_name="add_cost" var_name="cost"
+	   value="2" />
+
+  </post_inputs>
+
+  <limit lim="7"> </limit>
+
 </doc>
