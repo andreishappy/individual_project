@@ -18,11 +18,17 @@ transport advertise(int cost);
 neighbour(N) if add_neighbour(N);
 neighbour(N) if prev neighbour(N);
 
+//Facts
 cost(2) if peers(*,"Self");
 cost(1) if peers(*,"Self");
+
 block;
+//Always populates best_cost with 0
 best_cost(MIN(i)) if not cnt_cost(0), cost(i);
+
 block;
+
+//Sends every time a rule evaluation is triggered
 advertise(i)@N if
     best_cost(i), 
     not prev best_cost(i),
