@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='ASCII'?>
+<result>
+  <messages>
+    <template type="advertise" separator=";" columns="dest;path"/>
+  </messages>
+  <tables>
+    <template type="neighbour" separator=";" columns="neighbour"/>
+    <template type="path" separator=";" columns="dest;path;nextHop"/>
+  </tables>
+  <nodes>
+    <node id="id4">
+      <states>
+        <state id="10">
+          <sent/>
+          <received>
+            <message content="id3;id3" from="id3" type="advertise" timestamp="105"/>
+            <message content="id2;id3id2" from="id3" type="advertise" timestamp="106"/>
+            <message content="id1;id3id2id1" from="id3" type="advertise" timestamp="107"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="path">
+              <row content="id3;id3;id3"/>
+              <row content="id2;id3id2;id3"/>
+              <row content="id1;id3id2id1;id3"/>
+            </table>
+          </content>
+        </state>
+        <state id="11">
+          <sent>
+            <message content="id4;id4" to="id3" type="advertise" timestamp="108"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id3"/>
+            </table>
+            <table type="path">
+              <row content="id3;id3;id3"/>
+              <row content="id2;id3id2;id3"/>
+              <row content="id1;id3id2id1;id3"/>
+            </table>
+          </content>
+        </state>
+        <state id="13">
+          <sent>
+            <message content="id4;id4" to="id5" type="advertise" timestamp="110"/>
+            <message content="id3;id4id3" to="id5" type="advertise" timestamp="111"/>
+            <message content="id2;id4id3id2" to="id5" type="advertise" timestamp="112"/>
+            <message content="id1;id4id3id2id1" to="id5" type="advertise" timestamp="113"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id3"/>
+              <row content="id5"/>
+            </table>
+            <table type="path">
+              <row content="id3;id3;id3"/>
+              <row content="id2;id3id2;id3"/>
+              <row content="id1;id3id2id1;id3"/>
+            </table>
+          </content>
+        </state>
+        <state id="16">
+          <sent/>
+          <received>
+            <message content="id5;id5" from="id5" type="advertise" timestamp="115"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id3"/>
+              <row content="id5"/>
+            </table>
+            <table type="path">
+              <row content="id3;id3;id3"/>
+              <row content="id2;id3id2;id3"/>
+              <row content="id1;id3id2id1;id3"/>
+              <row content="id5;id5;id5"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="id5">
+      <states>
+        <state id="14">
+          <sent/>
+          <received>
+            <message content="id4;id4" from="id4" type="advertise" timestamp="110"/>
+            <message content="id3;id4id3" from="id4" type="advertise" timestamp="111"/>
+            <message content="id2;id4id3id2" from="id4" type="advertise" timestamp="112"/>
+            <message content="id1;id4id3id2id1" from="id4" type="advertise" timestamp="113"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="path">
+              <row content="id4;id4;id4"/>
+              <row content="id3;id4id3;id4"/>
+              <row content="id2;id4id3id2;id4"/>
+              <row content="id1;id4id3id2id1;id4"/>
+            </table>
+          </content>
+        </state>
+        <state id="15">
+          <sent>
+            <message content="id5;id5" to="id4" type="advertise" timestamp="114"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id4"/>
+            </table>
+            <table type="path">
+              <row content="id4;id4;id4"/>
+              <row content="id3;id4id3;id4"/>
+              <row content="id2;id4id3id2;id4"/>
+              <row content="id1;id4id3id2id1;id4"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="id2">
+      <states>
+        <state id="1">
+          <sent/>
+          <received>
+            <message content="id1;id1" from="id1" type="advertise" timestamp="100"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="path">
+              <row content="id1;id1;id1"/>
+            </table>
+          </content>
+        </state>
+        <state id="2">
+          <sent>
+            <message content="id2;id2" to="id1" type="advertise" timestamp="101"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id1"/>
+            </table>
+            <table type="path">
+              <row content="id1;id1;id1"/>
+            </table>
+          </content>
+        </state>
+        <state id="4">
+          <sent>
+            <message content="id1;id2id1" to="id3" type="advertise" timestamp="103"/>
+            <message content="id2;id2" to="id3" type="advertise" timestamp="1032"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id1"/>
+              <row content="id3"/>
+            </table>
+            <table type="path">
+              <row content="id1;id1;id1"/>
+            </table>
+          </content>
+        </state>
+        <state id="7">
+          <sent>
+            <message content="id2;id2id3" to="id1" type="advertise" timestamp="102"/>
+          </sent>
+          <received>
+            <message content="id3;id3" from="id3" type="advertise" timestamp="104"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id1"/>
+              <row content="id3"/>
+            </table>
+            <table type="path">
+              <row content="id1;id1;id1"/>
+              <row content="id3;id3;id3"/>
+            </table>
+          </content>
+        </state>
+        <state id="16">
+          <sent>
+            <message content="id4;id3id4" to="id1" type="advertise" timestamp="116"/>
+          </sent>
+          <received>
+            <message content="id4;id3id4" from="id3" type="advertise" timestamp="115"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id1"/>
+              <row content="id3"/>
+            </table>
+            <table type="path">
+              <row content="id1;id1;id1"/>
+              <row content="id3;id3;id3"/>
+              <row content="id4;id2id3id4"/>
+            </table>
+          </content>
+        </state>
+        <state id="18">
+          <sent>
+            <message content="id5;id3id4id5" to="id1" type="advertise" timestamp="118"/>
+          </sent>
+          <received>
+            <message content="id5;id3id4id5" from="id3" type="advertise" timestamp="117"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id1"/>
+              <row content="id3"/>
+            </table>
+            <table type="path">
+              <row content="id1;id1;id1"/>
+              <row content="id3;id3;id3"/>
+              <row content="id4;id1id3id4"/>
+              <row content="id5;id2id3id4id5"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="id3">
+      <states>
+        <state id="5">
+          <sent/>
+          <received>
+            <message content="id1;id2id1" from="id2" type="advertise" timestamp="103"/>
+            <message content="id2;id2" from="id2" type="advertise" timestamp="1032"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="path">
+              <row content="id1;id2id1;id2"/>
+              <row content="id2;id2;id2"/>
+            </table>
+          </content>
+        </state>
+        <state id="6">
+          <sent>
+            <message content="id3;id3" to="id2" type="advertise" timestamp="104"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+            </table>
+            <table type="path">
+              <row content="id1;id2id1;id2"/>
+              <row content="id2;id2;id2"/>
+            </table>
+          </content>
+        </state>
+        <state id="9">
+          <sent>
+            <message content="id3;id3" to="id4" type="advertise" timestamp="105"/>
+            <message content="id2;id3id2" to="id4" type="advertise" timestamp="106"/>
+            <message content="id1;id3id2id1" to="id4" type="advertise" timestamp="107"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+              <row content="id4"/>
+            </table>
+            <table type="path">
+              <row content="id1;id2id1;id2"/>
+              <row content="id2;id2;id2"/>
+            </table>
+          </content>
+        </state>
+        <state id="12">
+          <sent>
+            <message content="id4;id3id4" to="id2" type="advertise" timestamp="109"/>
+          </sent>
+          <received>
+            <message content="id4;id4" from="id4" type="advertise" timestamp="108"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+              <row content="id4"/>
+            </table>
+            <table type="path">
+              <row content="id1;id2id1;id2"/>
+              <row content="id2;id2;id2"/>
+              <row content="id4;id4;id4"/>
+            </table>
+          </content>
+        </state>
+        <state id="17">
+          <sent>
+            <message content="id5;id3id4id5" to="id2" type="advertise" timestamp="117"/>
+          </sent>
+          <received>
+            <message content="id5;id4id5" from="id4" type="advertise" timestamp="115"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+              <row content="id4"/>
+            </table>
+            <table type="path">
+              <row content="id1;id2id1;id2"/>
+              <row content="id2;id2;id2"/>
+              <row content="id4;id4;id4"/>
+              <row content="id5;id4id5;id4"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="id1">
+      <states>
+        <state id="0">
+          <sent>
+            <message content="id1;id1" to="id2" type="advertise" timestamp="100"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+            </table>
+            <table type="path"/>
+          </content>
+        </state>
+        <state id="3">
+          <sent/>
+          <received>
+            <message content="id2;id2" from="id2" type="advertise" timestamp="101"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+            </table>
+            <table type="path">
+              <row content="id2;id2;id2"/>
+            </table>
+          </content>
+        </state>
+        <state id="8">
+          <sent/>
+          <received>
+            <message content="id2;id2id3" from="id2" type="advertise" timestamp="102"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+            </table>
+            <table type="path">
+              <row content="id2;id2;id2"/>
+              <row content="id3;id2id3;id2"/>
+            </table>
+          </content>
+        </state>
+        <state id="19">
+          <sent/>
+          <received>
+            <message content="id5;id2id3id4id5" from="id2" type="advertise" timestamp="118"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="id2"/>
+            </table>
+            <table type="path">
+              <row content="id2;id2;id2"/>
+              <row content="id3;id2id3;id2"/>
+              <row content="id5;id2id3id4id5;id2"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+  </nodes>
+</result>

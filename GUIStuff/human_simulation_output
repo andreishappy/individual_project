@@ -1,0 +1,175 @@
+States node id1:
+
+State id1 nr.0:
+      Messages Received: nonde
+      Messages Sent: advertise(1,1)@2 [100]
+      Actual State:
+      	     neighbour(2)
+
+State id1 nr. 3:
+      Messages Received: advertise(2,2)@2 [101]
+      Messages Sent: None
+      Actual State:
+      	    neighbour(2)
+	    path(2,2,2)
+	    
+
+State id1 nr. 8:
+      Messages Received: advertise(2,23)@2[102]
+      Messages Sent: None
+      Actual State:
+      	     neighbour(2)
+	     path(2,2,2)
+	     
+State id1 nr. 19 :
+      Messages Received: advertise(5,2345)@2[118]
+      Messages Sent: None
+      Actual State:
+      	     neighbour(2)
+	     path(2,2,2)
+	     path(5,2345,2)
+
+States Node id2:
+
+State id2 nr. 1 :
+      Messages Received: advertise(5,2345)@2[118]
+      Messages Sent: None
+      Actual State:
+      	     path(1,1,1)
+
+State id2 nr. 2 :
+      Messages Received: None
+      Messages Sent: advertise(2,2)@1 [101]
+      Actual State:
+       	     path(1,1,1)
+	     neighbour(1)
+
+State id2 nr. 4 :
+      Messages Received: None
+      Messages Sent:
+      	       advertise(1,21)[103]
+	       advertise(2,2)[103.2]
+      Actual State:
+      	     path(1,1,1)
+	     neighbour(1)
+	     neighbour(3)
+
+State id2 nr. 7 :
+      Messages Received: advertise(3,3)@3[104]
+      Messages Sent: advertise(2,23)@1[102]
+      Actual State:
+      	     before + path(3,3,3)
+
+State id2 nr. 16 :
+      Messages Received: advertise(4,3,4)@3 [115]
+      Messages Sent: advertise(4,234)@1 [116]
+      Actual State:
+      	     before + path(4,34,3)
+
+State id2 nr. 18 :
+      Messages Received: advertise(5,345)@3 [117]
+      Messages Sent: advertise(5,2345)@1 [118]
+      Actual State:
+      	     before + path(5,345,3)
+
+States Node id3:
+
+State id3 nr. 5 :
+      Messages Received: advertise(1,21)@2[103], advertise(2,2)@2[103.2]
+      Messages Sent: None
+      Actual State:
+      	     path(1,21,2)
+	     path(2,2,2)
+
+State id3 nr. 6 :
+      Messages Received: None 
+      Messages Sent: advertise(3,3)@2[104]
+      Actual State:
+      	     before + neighbour(2)
+
+State id3 nr. 9 :
+      Messages Received: None
+      Messages Sent:
+      	       advertise(3,3)@4[105]
+	       advertise(2,32)@4[106]
+	       advertise(1,321)@4[107]
+      Actual State:
+      	     before + neighbour(4)
+
+State id3 nr. 12 :
+      Messages Received: advertise(4,4)@4 [108]
+      Messages Sent: advertise(4,34)@2[109]
+      Actual State:
+      	     before + path(4,4,4)
+
+State id3 nr. 17 :
+      Messages Received: advertise(5,45)@4
+      Messages Sent: advertise(5,345)@2[117]
+      Actual State:
+      	     before + path(5,45,4)
+
+States node id4:
+
+State id4 nr. 10 :
+      Messages Received: 
+      	       advertise(3,3)@3 [105]
+	       advertise(2,32)@3 [106]
+	       advertise(1,321)@3 [107]
+      Messages Sent: None
+      Actual State:
+      	     path(3,3,3)
+	     path(2,32,3)
+	     path(1,321,3)
+
+
+State id4 nr. 11 :
+      Messages Received: None
+      Messages Sent: advertise(4,4)@3[108]
+      Actual State:
+      	     before + neighbour(3)
+
+State id4 nr. 13 :
+      Messages Received: None
+      Messages Sent:
+      	       advertise(4,4)@5 [110]
+	       advertise(3,43)@5 [111]
+	       advertise(2,432)@5 [112]
+	       advertise(1,4321)@5 [113]
+      Actual State:
+
+State id4 nr. 16 :
+      Messages Received: advertise(5,5)@5 [114]
+      Messages Sent:
+      	       advertise(5,45)@3[115]
+      Actual State:
+      	     before + path(5,5,5)
+
+States node id5:
+
+State id5 nr.14:
+      Messages Received: 
+      	       advertise(4,4)@4 [110]
+	       advertise(3,43)@4[111]
+	       advertise(2,432)@4 [112]
+	       advertise(1, 4321)@4 [113]
+      Messages Sent: None
+      Actual State:
+      	     path(4,4,4)
+	     path(3,43,4)
+	     path(2,432,4)
+	     path(1,4321,4)
+
+State id5 nr.15:
+      Messages Received: None
+      Messages Sent: advertise(5,5)@4 [114]
+      Actual State:
+      	     before + neighbour(4)
+
+
+
+
+
+ 
+
+
+	     
