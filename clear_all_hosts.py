@@ -1,12 +1,12 @@
 import paramiko
 from optparse import OptionParser
-from xml_tool import XMLParser
+from xml_tool import MyXMLParser
 
 if __name__ == "__main__":
     parser = OptionParser()
     (options,args) = parser.parse_args()
 
-    config = XMLParser(args[0])
+    config = MyXMLParser(args[0])
     hosts = config.hosts
 
 

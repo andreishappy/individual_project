@@ -228,7 +228,12 @@ class PhysicalNodeController(Thread):
 
                                     #Create the new state and add the messages sent and received to it
                                     new_state = state_log_to_state(self.state_buffer[instance],instance,self.state_nr[instance],\
-                                                                    self.current_sent_messages[instance],self.current_received_messages[instance],self.transport_names)
+                                                                    self.current_sent_messages[instance],\
+                                                                    self.current_received_messages[instance],\
+                                                                    self.transport_names)
+                                    
+                                    self.current_sent_messages[instance] = []
+                                    self.current_received_messages[instance] = []
                                     self.states[instance].append(new_state)
 
                                     #Signal the controller

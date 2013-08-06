@@ -1,23 +1,15 @@
 <doc>
   <nodes>
 
-    <node id="n001" links="id2"
-	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
-    </node>
-
-    <node id="n002" links="id1,id3,id4"
-	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
-    </node>
-
-    <node id="n003" links="id2,id4"
-	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
-    </node>
-
-    <node id="n004" links="id3,id2"
-	  rule="/homes/ap3012/individual_project/home/BGP_v2.dsmr">
-    </node>
+    <node id="n001" />
+    <node id="n002" />
+    <node id="n003" />
+    <node id="n004" />
+    <node id="n005" />
 
   </nodes>
+
+  <rule filename="/homes/ap3012/individual_project/home/BGP_v2.dsmr" />
 
   <hosts>
 
@@ -31,11 +23,14 @@
 
   </hosts>
 
+  <pre_inputs />
+  <post_inputs />
+
   <topology>
     <link node1='n001' node2='n002' />
     <link node1='n002' node2='n003' />
     <link node1='n003' node2='n004' />
-    <link node1='n002' node2='n004' />
+    <link node1='n004' node2='n005' />
     
   </topology>
   <limit lim="200"> </limit>

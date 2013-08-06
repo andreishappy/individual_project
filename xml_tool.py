@@ -8,7 +8,7 @@ import string
 #    for elem in tree.iter(tag='node'):
 #        print elem.tag, elem.attrib
 #To find all the nodes in the whole document
-class XMLParser:
+class MyXMLParser:
     def __init__(self, filename):
         self.tree = ET.ElementTree(file=filename)
         self.tree = self.tree.getroot()
@@ -31,6 +31,8 @@ class XMLParser:
                 pre_inputs = element
             elif element.tag == 'post_inputs':
                 post_inputs = element
+            elif element.tag == 'rule':
+                self.rule=element.attrib['filename']
 
         for inp in post_inputs:
             input_result = {}

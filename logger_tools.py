@@ -21,7 +21,6 @@ Tuple[TupleEntry: value=id5, TupleEntry: value=id4, TupleEntry: value=id4, Tuple
 st3 ='''2013-07-29 16:18:53.015'''
 
 #Takes instance name at initialization
-
 class TupleEntry:
     def __init__(self,value,_type):
         self.value = value
@@ -114,6 +113,44 @@ def get_transport_table_name_list(filename):
             result.append(words[1])
 
     return result
+
+def remove_starting_white_space(st):
+    while st[0] == ' ':
+        st = st[1:len(st)]
+    return st
+
+#Returns a list of dicts of tables of the type in the argument
+def get_table_dict(rule,typ):
+    f = open(rule,'r')
+    result = []
+
+    for line in f:
+        #Example input add_neighbour(char [128] to_add, int cost)
+        if typ in line:
+            table_dict = {}
+            result.append(table_dict)
+            first_space = line.find(' ')
+            open_bracket = line.find('(')
+            table_dict['name'] = line[first_space+1:open_bracket]
+            result_columns = []
+
+            #get something of the form: "char [128] to_add, int cost"
+            in_bracket = line[open_bracket+1:len(line)].replace(');','')
+            columns = string.split(in_bracket,',')
+            for col in columns:
+                col = remove_starting_white_space(col)
+                words = col.split()
+                
+                #check for space after char
+                if len(words) == 3:
+                    words[0]+= words[1]#the type is currently lost
+                    words[1] = words[2]
+                #print words
+                result_columns.append(words[1])
+            table_dict['columns'] = ';'.join(result_columns)
+
+    return result
+
 
 #Returns a state with received and sent messages added
 def state_log_to_state(raw_state,instance,state_nr,sent,received,transport_names):
@@ -301,11 +338,6 @@ def received_messages_to_list(line,state_nr):
 
 if __name__ == "__main__":
     
-    print received_messages_to_list(-1,st2)
-    '''print get_transport_table_name_list('/homes/ap3012/individual_project/home/BGP_v1.dsmr')
-
-
-    print transport_table(st2,['hell','on','advertise'])
-'''
+    print get_table_dict('BGP_v2.dsmr','persistent')
 
 

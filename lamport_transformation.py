@@ -60,9 +60,7 @@ def lamport_transformation(node_state_dict):
                 for i in range(0,len(dest_state_list)):
                     if has_received(dest_state_list[i],sent_message):
                         print "Going down for mess to {0} at time {1}".format(dest,src_state.state_nr)
-                        two_way_recurse(node_state_dict,dest_state_list[i:],src_state.state_nr+1)
-
-              
+                        two_way_recurse(node_state_dict,dest_state_list[i:],src_state.state_nr+1)   
 
 if __name__ == '__main__':
 

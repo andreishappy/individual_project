@@ -29,6 +29,6 @@
 
   </post_inputs>
 
-  <limit lim="7"> </limit>
+  <limit lim="100"> </limit>
 
 </doc>

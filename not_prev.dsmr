@@ -24,7 +24,7 @@ cost(1) if peers(*,"Self");
 
 block;
 //Always populates best_cost with 0
-best_cost(MIN(i)) if not cnt_cost(0), cost(i);
+best_cost(MIN(i)) if cost(i);
 
 block;
 

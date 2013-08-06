@@ -1,23 +1,45 @@
-from xml_tool import XMLParser
+from xml_tool import MyXMLParser
 import subprocess
 from thread_2_capture_messages import PhysicalNodeController,Controller
 from optparse import OptionParser
 import sys
 import threading
 import time
+from lamport_transformation import *
+from lxml.etree import *
+from result_to_xml import *
 
 class XML_to_DSM:
 
     def __init__(self,config_file):
-        config = XMLParser(config_file)
+        config = MyXMLParser(config_file)
         self.hosts = config.hosts
         self.nodes = config.nodes
         self.limit = config.limit
         self.topology = config.topology
         self.pre_inputs = config.pre_inputs
         self.post_inputs = config.post_inputs
+        self.rule = config.rule
+        self.monitor = Controller(self.limit,len(self.hosts))
+        #next 2 return list of dicts
+        self.tran_table_dict = get_table_dict(self.rule,'transport')
+        self.persistent_table_dict = get_table_dict(self.rule,'persistent')
 
-    def start_nodes(self,hosts,nodes,rule,monitor):
+    def make_xml(self):
+        result = Element('result')
+        
+        #Do_declarations in result_to_xml.py
+        messages_elem = do_declarations(self.tran_table_dict,'messages')
+        tables_elem = do_declarations(self.persistent_table_dict,'tables')
+
+        result.append(messages_elem)
+        result.append(tables_elem)
+        
+        states_elem = do_states(self.node_states)
+        result.append(states_elem)
+        return tostring(result, xml_declaration=True, pretty_print=True)
+
+    def start_nodes(self):
     ##START THE NODES
     ##Still need to implement being able to load different rules into different engines
     ##----> node dict contains the info
@@ -27,24 +49,24 @@ class XML_to_DSM:
         
         nodes_started = 0
         hosts_done = 0
-        for node in nodes:
+        for node in self.nodes:
             instances.append(node)
             
         
-        nodes_per_host = len(nodes)/len(hosts)
+        nodes_per_host = len(self.nodes)/len(self.hosts)
         
         
-        for host in hosts:
+        for host in self.hosts:
         #get a list of nodes to be started for each host
             first = nodes_started
-            if hosts_done == len(hosts) -1 :
+            if hosts_done == len(self.hosts) -1 :
                 last = len(instances)
             else:
                 last = nodes_started + nodes_per_host
                 
             to_start = instances[first:last]
             print "contructing for {0} with instances {1}".format(host,to_start)
-            t = PhysicalNodeController(host,hosts[host]['username'],'andrei',to_start,rule,monitor)
+            t = PhysicalNodeController(host,self.hosts[host]['username'],'andrei',to_start,self.rule,self.monitor)
             print "done constructing"
             nodes_started += nodes_per_host
 
@@ -109,23 +131,15 @@ class XML_to_DSM:
         for link in self.topology:
             print "Inserting link {0} <==> {1}".format(link[0],link[1])
             self.insert_link(link[0],link[1])
-            self.insert_link(link[1],link[0])
-              
-    def run_simulation(self):
-        #This is HORRIBLE CODE HERE
-        for node in self.nodes:
-            rule = self.nodes[node]['rule']
-            print 'l'
-            break
-
-        print "rule is {0}".format(rule)
-
-        monitor = Controller(self.limit,len(self.hosts))
+            #self.insert_link(link[1],link[0])
     
+    def run_simulation(self):
+    
+
         #Start the nodes and get a LIST of host specific threads
-        host_controllers = self.start_nodes(self.hosts,self.nodes,rule,monitor)
+        host_controllers = self.start_nodes()
         
-        while not monitor.all_threads_started():
+        while not self.monitor.all_threads_started():
             pass
 
         time.sleep(2)
@@ -149,12 +163,12 @@ class XML_to_DSM:
             exit(0)
         
         time.sleep(2)
-        while not monitor.converged() and not monitor.hit_limit():
+        while not self.monitor.converged() and not self.monitor.hit_limit():
             pass
 
-        if monitor.hit_limit():
+        if self.monitor.hit_limit():
             print "hit_limit"
-        elif monitor.converged():
+        elif self.monitor.converged():
             print "convergence reached"
         
 
@@ -163,14 +177,34 @@ class XML_to_DSM:
             #Returns a dict of id -> list of State objects for each thread
             states = thread.stop()
             thread = None
-            thread_states.append(states)
+            thread_states += states.items()
 
+        self.node_states = dict(thread_states)
+
+  
+
+        lamport_transformation(self.node_states)
+       
+        for node in self.node_states:
+            print "Instance {0} states".format(node)
+            print "================================"
+            for state in self.node_states[node]:
+                print state
+                '''
+        f = open('bgp_dict','w')
+        f.write(self.node_states)
+        f.close
+        '''
+        print(self.make_xml())
+        
+        '''
         for thread_state in thread_states:
             for instance in thread_state:
                 #if instance == "id6":
                 print "Instance {0} states:\n===================".format(instance)
                 for state in thread_state[instance]:
                     print state
+                    '''
 
 if __name__ == "__main__":
 
