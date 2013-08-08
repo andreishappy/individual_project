@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-2013-08-06 18:45:16.648 GMT:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.2 - (1396889): instance a816c00e-0140-54f2-8c95-00000e5c6388 
-on database directory memory:/homes/ap3012/individual_project/home/andrei73012114-5446-45d4-a03a-97c27c957173  with class loader sun.misc.Launcher$AppClassLoader@53372a1a 
-Loaded from file:/homes/ap3012/individual_project/unzipped17/lib/derby.jar
+2013-08-08 14:52:04.907 GMT:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.2 - (1396889): instance a816c00e-0140-5e69-c529-00000e5cb7f8 
+on database directory memory:/homes/ap3012/individual_project/home/andrei92c45ebb-1763-48ed-8049-fafbeafaca69  with class loader sun.misc.Launcher$AppClassLoader@1a45a877 
+Loaded from file:/homes/ap3012/individual_project/unzipped20/lib/derby.jar
 java.vendor=Sun Microsystems Inc.
 java.runtime.version=1.6.0_27-b27
 user.dir=/homes/ap3012/individual_project/home

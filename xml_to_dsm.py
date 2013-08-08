@@ -126,12 +126,11 @@ class XML_to_DSM:
     def set_topology(self):
     ##INSERT THE TOPOLOGY INTO THE NODES
         print "####Starting Insert####"
-        print self.topology
-    
+        
         for link in self.topology:
             print "Inserting link {0} <==> {1}".format(link[0],link[1])
             self.insert_link(link[0],link[1])
-            #self.insert_link(link[1],link[0])
+            self.insert_link(link[1],link[0])
     
     def run_simulation(self):
     
@@ -195,7 +194,10 @@ class XML_to_DSM:
         f.write(self.node_states)
         f.close
         '''
-        print(self.make_xml())
+        result = self.make_xml()
+        f = open('output.xml','w')
+        f.write(result)
+        f.close
         
         '''
         for thread_state in thread_states:

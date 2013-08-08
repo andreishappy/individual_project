@@ -1,0 +1,29 @@
+<doc>
+  <nodes>
+
+    <node id="n001" />
+  </nodes>
+
+  <rule filename="/homes/ap3012/individual_project/home/substring.dsmr" />
+
+  <hosts>
+
+    <host hostname="corona30.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+    <host hostname="edge17.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+  </hosts>
+
+  <pre_inputs>
+    <input instance="n001" table_name="start" var_name="payload"
+	   value="1" />
+
+  </pre_inputs>
+  <post_inputs />
+  <topology />
+  <limit lim="200"> </limit>
+</doc>

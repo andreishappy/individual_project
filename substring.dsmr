@@ -1,0 +1,15 @@
+input start(int payload);
+persistent keep(int payload);
+persistent str(char[128] str);
+persistent sub(char[128] sub);
+persistent integ(int i);
+persistent minimum_integ(int i);
+system peers(char[128] node, char[64] relationship);
+
+keep(i) if start(i);
+str("n001") if peers(*,Self);
+str("n002") if peers(*,Self);
+sub(substr(str,2,3)) if str(str);
+integ(SQL(CAST(i as int))) if sub(i);
+block;
+minimum_integ(MIN(i)) if integ(i);

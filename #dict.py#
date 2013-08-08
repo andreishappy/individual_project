@@ -1,0 +1,5 @@
+dic = {}
+for a in list:
+
+
+    dic[a] = value

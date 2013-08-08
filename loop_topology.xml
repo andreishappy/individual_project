@@ -6,6 +6,20 @@
     <node id="n003" />
     <node id="n004" />
     <node id="n005" />
+    <node id="n006" />
+    <node id="n007" />
+    <node id="n008" />
+    <node id="n009" />
+    <node id="n010" />
+    <node id="n011" />
+    <node id="n012" />
+    <node id="n013" />
+    <node id="n014" />
+    <node id="n015" />
+    <node id="n016" />
+    <node id="n017" />
+
+
 
   </nodes>
 
@@ -17,9 +31,20 @@
 	  password="">
     </host>
 
-    <host hostname="edge17.doc.ic.ac.uk" username="ap3012"
+    <host hostname="corona29.doc.ic.ac.uk" username="ap3012"
 	  password="">
     </host>
+
+    <host hostname="corona31.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+    <host hostname="corona32.doc.ic.ac.uk" username="ap3012"
+	  password="">
+    </host>
+
+
+
 
   </hosts>
 
@@ -31,7 +56,21 @@
     <link node1='n002' node2='n003' />
     <link node1='n003' node2='n004' />
     <link node1='n004' node2='n005' />
-    
+    <link node1='n002' node2='n005' />
+ 
+    <link node1='n001' node2='n007' />
+    <link node1='n006' node2='n007' />
+    <link node1='n011' node2='n012' />
+    <link node1='n006' node2='n011' />
+    <link node1='n007' node2='n012' />
+  
+    <link node1='n008' node2='n009' />
+    <link node1='n003' node2='n009' />
+    <link node1='n004' node2='n008' />
+    <link node1='n009' node2='n010' />
+    <link node1='n008' node2='n013' />
+    <link node1='n013' node2='n014' />
+    <link node1='n014' node2='n015' />
   </topology>
-  <limit lim="200"> </limit>
+  <limit lim="300"> </limit>
 </doc>

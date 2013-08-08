@@ -15,27 +15,27 @@ def has_received(state,mess):
 def two_way_recurse(node_state_dict, node_state_list, current_time):
     for src_state in node_state_list:
         src = node_state_list[0].instance
-        print "In the list for {0}".format(src)
+        #print "In the list for {0}".format(src)
 
         if current_time > src_state.state_nr:
-            print "incrementing state_nr of {0} | {1} ==> {2}"\
-                   .format(src,src_state.state_nr,current_time)
+            #print "incrementing state_nr of {0} | {1} ==> {2}"\
+            #       .format(src,src_state.state_nr,current_time)
             src_state.state_nr = current_time
         elif current_time == src_state.state_nr:
             break
         else:
-            print 'broke here'
+            #print 'broke here'
             break
         for sent_message in src_state.sent:
-            print "Checking message"
-            print sent_message
+            #print "Checking message"
+            #print sent_message
             dest = sent_message.dest
             dest_node_state_list = node_state_dict[dest]
             
             for i in range(0,len(dest_node_state_list)):
                 if has_received(dest_node_state_list[i],sent_message):
-                    print 'calling two_way_recurse on destination {0} with current time {1}'\
-                           .format(dest,current_time)
+                    #print 'calling two_way_recurse on destination {0} with current time {1}'\
+                    #       .format(dest,current_time)
                     two_way_recurse(node_state_dict,dest_node_state_list[i:],current_time+1)
         current_time += 1
 
@@ -43,8 +43,8 @@ def two_way_recurse(node_state_dict, node_state_list, current_time):
 #Changes the dict in place
 def lamport_transformation(node_state_dict):
     for src in node_state_dict:
-        print "TOP LEVEL SRC is {0}".format(src)
-        print "============"
+        #print "TOP LEVEL SRC is {0}".format(src)
+        #print "============"
         #Iterate through every state looking for sent messages
         src_state_list = node_state_dict[src]
     
@@ -59,7 +59,7 @@ def lamport_transformation(node_state_dict):
                 #Iterate through states until 
                 for i in range(0,len(dest_state_list)):
                     if has_received(dest_state_list[i],sent_message):
-                        print "Going down for mess to {0} at time {1}".format(dest,src_state.state_nr)
+                        #print "Going down for mess to {0} at time {1}".format(dest,src_state.state_nr)
                         two_way_recurse(node_state_dict,dest_state_list[i:],src_state.state_nr+1)   
 
 if __name__ == '__main__':
