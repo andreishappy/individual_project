@@ -1,0 +1,2527 @@
+Instance n004 states================================State for n004 | NR. 0:
+Table neighbour
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+State for n004 | NR. 13:
+Table neighbour
+
+Table route_updated
+n001;n001
+n002;n001
+n003;n001
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n001;n001;n001
+n002;n001;n001n002
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+Received messages=========
+advertise n001 ==> n004 AT 1376588033717
+Content: n001;n001
+advertise n001 ==> n004 AT 1376588033723
+Content: n002;n001n002
+advertise n001 ==> n004 AT 1376588033723
+Content: n003;n001n002n003
+State for n004 | NR. 14:
+Table neighbour
+n001
+
+Table route_updated
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n001;n001;n001
+n002;n001;n001n002
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+advertise n004 ==> n001 AT 1376588036957
+Content: n004;n004
+Received messages=========
+State for n004 | NR. 15:
+Table neighbour
+n001
+
+Table route_updated
+n004;n001
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n001;n001;n001
+n002;n001;n001n002
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n004 AT 1376588037529
+Content: n004
+State for n004 | NR. 16:
+Table neighbour
+n001
+
+Table route_updated
+n004;n001
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n001;n001;n001
+n002;n001;n001n002
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n004 AT 1376588037529
+Content: n004
+State for n004 | NR. 19:
+Table neighbour
+n001
+
+Table route_updated
+n002;n002
+n001;n002
+n003;n002
+
+Table best_candidate
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n002;n001;n001n002
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+
+Sent messages=========
+advertise n004 ==> n001 AT 1376588040383
+Content: n002;n004n002
+advertise n004 ==> n001 AT 1376588040383
+Content: n003;n004n002n003
+Received messages=========
+advertise n002 ==> n004 AT 1376588039873
+Content: n002;n002
+advertise n002 ==> n004 AT 1376588039879
+Content: n001;n002n001
+advertise n002 ==> n004 AT 1376588039879
+Content: n003;n002n003
+State for n004 | NR. 21:
+Table neighbour
+n001
+
+Table route_updated
+n002;n001
+
+Table best_candidate
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n004 AT 1376588040778
+Content: n002
+State for n004 | NR. 22:
+Table neighbour
+n002
+n001
+
+Table route_updated
+
+Table best_candidate
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+
+Sent messages=========
+advertise n004 ==> n002 AT 1376588042484
+Content: n004;n004
+advertise n004 ==> n002 AT 1376588042490
+Content: n001;n004n001
+Received messages=========
+State for n004 | NR. 28:
+Table neighbour
+n002
+n001
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n005;n002n005
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n005;n002;n002n005
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+n005;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n005;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+n005;n002
+
+Sent messages=========
+advertise n004 ==> n001 AT 1376588050231
+Content: n005;n004n002n005
+Received messages=========
+advertise n002 ==> n004 AT 1376588049187
+Content: n005;n002n005
+State for n004 | NR. 29:
+Table neighbour
+n002
+n001
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n005;n002n005
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n005;n002;n002n005
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+n005;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n005;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n004 AT 1376588049187
+Content: n005;n002n005
+State for n004 | NR. 30:
+Table neighbour
+n002
+n001
+
+Table route_updated
+n005;n001
+
+Table best_candidate
+n005;n002n005
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n005;n001;n001n002n005
+n005;n002;n002n005
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+n005;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n005;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n001 ==> n004 AT 1376588050094
+Content: n005;n001n002n005
+State for n004 | NR. 31:
+Table neighbour
+n002
+n001
+
+Table route_updated
+n005;n001
+
+Table best_candidate
+n005;n002n005
+n002;n002
+n003;n002n003
+n001;n001
+
+Table policy
+n001;n001;10
+n002;n002;10
+n003;n002n003;10
+n005;n002n005;10
+
+Table candidate
+n005;n001;n001n002n005
+n005;n002;n002n005
+n002;n002;n002
+n001;n002;n002n001
+n003;n002;n002n003
+n001;n001;n001
+n003;n001;n001n002n003
+
+Table best_cost
+n001;4
+n002;4
+n003;8
+n005;8
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n005;10
+
+Table best_next_hop
+n001;n001
+n002;n002
+n003;n002
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n001 ==> n004 AT 1376588050094
+Content: n005;n001n002n005
+Instance n005 states================================State for n005 | NR. 0:
+Table neighbour
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+n001;n002n001;10
+n002;n002;10
+n003;n002n003;10
+n004;n002n001n004;20
+n004;n002n004;10
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+State for n005 | NR. 25:
+Table neighbour
+
+Table route_updated
+n002;n002
+n004;n002
+n003;n002
+n001;n002
+
+Table best_candidate
+n001;n002n001
+n002;n002
+n003;n002n003
+n004;n002n001n004
+
+Table policy
+n001;n002n001;10
+n002;n002;10
+n003;n002n003;10
+n004;n002n001n004;20
+n004;n002n004;10
+
+Table candidate
+n002;n002;n002
+n004;n002;n002n001n004
+n003;n002;n002n003
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+n003;8
+n004;12
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n002
+n002;n002
+n003;n002
+n004;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n005 AT 1376588045627
+Content: n002;n002
+advertise n002 ==> n005 AT 1376588045632
+Content: n004;n002n001n004
+advertise n002 ==> n005 AT 1376588045632
+Content: n003;n002n003
+advertise n002 ==> n005 AT 1376588045632
+Content: n001;n002n001
+State for n005 | NR. 26:
+Table neighbour
+n002
+
+Table route_updated
+
+Table best_candidate
+n001;n002n001
+n002;n002
+n003;n002n003
+n004;n002n001n004
+
+Table policy
+n001;n002n001;10
+n002;n002;10
+n003;n002n003;10
+n004;n002n001n004;20
+n004;n002n004;10
+
+Table candidate
+n002;n002;n002
+n004;n002;n002n001n004
+n003;n002;n002n003
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+n003;8
+n004;12
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n002
+n002;n002
+n003;n002
+n004;n002
+
+Sent messages=========
+advertise n005 ==> n002 AT 1376588048804
+Content: n005;n005
+Received messages=========
+State for n005 | NR. 27:
+Table neighbour
+n002
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n001;n002n001
+n002;n002
+n003;n002n003
+n004;n002n001n004
+
+Table policy
+n001;n002n001;10
+n002;n002;10
+n003;n002n003;10
+n004;n002n001n004;20
+n004;n002n004;10
+
+Table candidate
+n002;n002;n002
+n004;n002;n002n001n004
+n003;n002;n002n003
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+n003;8
+n004;12
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n002
+n002;n002
+n003;n002
+n004;n002
+
+Sent messages=========
+Received messages=========
+withdraw n002 ==> n005 AT 1376588049197
+Content: n005
+State for n005 | NR. 28:
+Table neighbour
+n002
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n001;n002n001
+n002;n002
+n003;n002n003
+n004;n002n001n004
+
+Table policy
+n001;n002n001;10
+n002;n002;10
+n003;n002n003;10
+n004;n002n001n004;20
+n004;n002n004;10
+
+Table candidate
+n002;n002;n002
+n004;n002;n002n001n004
+n003;n002;n002n003
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+n003;8
+n004;12
+
+Table best_pref
+n001;10
+n002;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n002
+n002;n002
+n003;n002
+n004;n002
+
+Sent messages=========
+Received messages=========
+withdraw n002 ==> n005 AT 1376588049197
+Content: n005
+Instance n002 states================================State for n002 | NR. 0:
+Table neighbour
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+State for n002 | NR. 2:
+Table neighbour
+
+Table route_updated
+n001;n001
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n001;n001;n001
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+Received messages=========
+advertise n001 ==> n002 AT 1376588024017
+Content: n001;n001
+State for n002 | NR. 3:
+Table neighbour
+n001
+
+Table route_updated
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n001;n001;n001
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+advertise n002 ==> n001 AT 1376588026163
+Content: n002;n002
+Received messages=========
+State for n002 | NR. 5:
+Table neighbour
+n001
+
+Table route_updated
+n002;n001
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n001;n001;n001
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n002 AT 1376588026636
+Content: n002
+State for n002 | NR. 6:
+Table neighbour
+n003
+n001
+
+Table route_updated
+
+Table best_candidate
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n001;n001;n001
+
+Table best_cost
+n001;4
+
+Table best_pref
+n001;10
+
+Table best_next_hop
+n001;n001
+
+Sent messages=========
+advertise n002 ==> n003 AT 1376588028430
+Content: n002;n002
+advertise n002 ==> n003 AT 1376588028449
+Content: n001;n002n001
+Received messages=========
+State for n002 | NR. 9:
+Table neighbour
+n003
+n001
+
+Table route_updated
+n003;n003
+
+Table best_candidate
+n001;n001
+n003;n003
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+
+Table best_pref
+n001;10
+n003;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+
+Sent messages=========
+advertise n002 ==> n001 AT 1376588031302
+Content: n003;n002n003
+Received messages=========
+advertise n003 ==> n002 AT 1376588030683
+Content: n003;n003
+State for n002 | NR. 11:
+Table neighbour
+n003
+n001
+
+Table route_updated
+n003;n001
+
+Table best_candidate
+n001;n001
+n003;n003
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+
+Table best_pref
+n001;10
+n003;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n002 AT 1376588032010
+Content: n003
+State for n002 | NR. 16:
+Table neighbour
+n003
+n001
+
+Table route_updated
+n004;n001
+
+Table best_candidate
+n001;n001
+n003;n003
+n004;n001n004
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+
+Sent messages=========
+advertise n002 ==> n003 AT 1376588038052
+Content: n004;n002n001n004
+Received messages=========
+advertise n001 ==> n002 AT 1376588037516
+Content: n004;n001n004
+State for n002 | NR. 17:
+Table neighbour
+n003
+n001
+
+Table route_updated
+n004;n001
+
+Table best_candidate
+n001;n001
+n003;n003
+n004;n001n004
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+
+Sent messages=========
+Received messages=========
+advertise n001 ==> n002 AT 1376588037516
+Content: n004;n001n004
+State for n002 | NR. 18:
+Table neighbour
+n004
+n003
+n001
+
+Table route_updated
+
+Table best_candidate
+n001;n001
+n003;n003
+n004;n001n004
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+
+Sent messages=========
+advertise n002 ==> n004 AT 1376588039873
+Content: n002;n002
+advertise n002 ==> n004 AT 1376588039879
+Content: n001;n002n001
+advertise n002 ==> n004 AT 1376588039879
+Content: n003;n002n003
+Received messages=========
+State for n002 | NR. 21:
+Table neighbour
+n004
+n003
+n001
+
+Table route_updated
+n002;n001
+
+Table best_candidate
+n001;n001
+n003;n003
+n004;n001n004
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n002 AT 1376588040778
+Content: n002
+State for n002 | NR. 23:
+Table neighbour
+n004
+n003
+n001
+
+Table route_updated
+n004;n004
+n001;n004
+
+Table best_candidate
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+
+Sent messages=========
+Received messages=========
+advertise n004 ==> n002 AT 1376588042484
+Content: n004;n004
+advertise n004 ==> n002 AT 1376588042490
+Content: n001;n004n001
+State for n002 | NR. 24:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+
+Table best_candidate
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+
+Sent messages=========
+advertise n002 ==> n005 AT 1376588045627
+Content: n002;n002
+advertise n002 ==> n005 AT 1376588045632
+Content: n004;n002n001n004
+advertise n002 ==> n005 AT 1376588045632
+Content: n003;n002n003
+advertise n002 ==> n005 AT 1376588045632
+Content: n001;n002n001
+Received messages=========
+State for n002 | NR. 27:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+n005;n005
+
+Table best_candidate
+n005;n005
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n005;n005;n005
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+n005;4
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+n005;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+n005;n005
+
+Sent messages=========
+advertise n002 ==> n004 AT 1376588049187
+Content: n005;n002n005
+advertise n002 ==> n003 AT 1376588049187
+Content: n005;n002n005
+advertise n002 ==> n001 AT 1376588049187
+Content: n005;n002n005
+Received messages=========
+advertise n005 ==> n002 AT 1376588048804
+Content: n005;n005
+State for n002 | NR. 28:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+n005;n001
+
+Table best_candidate
+n005;n005
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n005;n005;n005
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+n005;4
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+n005;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+n005;n005
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n002 AT 1376588050111
+Content: n005
+State for n002 | NR. 29:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+n005;n003
+
+Table best_candidate
+n005;n005
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n005;n005;n005
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+n005;4
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+n005;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+n005;n005
+
+Sent messages=========
+Received messages=========
+withdraw n003 ==> n002 AT 1376588050144
+Content: n005
+State for n002 | NR. 30:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+n005;n001
+
+Table best_candidate
+n005;n005
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n005;n005;n005
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+n005;4
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+n005;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+n005;n005
+
+Sent messages=========
+Received messages=========
+withdraw n001 ==> n002 AT 1376588050111
+Content: n005
+State for n002 | NR. 31:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+n005;n004
+
+Table best_candidate
+n005;n005
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n005;n005;n005
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+n005;4
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+n005;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+n005;n005
+
+Sent messages=========
+Received messages=========
+withdraw n004 ==> n002 AT 1376588050252
+Content: n005
+State for n002 | NR. 32:
+Table neighbour
+n005
+n004
+n003
+n001
+
+Table route_updated
+n005;n004
+
+Table best_candidate
+n005;n005
+n004;n001n004
+n003;n003
+n001;n001
+
+Table policy
+n001;n001;10
+n004;n004;10
+n005;n005;10
+n003;n003;10
+n004;n001n004;20
+
+Table candidate
+n005;n005;n005
+n004;n004;n004
+n001;n004;n004n001
+n004;n001;n001n004
+n003;n003;n003
+n001;n001;n001
+
+Table best_cost
+n001;4
+n003;4
+n004;8
+n005;4
+
+Table best_pref
+n001;10
+n003;10
+n004;20
+n005;10
+
+Table best_next_hop
+n001;n001
+n003;n003
+n004;n001
+n005;n005
+
+Sent messages=========
+Received messages=========
+withdraw n004 ==> n002 AT 1376588050252
+Content: n005
+Instance n003 states================================State for n003 | NR. 0:
+Table neighbour
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+State for n003 | NR. 7:
+Table neighbour
+
+Table route_updated
+n002;n002
+n001;n002
+
+Table best_candidate
+n001;n002n001
+n002;n002
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+
+Table best_pref
+n001;10
+n002;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n003 AT 1376588028430
+Content: n002;n002
+advertise n002 ==> n003 AT 1376588028449
+Content: n001;n002n001
+State for n003 | NR. 8:
+Table neighbour
+n002
+
+Table route_updated
+
+Table best_candidate
+n001;n002n001
+n002;n002
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+
+Table best_pref
+n001;10
+n002;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+
+Sent messages=========
+advertise n003 ==> n002 AT 1376588030683
+Content: n003;n003
+Received messages=========
+State for n003 | NR. 9:
+Table neighbour
+n002
+
+Table route_updated
+n003;n002
+
+Table best_candidate
+n001;n002n001
+n002;n002
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+
+Table best_pref
+n001;10
+n002;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+
+Sent messages=========
+Received messages=========
+withdraw n002 ==> n003 AT 1376588031315
+Content: n003
+State for n003 | NR. 10:
+Table neighbour
+n002
+
+Table route_updated
+n003;n002
+
+Table best_candidate
+n001;n002n001
+n002;n002
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+
+Table best_pref
+n001;10
+n002;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+
+Sent messages=========
+Received messages=========
+withdraw n002 ==> n003 AT 1376588031315
+Content: n003
+State for n003 | NR. 17:
+Table neighbour
+n002
+
+Table route_updated
+n004;n002
+
+Table best_candidate
+n002;n002
+n001;n002n001
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n004;n002;n002n001n004
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+
+Table best_pref
+n001;10
+n002;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n003 AT 1376588038052
+Content: n004;n002n001n004
+State for n003 | NR. 18:
+Table neighbour
+n002
+
+Table route_updated
+n004;n002
+
+Table best_candidate
+n002;n002
+n001;n002n001
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n004;n002;n002n001n004
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+
+Table best_pref
+n001;10
+n002;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n003 AT 1376588038052
+Content: n004;n002n001n004
+State for n003 | NR. 28:
+Table neighbour
+n002
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n005;n002n005
+n002;n002
+n001;n002n001
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n005;n002;n002n005
+n004;n002;n002n001n004
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+n005;8
+
+Table best_pref
+n001;10
+n002;10
+n005;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+n005;n002
+
+Sent messages=========
+withdraw n003 ==> n002 AT 1376588050144
+Content: n005
+Received messages=========
+advertise n002 ==> n003 AT 1376588049187
+Content: n005;n002n005
+State for n003 | NR. 29:
+Table neighbour
+n002
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n005;n002n005
+n002;n002
+n001;n002n001
+
+Table policy
+n002;n002;10
+n001;n002n001;10
+n004;n002n004;10
+n005;n002n005;10
+n005;n002n001n005;20
+
+Table candidate
+n005;n002;n002n005
+n004;n002;n002n001n004
+n002;n002;n002
+n001;n002;n002n001
+
+Table best_cost
+n001;8
+n002;4
+n005;8
+
+Table best_pref
+n001;10
+n002;10
+n005;10
+
+Table best_next_hop
+n001;n002
+n002;n002
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n003 AT 1376588049187
+Content: n005;n002n005
+Instance n001 states================================State for n001 | NR. 0:
+Table neighbour
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+State for n001 | NR. 1:
+Table neighbour
+n002
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n001 ==> n002 AT 1376588024017
+Content: n001;n001
+Received messages=========
+State for n001 | NR. 4:
+Table neighbour
+n002
+
+Table route_updated
+n002;n002
+
+Table best_candidate
+n002;n002
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n002;n002;n002
+
+Table best_cost
+n002;4
+
+Table best_pref
+n002;10
+
+Table best_next_hop
+n002;n002
+
+Sent messages=========
+withdraw n001 ==> n002 AT 1376588026636
+Content: n002
+Received messages=========
+advertise n002 ==> n001 AT 1376588026163
+Content: n002;n002
+State for n001 | NR. 10:
+Table neighbour
+n002
+
+Table route_updated
+n003;n002
+
+Table best_candidate
+n002;n002
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;4
+n003;8
+
+Table best_pref
+n002;10
+n003;10
+
+Table best_next_hop
+n002;n002
+n003;n002
+
+Sent messages=========
+withdraw n001 ==> n002 AT 1376588032010
+Content: n003
+Received messages=========
+advertise n002 ==> n001 AT 1376588031302
+Content: n003;n002n003
+State for n001 | NR. 11:
+Table neighbour
+n002
+
+Table route_updated
+n003;n002
+
+Table best_candidate
+n002;n002
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;4
+n003;8
+
+Table best_pref
+n002;10
+n003;10
+
+Table best_next_hop
+n002;n002
+n003;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n001 AT 1376588031302
+Content: n003;n002n003
+State for n001 | NR. 12:
+Table neighbour
+n004
+n002
+
+Table route_updated
+
+Table best_candidate
+n002;n002
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;4
+n003;8
+
+Table best_pref
+n002;10
+n003;10
+
+Table best_next_hop
+n002;n002
+n003;n002
+
+Sent messages=========
+advertise n001 ==> n004 AT 1376588033717
+Content: n001;n001
+advertise n001 ==> n004 AT 1376588033723
+Content: n002;n001n002
+advertise n001 ==> n004 AT 1376588033723
+Content: n003;n001n002n003
+Received messages=========
+State for n001 | NR. 15:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n004;n004
+
+Table best_candidate
+n002;n002
+n003;n002n003
+n004;n004
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;4
+n003;8
+n004;4
+
+Table best_pref
+n002;10
+n003;10
+n004;10
+
+Table best_next_hop
+n002;n002
+n003;n002
+n004;n004
+
+Sent messages=========
+advertise n001 ==> n002 AT 1376588037516
+Content: n004;n001n004
+Received messages=========
+advertise n004 ==> n001 AT 1376588036957
+Content: n004;n004
+State for n001 | NR. 16:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n004;n002
+
+Table best_candidate
+n002;n002
+n003;n002n003
+n004;n004
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;4
+n003;8
+n004;4
+
+Table best_pref
+n002;10
+n003;10
+n004;10
+
+Table best_next_hop
+n002;n002
+n003;n002
+n004;n004
+
+Sent messages=========
+Received messages=========
+withdraw n002 ==> n001 AT 1376588038077
+Content: n004
+State for n001 | NR. 17:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n004;n002
+
+Table best_candidate
+n002;n002
+n003;n002n003
+n004;n004
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;4
+n003;8
+n004;4
+
+Table best_pref
+n002;10
+n003;10
+n004;10
+
+Table best_next_hop
+n002;n002
+n003;n002
+n004;n004
+
+Sent messages=========
+Received messages=========
+withdraw n002 ==> n001 AT 1376588038077
+Content: n004
+State for n001 | NR. 20:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n002;n004
+n003;n004
+
+Table best_candidate
+n002;n004n002
+n004;n004
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n002;n004;n004n002
+n003;n004;n004n002n003
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;8
+n003;8
+n004;4
+
+Table best_pref
+n002;20
+n003;10
+n004;10
+
+Table best_next_hop
+n002;n004
+n003;n002
+n004;n004
+
+Sent messages=========
+withdraw n001 ==> n004 AT 1376588040778
+Content: n002
+withdraw n001 ==> n002 AT 1376588040778
+Content: n002
+Received messages=========
+advertise n004 ==> n001 AT 1376588040383
+Content: n002;n004n002
+advertise n004 ==> n001 AT 1376588040383
+Content: n003;n004n002n003
+State for n001 | NR. 28:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n005;n002n005
+n002;n004n002
+n004;n004
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n005;n002;n002n005
+n002;n004;n004n002
+n003;n004;n004n002n003
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;8
+n003;8
+n004;4
+n005;8
+
+Table best_pref
+n002;20
+n003;10
+n004;10
+n005;10
+
+Table best_next_hop
+n002;n004
+n003;n002
+n004;n004
+n005;n002
+
+Sent messages=========
+advertise n001 ==> n004 AT 1376588050094
+Content: n005;n001n002n005
+Received messages=========
+advertise n002 ==> n001 AT 1376588049187
+Content: n005;n002n005
+State for n001 | NR. 29:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n005;n002
+
+Table best_candidate
+n005;n002n005
+n002;n004n002
+n004;n004
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n005;n002;n002n005
+n002;n004;n004n002
+n003;n004;n004n002n003
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;8
+n003;8
+n004;4
+n005;8
+
+Table best_pref
+n002;20
+n003;10
+n004;10
+n005;10
+
+Table best_next_hop
+n002;n004
+n003;n002
+n004;n004
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n001 AT 1376588049187
+Content: n005;n002n005
+State for n001 | NR. 30:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n005;n004
+
+Table best_candidate
+n005;n002n005
+n002;n004n002
+n004;n004
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n005;n004;n004n002n005
+n005;n002;n002n005
+n002;n004;n004n002
+n003;n004;n004n002n003
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;8
+n003;8
+n004;4
+n005;8
+
+Table best_pref
+n002;20
+n003;10
+n004;10
+n005;10
+
+Table best_next_hop
+n002;n004
+n003;n002
+n004;n004
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n004 ==> n001 AT 1376588050231
+Content: n005;n004n002n005
+State for n001 | NR. 31:
+Table neighbour
+n004
+n002
+
+Table route_updated
+n005;n004
+
+Table best_candidate
+n005;n002n005
+n002;n004n002
+n004;n004
+n003;n002n003
+
+Table policy
+n002;n002;10
+n002;n004n002;20
+n003;n002n003;10
+n004;n004;10
+n005;n002n005;10
+
+Table candidate
+n005;n004;n004n002n005
+n005;n002;n002n005
+n002;n004;n004n002
+n003;n004;n004n002n003
+n004;n004;n004
+n003;n002;n002n003
+n002;n002;n002
+
+Table best_cost
+n002;8
+n003;8
+n004;4
+n005;8
+
+Table best_pref
+n002;20
+n003;10
+n004;10
+n005;10
+
+Table best_next_hop
+n002;n004
+n003;n002
+n004;n004
+n005;n002
+
+Sent messages=========
+Received messages=========
+advertise n004 ==> n001 AT 1376588050231
+Content: n005;n004n002n005

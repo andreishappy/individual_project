@@ -1,0 +1,2666 @@
+<?xml version='1.0' encoding='ASCII'?>
+<result>
+  <messages>
+    <template type="advertise" separator=";" columns="Dest;Path"/>
+    <template type="withdraw" separator=";" columns="Dest"/>
+  </messages>
+  <tables>
+    <template type="neighbour" separator=";" columns="neighbour"/>
+    <template type="candidate" separator=";" columns="Dest;NextHop;Path"/>
+    <template type="best_candidate" separator=";" columns="Dest;Path"/>
+    <template type="best_cost" separator=";" columns="Dest;Cost"/>
+    <template type="route_updated" separator=";" columns="Dest;NextHop"/>
+    <template type="best_next_hop" separator=";" columns="Dest;NextHop"/>
+    <template type="policy" separator=";" columns="Dest;Path;Pref"/>
+    <template type="best_pref" separator=";" columns="Dest;Pref"/>
+  </tables>
+  <nodes>
+    <node id="n004">
+      <states>
+        <state id="0">
+          <sent/>
+          <received/>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated"/>
+            <table type="best_candidate"/>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate"/>
+            <table type="best_cost"/>
+            <table type="best_pref"/>
+            <table type="best_next_hop"/>
+          </content>
+        </state>
+        <state id="13">
+          <sent/>
+          <received>
+            <message content="n001;n001" type="advertise" from="n001"/>
+            <message content="n002;n001n002" type="advertise" from="n001"/>
+            <message content="n003;n001n002n003" type="advertise" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated">
+              <row content="n001;n001"/>
+              <row content="n002;n001"/>
+              <row content="n003;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+              <row content="n002;n001;n001n002"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="14">
+          <sent>
+            <message content="n004;n004" type="advertise" to="n001"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+              <row content="n002;n001;n001n002"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="15">
+          <sent/>
+          <received>
+            <message content="n004" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+              <row content="n002;n001;n001n002"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="16">
+          <sent/>
+          <received>
+            <message content="n004" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+              <row content="n002;n001;n001n002"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="19">
+          <sent>
+            <message content="n002;n004n002" type="advertise" to="n001"/>
+            <message content="n003;n004n002n003" type="advertise" to="n001"/>
+          </sent>
+          <received>
+            <message content="n002;n002" type="advertise" from="n002"/>
+            <message content="n001;n002n001" type="advertise" from="n002"/>
+            <message content="n003;n002n003" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n002;n002"/>
+              <row content="n001;n002"/>
+              <row content="n003;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n002;n001;n001n002"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="21">
+          <sent/>
+          <received>
+            <message content="n002" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n002;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="22">
+          <sent>
+            <message content="n004;n004" type="advertise" to="n002"/>
+            <message content="n001;n004n001" type="advertise" to="n002"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="28">
+          <sent>
+            <message content="n005;n004n002n005" type="advertise" to="n001"/>
+          </sent>
+          <received>
+            <message content="n005;n002n005" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="29">
+          <sent/>
+          <received>
+            <message content="n005;n002n005" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="30">
+          <sent/>
+          <received>
+            <message content="n005;n001n002n005" type="advertise" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n001;n001n002n005"/>
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="31">
+          <sent/>
+          <received>
+            <message content="n005;n001n002n005" type="advertise" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n001;n001n002n005"/>
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n001;n001"/>
+              <row content="n003;n001;n001n002n003"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="n005">
+      <states>
+        <state id="0">
+          <sent/>
+          <received/>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated"/>
+            <table type="best_candidate"/>
+            <table type="policy">
+              <row content="n001;n002n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n002n001n004;20"/>
+              <row content="n004;n002n004;10"/>
+            </table>
+            <table type="candidate"/>
+            <table type="best_cost"/>
+            <table type="best_pref"/>
+            <table type="best_next_hop"/>
+          </content>
+        </state>
+        <state id="25">
+          <sent/>
+          <received>
+            <message content="n002;n002" type="advertise" from="n002"/>
+            <message content="n004;n002n001n004" type="advertise" from="n002"/>
+            <message content="n003;n002n003" type="advertise" from="n002"/>
+            <message content="n001;n002n001" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated">
+              <row content="n002;n002"/>
+              <row content="n004;n002"/>
+              <row content="n003;n002"/>
+              <row content="n001;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n002n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n002n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n002n001n004;20"/>
+              <row content="n004;n002n004;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;12"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="26">
+          <sent>
+            <message content="n005;n005" type="advertise" to="n002"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n002n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n002n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n002n001n004;20"/>
+              <row content="n004;n002n004;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;12"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="27">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n002n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n002n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n002n001n004;20"/>
+              <row content="n004;n002n004;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;12"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="28">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n002n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n002n001;10"/>
+              <row content="n002;n002;10"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n002n001n004;20"/>
+              <row content="n004;n002n004;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;12"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n002"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="n002">
+      <states>
+        <state id="0">
+          <sent/>
+          <received/>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated"/>
+            <table type="best_candidate"/>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate"/>
+            <table type="best_cost"/>
+            <table type="best_pref"/>
+            <table type="best_next_hop"/>
+          </content>
+        </state>
+        <state id="2">
+          <sent/>
+          <received>
+            <message content="n001;n001" type="advertise" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated">
+              <row content="n001;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="3">
+          <sent>
+            <message content="n002;n002" type="advertise" to="n001"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="5">
+          <sent/>
+          <received>
+            <message content="n002" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n002;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="6">
+          <sent>
+            <message content="n002;n002" type="advertise" to="n003"/>
+            <message content="n001;n002n001" type="advertise" to="n003"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="9">
+          <sent>
+            <message content="n003;n002n003" type="advertise" to="n001"/>
+          </sent>
+          <received>
+            <message content="n003;n003" type="advertise" from="n003"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n003;n003"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+            </table>
+          </content>
+        </state>
+        <state id="11">
+          <sent/>
+          <received>
+            <message content="n003" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n003;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+            </table>
+          </content>
+        </state>
+        <state id="16">
+          <sent>
+            <message content="n004;n002n001n004" type="advertise" to="n003"/>
+          </sent>
+          <received>
+            <message content="n004;n001n004" type="advertise" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="17">
+          <sent/>
+          <received>
+            <message content="n004;n001n004" type="advertise" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="18">
+          <sent>
+            <message content="n002;n002" type="advertise" to="n004"/>
+            <message content="n001;n002n001" type="advertise" to="n004"/>
+            <message content="n003;n002n003" type="advertise" to="n004"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="21">
+          <sent/>
+          <received>
+            <message content="n002" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n002;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001n004"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="23">
+          <sent/>
+          <received>
+            <message content="n004;n004" type="advertise" from="n004"/>
+            <message content="n001;n004n001" type="advertise" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n004"/>
+              <row content="n001;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="24">
+          <sent>
+            <message content="n002;n002" type="advertise" to="n005"/>
+            <message content="n004;n002n001n004" type="advertise" to="n005"/>
+            <message content="n003;n002n003" type="advertise" to="n005"/>
+            <message content="n001;n002n001" type="advertise" to="n005"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+            </table>
+          </content>
+        </state>
+        <state id="27">
+          <sent>
+            <message content="n005;n002n005" type="advertise" to="n004"/>
+            <message content="n005;n002n005" type="advertise" to="n003"/>
+            <message content="n005;n002n005" type="advertise" to="n001"/>
+          </sent>
+          <received>
+            <message content="n005;n005" type="advertise" from="n005"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n005"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n005"/>
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n005;n005"/>
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+              <row content="n005;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+              <row content="n005;n005"/>
+            </table>
+          </content>
+        </state>
+        <state id="28">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n005"/>
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n005;n005"/>
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+              <row content="n005;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+              <row content="n005;n005"/>
+            </table>
+          </content>
+        </state>
+        <state id="29">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n003"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n003"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n005"/>
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n005;n005"/>
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+              <row content="n005;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+              <row content="n005;n005"/>
+            </table>
+          </content>
+        </state>
+        <state id="30">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n001"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n001"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n005"/>
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n005;n005"/>
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+              <row content="n005;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+              <row content="n005;n005"/>
+            </table>
+          </content>
+        </state>
+        <state id="31">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n005"/>
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n005;n005"/>
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+              <row content="n005;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+              <row content="n005;n005"/>
+            </table>
+          </content>
+        </state>
+        <state id="32">
+          <sent/>
+          <received>
+            <message content="n005" type="withdraw" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n005"/>
+              <row content="n004"/>
+              <row content="n003"/>
+              <row content="n001"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n005"/>
+              <row content="n004;n001n004"/>
+              <row content="n003;n003"/>
+              <row content="n001;n001"/>
+            </table>
+            <table type="policy">
+              <row content="n001;n001;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n005;10"/>
+              <row content="n003;n003;10"/>
+              <row content="n004;n001n004;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n005;n005"/>
+              <row content="n004;n004;n004"/>
+              <row content="n001;n004;n004n001"/>
+              <row content="n004;n001;n001n004"/>
+              <row content="n003;n003;n003"/>
+              <row content="n001;n001;n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;4"/>
+              <row content="n003;4"/>
+              <row content="n004;8"/>
+              <row content="n005;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n003;10"/>
+              <row content="n004;20"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n001"/>
+              <row content="n003;n003"/>
+              <row content="n004;n001"/>
+              <row content="n005;n005"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="n003">
+      <states>
+        <state id="0">
+          <sent/>
+          <received/>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated"/>
+            <table type="best_candidate"/>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate"/>
+            <table type="best_cost"/>
+            <table type="best_pref"/>
+            <table type="best_next_hop"/>
+          </content>
+        </state>
+        <state id="7">
+          <sent/>
+          <received>
+            <message content="n002;n002" type="advertise" from="n002"/>
+            <message content="n001;n002n001" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated">
+              <row content="n002;n002"/>
+              <row content="n001;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="8">
+          <sent>
+            <message content="n003;n003" type="advertise" to="n002"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="9">
+          <sent/>
+          <received>
+            <message content="n003" type="withdraw" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n003;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="10">
+          <sent/>
+          <received>
+            <message content="n003" type="withdraw" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n003;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n001;n002n001"/>
+              <row content="n002;n002"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="17">
+          <sent/>
+          <received>
+            <message content="n004;n002n001n004" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n001;n002n001"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="18">
+          <sent/>
+          <received>
+            <message content="n004;n002n001n004" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n001;n002n001"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="28">
+          <sent>
+            <message content="n005" type="withdraw" to="n002"/>
+          </sent>
+          <received>
+            <message content="n005;n002n005" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n002"/>
+              <row content="n001;n002n001"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n002;n002n005"/>
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="29">
+          <sent/>
+          <received>
+            <message content="n005;n002n005" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n002"/>
+              <row content="n001;n002n001"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n001;n002n001;10"/>
+              <row content="n004;n002n004;10"/>
+              <row content="n005;n002n005;10"/>
+              <row content="n005;n002n001n005;20"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n002;n002n005"/>
+              <row content="n004;n002;n002n001n004"/>
+              <row content="n002;n002;n002"/>
+              <row content="n001;n002;n002n001"/>
+            </table>
+            <table type="best_cost">
+              <row content="n001;8"/>
+              <row content="n002;4"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n001;10"/>
+              <row content="n002;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n001;n002"/>
+              <row content="n002;n002"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+    <node id="n001">
+      <states>
+        <state id="0">
+          <sent/>
+          <received/>
+          <content>
+            <table type="neighbour"/>
+            <table type="route_updated"/>
+            <table type="best_candidate"/>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate"/>
+            <table type="best_cost"/>
+            <table type="best_pref"/>
+            <table type="best_next_hop"/>
+          </content>
+        </state>
+        <state id="1">
+          <sent>
+            <message content="n001;n001" type="advertise" to="n002"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate"/>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate"/>
+            <table type="best_cost"/>
+            <table type="best_pref"/>
+            <table type="best_next_hop"/>
+          </content>
+        </state>
+        <state id="4">
+          <sent>
+            <message content="n002" type="withdraw" to="n002"/>
+          </sent>
+          <received>
+            <message content="n002;n002" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n002;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="10">
+          <sent>
+            <message content="n003" type="withdraw" to="n002"/>
+          </sent>
+          <received>
+            <message content="n003;n002n003" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n003;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="11">
+          <sent/>
+          <received>
+            <message content="n003;n002n003" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n003;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="12">
+          <sent>
+            <message content="n001;n001" type="advertise" to="n004"/>
+            <message content="n002;n001n002" type="advertise" to="n004"/>
+            <message content="n003;n001n002n003" type="advertise" to="n004"/>
+          </sent>
+          <received/>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated"/>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="15">
+          <sent>
+            <message content="n004;n001n004" type="advertise" to="n002"/>
+          </sent>
+          <received>
+            <message content="n004;n004" type="advertise" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n004"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+            </table>
+          </content>
+        </state>
+        <state id="16">
+          <sent/>
+          <received>
+            <message content="n004" type="withdraw" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n004"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+            </table>
+          </content>
+        </state>
+        <state id="17">
+          <sent/>
+          <received>
+            <message content="n004" type="withdraw" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n004;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n002"/>
+              <row content="n003;n002n003"/>
+              <row content="n004;n004"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;4"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;10"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n002"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+            </table>
+          </content>
+        </state>
+        <state id="20">
+          <sent>
+            <message content="n002" type="withdraw" to="n004"/>
+            <message content="n002" type="withdraw" to="n002"/>
+          </sent>
+          <received>
+            <message content="n002;n004n002" type="advertise" from="n004"/>
+            <message content="n003;n004n002n003" type="advertise" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n002;n004"/>
+              <row content="n003;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n002;n004n002"/>
+              <row content="n004;n004"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n002;n004;n004n002"/>
+              <row content="n003;n004;n004n002n003"/>
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;8"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;20"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n004"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+            </table>
+          </content>
+        </state>
+        <state id="28">
+          <sent>
+            <message content="n005;n001n002n005" type="advertise" to="n004"/>
+          </sent>
+          <received>
+            <message content="n005;n002n005" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n004n002"/>
+              <row content="n004;n004"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n004;n004n002"/>
+              <row content="n003;n004;n004n002n003"/>
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;8"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;20"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n004"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="29">
+          <sent/>
+          <received>
+            <message content="n005;n002n005" type="advertise" from="n002"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n002"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n004n002"/>
+              <row content="n004;n004"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n004;n004n002"/>
+              <row content="n003;n004;n004n002n003"/>
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;8"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;20"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n004"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="30">
+          <sent/>
+          <received>
+            <message content="n005;n004n002n005" type="advertise" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n004n002"/>
+              <row content="n004;n004"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n004;n004n002n005"/>
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n004;n004n002"/>
+              <row content="n003;n004;n004n002n003"/>
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;8"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;20"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n004"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+        <state id="31">
+          <sent/>
+          <received>
+            <message content="n005;n004n002n005" type="advertise" from="n004"/>
+          </received>
+          <content>
+            <table type="neighbour">
+              <row content="n004"/>
+              <row content="n002"/>
+            </table>
+            <table type="route_updated">
+              <row content="n005;n004"/>
+            </table>
+            <table type="best_candidate">
+              <row content="n005;n002n005"/>
+              <row content="n002;n004n002"/>
+              <row content="n004;n004"/>
+              <row content="n003;n002n003"/>
+            </table>
+            <table type="policy">
+              <row content="n002;n002;10"/>
+              <row content="n002;n004n002;20"/>
+              <row content="n003;n002n003;10"/>
+              <row content="n004;n004;10"/>
+              <row content="n005;n002n005;10"/>
+            </table>
+            <table type="candidate">
+              <row content="n005;n004;n004n002n005"/>
+              <row content="n005;n002;n002n005"/>
+              <row content="n002;n004;n004n002"/>
+              <row content="n003;n004;n004n002n003"/>
+              <row content="n004;n004;n004"/>
+              <row content="n003;n002;n002n003"/>
+              <row content="n002;n002;n002"/>
+            </table>
+            <table type="best_cost">
+              <row content="n002;8"/>
+              <row content="n003;8"/>
+              <row content="n004;4"/>
+              <row content="n005;8"/>
+            </table>
+            <table type="best_pref">
+              <row content="n002;20"/>
+              <row content="n003;10"/>
+              <row content="n004;10"/>
+              <row content="n005;10"/>
+            </table>
+            <table type="best_next_hop">
+              <row content="n002;n004"/>
+              <row content="n003;n002"/>
+              <row content="n004;n004"/>
+              <row content="n005;n002"/>
+            </table>
+          </content>
+        </state>
+      </states>
+    </node>
+  </nodes>
+</result>

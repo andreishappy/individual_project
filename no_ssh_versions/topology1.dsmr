@@ -1,0 +1,5 @@
+input start(int payload_int, char[128] payload_string);
+persistent keep(int payload_int, char[128] payload_string);
+
+keep(i,j) if start(i,j);
+keep(i,j) if prev keep(i,j);

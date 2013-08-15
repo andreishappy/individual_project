@@ -36,23 +36,16 @@ class MyXMLParser:
 
         for inp in post_inputs:
             input_result = {}
-            input_result['instance'] = inp.attrib['instance']
-            input_result['table_name'] = inp.attrib['table_name']
-            input_result['var_name'] = inp.attrib['var_name']
-            input_result['value'] = inp.attrib['value']
+            for key in inp.attrib:
+                input_result[key] = inp.attrib[key]
             self.post_inputs.append(input_result)
-            
-
 
         for inp in pre_inputs:
             input_result = {}
-            input_result['instance'] = inp.attrib['instance']
-            input_result['table_name'] = inp.attrib['table_name']
-            input_result['var_name'] = inp.attrib['var_name']
-            input_result['value'] = inp.attrib['value']
+            for key in inp.attrib:
+                input_result[key] = inp.attrib[key]
             self.pre_inputs.append(input_result)
             
-        
         for link in topology:
             link_result = (link.attrib['node1'],link.attrib['node2'])
             self.topology.append(link_result)

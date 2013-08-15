@@ -144,9 +144,7 @@ class PhysicalNodeController(Thread):
         for instance in instances:
             self.open_files[instance] = open("engine-{0}".format(instance),'w')
 
-        self.start_engines()
-
-
+ 
 #Need to find a way to kill the engines AFTER all the states have been captured
 #Idea: boolean for each instance to tell that the final state has been captured
 #Talk to David about changing the logging
@@ -159,6 +157,7 @@ class PhysicalNodeController(Thread):
         return client
 
     def run(self):
+        self.start_engines()
         try:
             while not self.stopped:
                
@@ -311,6 +310,9 @@ class PhysicalNodeController(Thread):
             raise KeyboardInterrupt
 
     def start_engines(self):
+        if len(self.instances) == 0: 
+            self.controller.signal_start()
+
         transport = self.client.get_transport()
 
         for instance in self.instances:

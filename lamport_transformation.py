@@ -30,7 +30,10 @@ def two_way_recurse(node_state_dict, node_state_list, current_time):
             #print "Checking message"
             #print sent_message
             dest = sent_message.dest
-            dest_node_state_list = node_state_dict[dest]
+            try:
+                dest_node_state_list = node_state_dict[dest]
+            except KeyError:
+                pass
             
             for i in range(0,len(dest_node_state_list)):
                 if has_received(dest_node_state_list[i],sent_message):
@@ -54,7 +57,10 @@ def lamport_transformation(node_state_dict):
             #change the state number accordingly
             for sent_message in src_state.sent:
                 dest = sent_message.dest
-                dest_state_list = node_state_dict[dest]
+                try:
+                    dest_state_list = node_state_dict[dest]
+                except KeyError:
+                    pass
 
                 #Iterate through states until 
                 for i in range(0,len(dest_state_list)):

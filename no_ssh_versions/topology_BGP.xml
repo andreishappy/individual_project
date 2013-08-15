@@ -1,0 +1,45 @@
+<doc>
+  <nodes>
+
+    <node id="n001" x="10" y="30"/>
+    <node id="n002" x="20" y="30"/>
+    <node id="n003" x="30" y="30"/>
+    <node id="n004" x="40" y="30"/>
+    <node id="n005" x="50" y="30"/>
+
+  </nodes>
+
+  <rule filename="/homes/ap3012/individual_project/home/no_ssh_versions/BGP_v3_policy.dsmr" />
+
+  <pre_inputs>
+    <input instance="n001" type="csv" table_name="add_policy"
+	   csv_file="n001csv"/>
+    <input instance="n002" type="csv" table_name="add_policy"
+	   csv_file="n002csv"/>
+    <input instance="n003" type="csv" table_name="add_policy"
+	   csv_file="n003csv"/>
+    <input instance="n004" type="csv" table_name="add_policy"
+	   csv_file="n004csv"/>
+    <input instance="n005" type="csv" table_name="add_policy"
+	   csv_file="n005csv"/>
+
+    <!-- types: csv or normal     -->
+    <!--<input instance="n001" type="normal" table_name="start"
+	   var_names="payload_int;payload_string" values="3;hello" />
+    <input instance="n001" type="csv" table_name="start" csv_file="csv_attempt"/>-->
+  </pre_inputs>
+  
+  <post_inputs />
+
+  <topology>
+    <link node1="n001" node2="n002" />
+    <link node1="n002" node2="n003" />
+    <link node1="n001" node2="n004" />
+    <link node1="n002" node2="n004" />
+    <link node1="n002" node2="n005" />
+  </topology>
+
+  <hosts/>
+
+  <limit lim="200"> </limit>
+</doc>

@@ -1,0 +1,800 @@
+Watson Policy Management Library - Copyright IBM Corporation 2008,2012.
+Copyrights also by Apache Software Foundation (http://apache.org) and Antlr (http://antlr2.org)
+Distributed State Machine Toolkit - Copyright IBM Corporation 2011,2013.
+Copyrights also by Apache Software Foundation (http://apache.org) and Antlr (http://antlr3.org)
+Loading dsm properties from file:/homes/ap3012/individual_project/unzipped20/lib/dsm.properties
+Bad level value for property: sun.os.patch.level
+Bad level value for property: sun.os.patch.level
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.DSMParser.parse(DSMParser.java:94) 
+FINE: Parsed Tree...
+(DECLARATIONS (TABLE_DECL (TYPE system) (ID peers) (COLUMN_DECL (TYPE char 128) (ID node)) (COLUMN_DECL (TYPE char 64) (ID relationship))) (TABLE_DECL (TYPE input) (ID add_neighbour) (COLUMN_DECL (TYPE char 128) (ID to_add))) (TABLE_DECL (TYPE persistent) (ID neighbour) (COLUMN_DECL (TYPE char 128) (ID neighbour))) (TABLE_DECL (TYPE persistent) (ID candidate) (COLUMN_DECL (TYPE char 128) (ID Dest)) (COLUMN_DECL (TYPE char 128) (ID NextHop)) (COLUMN_DECL (TYPE char 128) (ID Path))) (TABLE_DECL (TYPE persistent) (ID best_candidate) (COLUMN_DECL (TYPE char 128) (ID Dest)) (COLUMN_DECL (TYPE char 128) (ID Path))) (TABLE_DECL (TYPE persistent) (ID best_cost) (COLUMN_DECL (TYPE char 128) (ID Dest)) (COLUMN_DECL (TYPE int) (ID Cost))) (TABLE_DECL (TYPE persistent) (ID route_updated) (COLUMN_DECL (TYPE char 128) (ID Dest)) (COLUMN_DECL (TYPE char 128) (ID NextHop))) (TABLE_DECL (TYPE persistent) (ID best_next_hop) (COLUMN_DECL (TYPE char 128) (ID Dest)) (COLUMN_DECL (TYPE char 128) (ID NextHop))) (TABLE_DECL (TYPE transport) (ID advertise) (COLUMN_DECL (TYPE char 128) (ID Dest)) (COLUMN_DECL (TYPE char 128) (ID Path))) (TABLE_DECL (TYPE transport) (ID withdraw) (COLUMN_DECL (TYPE char 128) (ID Dest)))) (RULESET (APPEND (LHS (TUPLEREF (ID neighbour) (COLUMNS (ID N)))) (RHS (JOIN (TUPLEREF (ID add_neighbour) (COLUMNS (ID N)))))) (APPEND (LHS (TUPLEREF (ID neighbour) (COLUMNS (ID N)))) (RHS (JOIN (PREVIOUS_TUPLEREF (ID neighbour) (COLUMNS (ID N)))))) BLOCK_DECL (APPEND (LHS (TUPLEREF (ID route_updated) (COLUMNS (ID Dest) (ID NextHop)))) (RHS (JOIN (TUPLEREF (ID advertise) (COLUMNS (ID Dest) (ID *)) (SOURCE (ID NextHop)))))) (APPEND (LHS (TUPLEREF (ID route_updated) (COLUMNS (ID Dest) (ID NextHop)))) (RHS (JOIN (TUPLEREF (ID withdraw) (COLUMNS (ID Dest)) (SOURCE (ID NextHop)))))) BLOCK_DECL (APPEND (LHS (TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID NextHop) (ID Path)))) (RHS (JOIN (TUPLEREF (ID advertise) (COLUMNS (ID Dest) (ID Path)) (SOURCE (ID NextHop)))))) (APPEND (LHS (TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID NextHop) (ID Path)))) (RHS (JOIN (PREVIOUS_TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID NextHop) (ID Path))) (NOT (TUPLEREF (ID route_updated) (COLUMNS (ID Dest) (ID NextHop))))))) BLOCK_DECL (APPEND (LHS (TUPLEREF (ID best_cost) (COLUMNS (ID Dest) (SQL_AGGREGATE MIN (SQL_CALL LENGTH (ID Path)))))) (RHS (JOIN (TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID *) (ID Path)))))) BLOCK_DECL (APPEND (LHS (TUPLEREF (ID best_next_hop) (COLUMNS (ID Dest) (SQL_AGGREGATE MIN (ID NextHop))))) (RHS (JOIN (TUPLEREF (ID best_cost) (COLUMNS (ID Dest) (ID BestCost))) (TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID NextHop) (ID Path)))) (CONDITION (== (SQL_CALL LENGTH (ID Path)) (ID BestCost))))) BLOCK_DECL (APPEND (LHS (TUPLEREF (ID best_candidate) (COLUMNS (ID Dest) (ID BestPath)))) (RHS (JOIN (TUPLEREF (ID best_next_hop) (COLUMNS (ID Dest) (ID BestNextHop))) (TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID BestNextHop) (ID BestPath)))))) BLOCK_DECL (APPEND (LHS (TUPLEREF (ID advertise) (COLUMNS (ID Self) (ID Self))) (DESTINATION (ID N))) (RHS (JOIN (TUPLEREF (ID add_neighbour) (COLUMNS (ID N))) (TUPLEREF (ID peers) (COLUMNS (ID Self) (LITERAL "Self")))))) (APPEND (LHS (TUPLEREF (ID advertise) (COLUMNS (ID Dest) (+ (ID Self) (ID Path)))) (DESTINATION (ID N))) (RHS (JOIN (TUPLEREF (ID add_neighbour) (COLUMNS (ID N))) (TUPLEREF (ID peers) (COLUMNS (ID Self) (LITERAL "Self"))) (TUPLEREF (ID best_candidate) (COLUMNS (ID Dest) (ID Path)))) (CONDITION (== (SQL_CALL LOCATE (ID N) (ID Path)) (LITERAL 0))))) (APPEND (LHS (TUPLEREF (ID advertise) (COLUMNS (ID Dest) (+ (ID Self) (ID Path)))) (DESTINATION (ID N))) (RHS (JOIN (TUPLEREF (ID best_candidate) (COLUMNS (ID Dest) (ID Path))) (NOT (PREVIOUS_TUPLEREF (ID best_candidate) (COLUMNS (ID Dest) (ID Path)))) (TUPLEREF (ID peers) (COLUMNS (ID Self) (LITERAL "Self"))) (TUPLEREF (ID neighbour) (COLUMNS (ID N)))) (CONDITION (== (SQL_CALL LOCATE (ID N) (ID Path)) (LITERAL 0))))) (APPEND (LHS (TUPLEREF (ID withdraw) (COLUMNS (ID Dest))) (DESTINATION (ID N))) (RHS (JOIN (PREVIOUS_TUPLEREF (ID best_candidate) (COLUMNS (ID Dest) (ID *))) (NOT (TUPLEREF (ID candidate) (COLUMNS (ID Dest) (ID *) (ID *)))) (TUPLEREF (ID peers) (COLUMNS (ID N) (LITERAL "Neighbor")))))))
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node DECLARATIONS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node system
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node peers
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node input
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node add_neighbour
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node persistent
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node neighbour
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node persistent
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node candidate
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node persistent
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node best_candidate
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node persistent
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node best_cost
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node persistent
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node route_updated
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node persistent
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node best_next_hop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node transport
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node advertise
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TABLE_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TYPE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node transport
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node withdraw
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMN_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RULESET
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node neighbour
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node N
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node neighbour
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node N
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node PREVIOUS_TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BLOCK_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node route_updated
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NextHop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node route_updated
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NextHop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BLOCK_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node candidate
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NextHop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Path
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node candidate
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NextHop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Path
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node PREVIOUS_TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NOT
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BLOCK_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node best_cost
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node SQL_AGGREGATE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node MIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node SQL_CALL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LENGTH
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Path
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BLOCK_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node best_next_hop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node SQL_AGGREGATE
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node MIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NextHop
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node CONDITION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BLOCK_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node best_candidate
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BestPath
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node BLOCK_DECL
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node advertise
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Self
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Self
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node DESTINATION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node N
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node advertise
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node +
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Self
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Path
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node DESTINATION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node N
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node CONDITION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node advertise
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node +
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Self
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Path
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node DESTINATION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node N
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NOT
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node PREVIOUS_TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node CONDITION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node APPEND
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node LHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node withdraw
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node COLUMNS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node Dest
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node DESTINATION
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node ID
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node N
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node RHS
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node JOIN
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node PREVIOUS_TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node NOT
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 org.antlr.runtime.tree.TreeVisitor.visit(TreeVisitor.java:56) 
+FINEST: Visiting node TUPLEREF
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =route_updated, i=0
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =route_updated, i=1
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =best_candidate_PREV_INTERNAL_, i=0
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =best_candidate_PREV_INTERNAL_, i=1
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =candidate, i=0
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =candidate, i=1
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.parser.dsm.internal.ParsedRule.toSQLRuleString(ParsedRule.java:629) 
+FINEST: table =candidate, i=2
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.AbstractRuleEngine.<init>(AbstractRuleEngine.java:140) 
+FINE: Transalation to SQL: 
+ATTRIBUTES
+version.major=2;
+// input peers(char[128] NODE, char[64] RELATIONSHIP);
+input
+peers: CREATE TABLE peers (NODE varchar(128), RELATIONSHIP varchar(64));
+
+// input add_neighbour(char[128] TO_ADD);
+input
+add_neighbour: CREATE TABLE add_neighbour (TO_ADD varchar(128));
+
+// persistent neighbour(char[128] NEIGHBOUR);
+persistent
+neighbour[PREVIOUS=neighbour_PREV_INTERNAL_]: CREATE TABLE neighbour (NEIGHBOUR varchar(128), TOC_INTERNAL_ timestamp);
+
+// persistent candidate(char[128] DEST, char[128] NEXTHOP, char[128] PATH);
+persistent
+candidate[PREVIOUS=candidate_PREV_INTERNAL_]: CREATE TABLE candidate (DEST varchar(128), NEXTHOP varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp);
+
+// persistent best_candidate(char[128] DEST, char[128] PATH);
+persistent
+best_candidate[PREVIOUS=best_candidate_PREV_INTERNAL_]: CREATE TABLE best_candidate (DEST varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp);
+
+// persistent best_cost(char[128] DEST, int COST);
+persistent
+best_cost[PREVIOUS=best_cost_PREV_INTERNAL_]: CREATE TABLE best_cost (DEST varchar(128), COST int, TOC_INTERNAL_ timestamp);
+
+// persistent route_updated(char[128] DEST, char[128] NEXTHOP);
+persistent
+route_updated[PREVIOUS=route_updated_PREV_INTERNAL_]: CREATE TABLE route_updated (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp);
+
+// persistent best_next_hop(char[128] DEST, char[128] NEXTHOP);
+persistent
+best_next_hop[PREVIOUS=best_next_hop_PREV_INTERNAL_]: CREATE TABLE best_next_hop (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp);
+
+// transport advertise(char[128] DEST, char[128] PATH);
+transport
+advertise: CREATE TABLE advertise (DEST_INTERNAL_ varchar(128), SRC_INTERNAL_ varchar(128), DEST varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp);
+
+// transport withdraw(char[128] DEST);
+transport
+withdraw: CREATE TABLE withdraw (DEST_INTERNAL_ varchar(128), SRC_INTERNAL_ varchar(128), DEST varchar(128), TOC_INTERNAL_ timestamp);
+
+// Automatically inserted declaration(s):
+// persistent neighbour_PREV_INTERNAL_(char[128] NEIGHBOUR);
+persistent
+neighbour_PREV_INTERNAL_[AUTOMATIC,PRIMARY=neighbour]: CREATE TABLE neighbour_PREV_INTERNAL_ (NEIGHBOUR varchar(128), TOC_INTERNAL_ timestamp);
+
+// Automatically inserted declaration(s):
+// persistent candidate_PREV_INTERNAL_(char[128] DEST, char[128] NEXTHOP, char[128] PATH);
+persistent
+candidate_PREV_INTERNAL_[AUTOMATIC,PRIMARY=candidate]: CREATE TABLE candidate_PREV_INTERNAL_ (DEST varchar(128), NEXTHOP varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp);
+
+// Automatically inserted declaration(s):
+// persistent best_candidate_PREV_INTERNAL_(char[128] DEST, char[128] PATH);
+persistent
+best_candidate_PREV_INTERNAL_[AUTOMATIC,PRIMARY=best_candidate]: CREATE TABLE best_candidate_PREV_INTERNAL_ (DEST varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp);
+
+// Automatically inserted declaration(s):
+// persistent best_cost_PREV_INTERNAL_(char[128] DEST, int COST);
+persistent
+best_cost_PREV_INTERNAL_[AUTOMATIC,PRIMARY=best_cost]: CREATE TABLE best_cost_PREV_INTERNAL_ (DEST varchar(128), COST int, TOC_INTERNAL_ timestamp);
+
+// Automatically inserted declaration(s):
+// persistent route_updated_PREV_INTERNAL_(char[128] DEST, char[128] NEXTHOP);
+persistent
+route_updated_PREV_INTERNAL_[AUTOMATIC,PRIMARY=route_updated]: CREATE TABLE route_updated_PREV_INTERNAL_ (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp);
+
+// Automatically inserted declaration(s):
+// persistent best_next_hop_PREV_INTERNAL_(char[128] DEST, char[128] NEXTHOP);
+persistent
+best_next_hop_PREV_INTERNAL_[AUTOMATIC,PRIMARY=best_next_hop]: CREATE TABLE best_next_hop_PREV_INTERNAL_ (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp);
+
+// Automatically inserted initialization(s): 
+// // Create dummy table
+
+Initialize
+DUMMIE_INTERNAL_[AUTOMATIC]: CREATE TABLE DUMMIE_INTERNAL_ (X int);
+
+
+// Automatically inserted initialization(s): 
+// // Load dummy table for SELECT
+
+Initialize
+DUMMIE_INTERNAL_[AUTOMATIC]: INSERT INTO DUMMIE_INTERNAL_ VALUES (1);
+
+
+// 
+CLAUSE
+
+// neighbour(N) if  add_neighbour(N);
+neighbour: SELECT add_neighbour.TO_ADD as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour;
+
+// neighbour(N) if  prev neighbour(N);
+neighbour: SELECT neighbour_PREV_INTERNAL_.NEIGHBOUR as NEIGHBOUR, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM neighbour_PREV_INTERNAL_;
+
+// block;
+BLOCK
+
+// route_updated(Dest, NextHop) if  advertise(Dest, *)@NextHop;
+route_updated: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise;
+
+// route_updated(Dest, NextHop) if  withdraw(Dest)@NextHop;
+route_updated: SELECT withdraw.DEST as DEST, withdraw.SRC_INTERNAL_ as NEXTHOP, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM withdraw;
+
+// block;
+BLOCK
+
+// candidate(Dest, NextHop, Path) if  advertise(Dest, Path)@NextHop;
+candidate: SELECT advertise.DEST as DEST, advertise.SRC_INTERNAL_ as NEXTHOP, advertise.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM advertise;
+
+// candidate(Dest, NextHop, Path) if  prev candidate(Dest, NextHop, Path), not route_updated(Dest, NextHop);
+candidate: SELECT candidate_PREV_INTERNAL_.DEST as DEST, candidate_PREV_INTERNAL_.NEXTHOP as NEXTHOP, candidate_PREV_INTERNAL_.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate_PREV_INTERNAL_
+	WHERE (NOT EXISTS (SELECT * FROM route_updated WHERE route_updated.DEST = candidate_PREV_INTERNAL_.DEST AND route_updated.NEXTHOP = candidate_PREV_INTERNAL_.NEXTHOP));
+
+// block;
+BLOCK
+
+// best_cost(Dest, MIN(LENGTH(Path))) if  candidate(Dest, *, Path);
+best_cost: SELECT candidate.DEST as DEST, MIN(LENGTH(candidate.PATH)) as COST, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM candidate GROUP BY candidate.DEST;
+
+// block;
+BLOCK
+
+// best_next_hop(Dest, MIN(NextHop)) if  best_cost(Dest, BestCost), candidate(Dest, NextHop, Path) : LENGTH(Path) == BestCost;
+best_next_hop: SELECT best_cost.DEST as DEST, MIN(candidate.NEXTHOP) as NEXTHOP, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM best_cost, candidate
+	WHERE best_cost.DEST = candidate.DEST
+		AND (LENGTH(candidate.PATH) = best_cost.COST) GROUP BY best_cost.DEST;
+
+// block;
+BLOCK
+
+// best_candidate(Dest, BestPath) if  best_next_hop(Dest, BestNextHop), candidate(Dest, BestNextHop, BestPath);
+best_candidate: SELECT best_next_hop.DEST as DEST, candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM best_next_hop, candidate
+	WHERE best_next_hop.DEST = candidate.DEST AND best_next_hop.NEXTHOP = candidate.NEXTHOP;
+
+// block;
+BLOCK
+
+// advertise(Self, Self)@N if  add_neighbour(N), peers(Self, "Self");
+advertise: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, ${static:self} as SRC_INTERNAL_, peers.NODE as DEST, peers.NODE as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers
+	WHERE peers.RELATIONSHIP = 'Self';
+
+// advertise(Dest, Self + Path)@N if  add_neighbour(N), peers(Self, "Self"), best_candidate(Dest, Path) : LOCATE(N, Path) == 0;
+advertise: SELECT add_neighbour.TO_ADD as DEST_INTERNAL_, ${static:self} as SRC_INTERNAL_, best_candidate.DEST as DEST, peers.NODE || best_candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM add_neighbour, peers, best_candidate
+	WHERE peers.RELATIONSHIP = 'Self'
+		AND (LOCATE(add_neighbour.TO_ADD, best_candidate.PATH) = 0);
+
+// advertise(Dest, Self + Path)@N if  best_candidate(Dest, Path), not prev best_candidate(Dest, Path), peers(Self, "Self"), neighbour(N) : LOCATE(N, Path) == 0;
+advertise: SELECT neighbour1.NEIGHBOUR as DEST_INTERNAL_, ${static:self} as SRC_INTERNAL_, best_candidate.DEST as DEST, peers1.NODE || best_candidate.PATH as PATH, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM best_candidate, peers as peers1, neighbour as neighbour1
+	WHERE peers1.RELATIONSHIP = 'Self'
+		AND (NOT EXISTS (SELECT * FROM best_candidate_PREV_INTERNAL_ as best_candidate_PREV_INTERNAL_1 WHERE best_candidate_PREV_INTERNAL_1.DEST = best_candidate.DEST AND best_candidate_PREV_INTERNAL_1.PATH = best_candidate.PATH))
+		AND (LOCATE(neighbour1.NEIGHBOUR, best_candidate.PATH) = 0);
+
+// withdraw(Dest)@N if  prev best_candidate(Dest, *), not candidate(Dest, *, *), peers(N, "Neighbor");
+withdraw: SELECT peers.NODE as DEST_INTERNAL_, ${static:self} as SRC_INTERNAL_, best_candidate_PREV_INTERNAL_.DEST as DEST, CURRENT_TIMESTAMP as TOC_INTERNAL_ FROM best_candidate_PREV_INTERNAL_, peers
+	WHERE peers.RELATIONSHIP = 'Neighbor'
+		AND (NOT EXISTS (SELECT * FROM candidate WHERE candidate.DEST = best_candidate_PREV_INTERNAL_.DEST));
+
+
+15-Aug-2013 12:47:10 com.ibm.watson.dsm.engine.app.DSMEngine.main(DSMEngine.java:651) 
+FINE: DSMEngine engine starting
+Loading wpml properties from file:/homes/ap3012/individual_project/unzipped20/lib/wpml.properties
+Bad level value for property: sun.os.patch.level
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table best_candidate_PREV_INTERNAL_ using CREATE TABLE best_candidate_PREV_INTERNAL_ (DEST varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table neighbour_PREV_INTERNAL_ using CREATE TABLE neighbour_PREV_INTERNAL_ (NEIGHBOUR varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table route_updated_PREV_INTERNAL_ using CREATE TABLE route_updated_PREV_INTERNAL_ (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table best_next_hop using CREATE TABLE best_next_hop (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table best_next_hop_PREV_INTERNAL_ using CREATE TABLE best_next_hop_PREV_INTERNAL_ (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table candidate_PREV_INTERNAL_ using CREATE TABLE candidate_PREV_INTERNAL_ (DEST varchar(128), NEXTHOP varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table best_candidate using CREATE TABLE best_candidate (DEST varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table candidate using CREATE TABLE candidate (DEST varchar(128), NEXTHOP varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table best_cost using CREATE TABLE best_cost (DEST varchar(128), COST int, TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table best_cost_PREV_INTERNAL_ using CREATE TABLE best_cost_PREV_INTERNAL_ (DEST varchar(128), COST int, TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table neighbour using CREATE TABLE neighbour (NEIGHBOUR varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1458) 
+FINE: Creating table route_updated using CREATE TABLE route_updated (DEST varchar(128), NEXTHOP varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1459) 
+FINE: Creating table add_neighbour using CREATE TABLE add_neighbour (TO_ADD varchar(128))
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1459) 
+FINE: Creating table peers using CREATE TABLE peers (NODE varchar(128), RELATIONSHIP varchar(64))
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1461) 
+FINE: Creating table advertise using CREATE TABLE advertise (DEST_INTERNAL_ varchar(128), SRC_INTERNAL_ varchar(128), DEST varchar(128), PATH varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.createStorage(AbstractRuleEngine.java:1461) 
+FINE: Creating table withdraw using CREATE TABLE withdraw (DEST_INTERNAL_ varchar(128), SRC_INTERNAL_ varchar(128), DEST varchar(128), TOC_INTERNAL_ timestamp)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.start(AbstractRuleEngine.java:1468) 
+FINE: Running initializing 'create' statement: CREATE TABLE DUMMIE_INTERNAL_ (X int)
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.AbstractRuleEngine.start(AbstractRuleEngine.java:1468) 
+FINE: Running initializing 'insert' statement: INSERT INTO DUMMIE_INTERNAL_ VALUES (1)
+Bad level value for property: sun.os.patch.level
+15-Aug-2013 12:47:11 java.lang.Thread.run(Thread.java:679) 
+INFO: Listening for serialized data on network://146.169.53.110:43364
+Bad level value for property: sun.os.patch.level
+15-Aug-2013 12:47:11 com.ibm.watson.dsm.engine.app.DSMEngine.main(DSMEngine.java:651) 
+FINE: DSMEngine engine started
+Engine andrei/n015 started.

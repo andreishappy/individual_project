@@ -1,26 +1,23 @@
 <doc>
   <nodes>
 
-    <node id="n001" />
-    <node id="n002" />
-    <node id="n003" />
-    <node id="n004" />
-    <node id="n005" />
-    <node id="n006" />
-    <node id="n007" />
-    <node id="n008" />
-    <node id="n009" />
-    <node id="n010" />
-    <node id="n011" />
-    <node id="n012" />
-    <node id="n013" />
-    <node id="n014" />
-    <node id="n015" />
-    <node id="n016" />
-    <node id="n017" />
-
-
-
+    <node id="n001" x="10" y="30"/>
+    <node id="n002" x="20" y="30"/>
+    <node id="n003" x="30" y="30"/>
+    <node id="n004" x="40" y="30"/>
+    <node id="n005" x="50" y="30"/>
+    <node id="n006" x="10" y="20"/>
+    <node id="n007" x="20" y="20"/>
+    <node id="n008" x="30" y="20"/>
+    <node id="n009" x="40" y="20"/>
+    <node id="n010" x="50" y="20"/>
+    <node id="n011" x="10" y="10"/>
+    <node id="n012" x="20" y="10"/>
+    <node id="n013" x="30" y="10"/>
+    <node id="n014" x="40" y="10"/>
+    <node id="n015" x="50" y="10"/>
+    <node id="n016" x="10" y="40"/>
+    <node id="n017" x="20" y="40"/>
   </nodes>
 
   <rule filename="/homes/ap3012/individual_project/home/BGP_v2.dsmr" />
@@ -48,7 +45,13 @@
 
   </hosts>
 
-  <pre_inputs />
+  <pre_inputs>
+    <!-- types: csv or normal     -->
+    <input instance="n001" type="normal" table_name="policy"
+	   var_names="path;score" values="n001n002;3" />
+    <input instance="n001" type="csv" table_name="policy" csv_file="csv_attempt"/>
+  </pre_inputs>
+  
   <post_inputs />
 
   <topology>
