@@ -1,8188 +1,1660 @@
-Instance n005 states================================State for n005 | NR. 0:
+Instance n005 states================================State for n005 | NR. ]10:
 Table neighbour
-n010
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n005 ==> n010 AT 1376153718395
-Content: n005;n005
-Received messages=========
-State for n005 | NR. 1:
-Table neighbour
-n004
-n010
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n005 ==> n004 AT 1376153722386
-Content: n005;n005
-Received messages=========
-State for n005 | NR. 2:
-Table neighbour
-n004
-n010
-
-Table route_updated
-n010;n010
-
-Table best_candidate
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n010;n010;n010
-
-Table best_cost
-n010;4
-
-Table best_next_hop
-n010;n010
-
-Sent messages=========
-advertise n005 ==> n004 AT 1376153728828
-Content: n010;n005n010
-Received messages=========
-advertise n010 ==> n005 AT 1376153718217
-Content: n010;n010
-State for n005 | NR. 3:
-Table neighbour
-n004
-n010
 
 Table route_updated
 n004;n004
 
 Table best_candidate
-n004;n004
-n010;n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
 n004;n004;n004
-n010;n010;n010
 
 Table best_cost
-n004;4
-n010;4
+
+Table best_pref
 
 Table best_next_hop
-n004;n004
-n010;n010
 
 Sent messages=========
-advertise n005 ==> n010 AT 1376153734339
-Content: n004;n005n004
 Received messages=========
-advertise n004 ==> n005 AT 1376153718395
+advertise n004 ==> n005 AT 1377019093856 UID:14
 Content: n004;n004
-State for n005 | NR. 4:
+State for n005 | NR. 11:
 Table neighbour
 n004
-n010
 
 Table route_updated
-n003;n004
 
 Table best_candidate
-n003;n004n003
-n004;n004
-n010;n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n003;n004;n004n003
 n004;n004;n004
-n010;n010;n010
 
 Table best_cost
-n003;8
-n004;4
-n010;4
+
+Table best_pref
 
 Table best_next_hop
-n003;n004
-n004;n004
-n010;n010
 
 Sent messages=========
-advertise n005 ==> n010 AT 1376153747239
-Content: n003;n005n004n003
+advertise n005 ==> n004 AT 1377019097868 UID:0
+Content: n005;n005
 Received messages=========
-advertise n004 ==> n005 AT 1376153734442
-Content: n003;n004n003
-State for n005 | NR. 5:
+State for n005 | NR. 12:
 Table neighbour
+n006
 n004
-n010
 
 Table route_updated
-n015;n010
 
 Table best_candidate
-n003;n004n003
-n004;n004
-n010;n010
-n015;n010n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n015;n010;n010n015
-n003;n004;n004n003
 n004;n004;n004
-n010;n010;n010
 
 Table best_cost
-n003;8
-n004;4
-n010;4
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n003;n004
-n004;n004
-n010;n010
-n015;n010
 
 Sent messages=========
-advertise n005 ==> n004 AT 1376153753205
-Content: n015;n005n010n015
+advertise n005 ==> n006 AT 1377019101063 UID:1
+Content: n005;n005
 Received messages=========
-advertise n010 ==> n005 AT 1376153741388
-Content: n015;n010n015
-State for n005 | NR. 6:
+State for n005 | NR. 15:
 Table neighbour
+n006
 n004
-n010
 
 Table route_updated
-n002;n004
+n006;n006
 
 Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n010;n010
-n015;n010n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
+n006;n006;n006
 n004;n004;n004
-n010;n010;n010
 
 Table best_cost
-n002;12
-n003;8
-n004;4
-n010;4
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n010;n010
-n015;n010
 
 Sent messages=========
-advertise n005 ==> n010 AT 1376153759841
-Content: n002;n005n004n003n002
 Received messages=========
-advertise n004 ==> n005 AT 1376153747123
-Content: n002;n004n003n002
-State for n005 | NR. 7:
+advertise n006 ==> n005 AT 1377019104371 UID:9
+Content: n006;n006
+State for n005 | NR. 16:
 Table neighbour
+n006
 n004
-n010
 
 Table route_updated
-n009;n010
+n002;n002
 
 Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n009;n010n009
-n010;n010
-n015;n010n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
+n002;n002;n002
+n006;n006;n006
 n004;n004;n004
-n010;n010;n010
 
 Table best_cost
-n002;12
-n003;8
-n004;4
-n009;8
-n010;4
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n009;n010
-n010;n010
-n015;n010
 
 Sent messages=========
-advertise n005 ==> n004 AT 1376153765560
-Content: n009;n005n010n009
 Received messages=========
-advertise n010 ==> n005 AT 1376153748231
-Content: n009;n010n009
-State for n005 | NR. 8:
-Table neighbour
-n004
-n010
-
-Table route_updated
-n014;n010
-
-Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n009;n010n009
-n010;n010
-n014;n010n009n014
-n015;n010n015
-
-Table add_neighbour
-
-Table candidate
-n014;n010;n010n009n014
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
-n004;n004;n004
-n010;n010;n010
-
-Table best_cost
-n002;12
-n003;8
-n004;4
-n009;8
-n010;4
-n014;12
-n015;8
-
-Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n009;n010
-n010;n010
-n014;n010
-n015;n010
-
-Sent messages=========
-advertise n005 ==> n004 AT 1376153771749
-Content: n014;n005n010n009n014
-Received messages=========
-advertise n010 ==> n005 AT 1376153760349
-Content: n014;n010n009n014
-State for n005 | NR. 9:
-Table neighbour
-n004
-n010
-
-Table route_updated
-n007;n004
-
-Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n007;n004n003n002n007
-n009;n010n009
-n010;n010
-n014;n010n009n014
-n015;n010n015
-
-Table add_neighbour
-
-Table candidate
-n007;n004;n004n003n002n007
-n014;n010;n010n009n014
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
-n004;n004;n004
-n010;n010;n010
-
-Table best_cost
-n002;12
-n003;8
-n004;4
-n007;16
-n009;8
-n010;4
-n014;12
-n015;8
-
-Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n007;n004
-n009;n010
-n010;n010
-n014;n010
-n015;n010
-
-Sent messages=========
-advertise n005 ==> n010 AT 1376153777446
-Content: n007;n005n004n003n002n007
-Received messages=========
-advertise n004 ==> n005 AT 1376153764321
-Content: n007;n004n003n002n007
-State for n005 | NR. 10:
-Table neighbour
-n004
-n010
-
-Table route_updated
-n008;n010
-
-Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n007;n004n003n002n007
-n008;n010n009n008
-n009;n010n009
-n010;n010
-n014;n010n009n014
-n015;n010n015
-
-Table add_neighbour
-
-Table candidate
-n008;n010;n010n009n008
-n007;n004;n004n003n002n007
-n014;n010;n010n009n014
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
-n004;n004;n004
-n010;n010;n010
-
-Table best_cost
-n002;12
-n003;8
-n004;4
-n007;16
-n008;12
-n009;8
-n010;4
-n014;12
-n015;8
-
-Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n007;n004
-n008;n010
-n009;n010
-n010;n010
-n014;n010
-n015;n010
-
-Sent messages=========
-advertise n005 ==> n004 AT 1376153782366
-Content: n008;n005n010n009n008
-Received messages=========
-advertise n010 ==> n005 AT 1376153774420
-Content: n008;n010n009n008
-State for n005 | NR. 13:
-Table neighbour
-n004
-n010
-
-Table route_updated
-n013;n010
-
-Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n007;n004n003n002n007
-n008;n010n009n008
-n009;n010n009
-n010;n010
-n013;n010n009n008n013
-n014;n010n009n014
-n015;n010n015
-
-Table add_neighbour
-
-Table candidate
-n013;n010;n010n009n008n013
-n008;n010;n010n009n008
-n007;n004;n004n003n002n007
-n014;n010;n010n009n014
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
-n004;n004;n004
-n010;n010;n010
-
-Table best_cost
-n002;12
-n003;8
-n004;4
-n007;16
-n008;12
-n009;8
-n010;4
-n013;16
-n014;12
-n015;8
-
-Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n007;n004
-n008;n010
-n009;n010
-n010;n010
-n013;n010
-n014;n010
-n015;n010
-
-Sent messages=========
-advertise n005 ==> n004 AT 1376153789726
-Content: n013;n005n010n009n008n013
-Received messages=========
-advertise n010 ==> n005 AT 1376153787532
-Content: n013;n010n009n008n013
-State for n005 | NR. 14:
-Table neighbour
-n004
-n010
-
-Table route_updated
-n012;n010
-
-Table best_candidate
-n002;n004n003n002
-n003;n004n003
-n004;n004
-n007;n004n003n002n007
-n008;n010n009n008
-n009;n010n009
-n010;n010
-n012;n010n009n008n013n012
-n013;n010n009n008n013
-n014;n010n009n014
-n015;n010n015
-
-Table add_neighbour
-
-Table candidate
-n012;n010;n010n009n008n013n012
-n013;n010;n010n009n008n013
-n008;n010;n010n009n008
-n007;n004;n004n003n002n007
-n014;n010;n010n009n014
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
-n004;n004;n004
-n010;n010;n010
-
-Table best_cost
-n002;12
-n003;8
-n004;4
-n007;16
-n008;12
-n009;8
-n010;4
-n012;20
-n013;16
-n014;12
-n015;8
-
-Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n007;n004
-n008;n010
-n009;n010
-n010;n010
-n012;n010
-n013;n010
-n014;n010
-n015;n010
-
-Sent messages=========
-advertise n005 ==> n004 AT 1376153804743
-Content: n012;n005n010n009n008n013n012
-Received messages=========
-advertise n010 ==> n005 AT 1376153803339
-Content: n012;n010n009n008n013n012
+advertise n002 ==> n005 AT 1377019108725 UID:19
+Content: n002;n002
 State for n005 | NR. 17:
 Table neighbour
+n002
+n006
 n004
-n010
 
 Table route_updated
-n009;n004
 
 Table best_candidate
-n012;n010n009n008n013n012
-n013;n010n009n008n013
-n008;n010n009n008
-n007;n004n003n002n007
-n014;n010n009n014
-n009;n010n009
-n002;n004n003n002
-n015;n010n015
-n003;n004n003
-n004;n004
-n010;n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n009;n004;n004n003n002n007n006n011n012n013n008n009
-n012;n010;n010n009n008n013n012
-n013;n010;n010n009n008n013
-n008;n010;n010n009n008
-n007;n004;n004n003n002n007
-n014;n010;n010n009n014
-n009;n010;n010n009
-n002;n004;n004n003n002
-n015;n010;n010n015
-n003;n004;n004n003
+n002;n002;n002
+n006;n006;n006
 n004;n004;n004
-n010;n010;n010
 
 Table best_cost
-n002;12
-n003;8
-n004;4
-n007;16
-n008;12
-n009;8
-n010;4
-n012;20
-n013;16
-n014;12
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n002;n004
-n003;n004
-n004;n004
-n007;n004
-n008;n010
-n009;n010
-n010;n010
-n012;n010
-n013;n010
-n014;n010
-n015;n010
 
 Sent messages=========
+advertise n005 ==> n002 AT 1377019111803 UID:2
+Content: n005;n005
 Received messages=========
-advertise n004 ==> n005 AT 1376153809214
-Content: n009;n004n003n002n007n006n011n012n013n008n009
-Instance n008 states================================State for n008 | NR. 0:
+Instance n008 states================================State for n008 | NR. 1:
 Table neighbour
-n013
 
 Table route_updated
+n007;n007
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
+n007;n007;n007
 
 Table best_cost
+
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n008 ==> n013 AT 1376153719902
-Content: n008;n008
 Received messages=========
-State for n008 | NR. 1:
-Table neighbour
-n009
-n013
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n008 ==> n009 AT 1376153724309
-Content: n008;n008
-Received messages=========
+advertise n007 ==> n008 AT 1377019123632 UID:11
+Content: n007;n007
 State for n008 | NR. 2:
 Table neighbour
-n009
-n013
+n007
 
 Table route_updated
-n013;n013
 
 Table best_candidate
-n013;n013
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n013;n013;n013
+n007;n007;n007
 
 Table best_cost
-n013;4
+
+Table best_pref
 
 Table best_next_hop
-n013;n013
 
 Sent messages=========
-advertise n008 ==> n009 AT 1376153730250
-Content: n013;n008n013
+advertise n008 ==> n007 AT 1377019126950 UID:3
+Content: n008;n008
 Received messages=========
-advertise n013 ==> n008 AT 1376153718269
-Content: n013;n013
 State for n008 | NR. 3:
 Table neighbour
 n009
-n013
+n007
 
 Table route_updated
-n009;n009
 
 Table best_candidate
-n009;n009
-n013;n013
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n009;n009;n009
-n013;n013;n013
+n007;n007;n007
 
 Table best_cost
-n009;4
-n013;4
+
+Table best_pref
 
 Table best_next_hop
-n009;n009
-n013;n013
 
 Sent messages=========
-advertise n008 ==> n013 AT 1376153736224
-Content: n009;n008n009
+advertise n008 ==> n009 AT 1377019131358 UID:4
+Content: n008;n008
 Received messages=========
-advertise n009 ==> n008 AT 1376153718760
-Content: n009;n009
-State for n008 | NR. 4:
-Table neighbour
-n009
-n013
-
-Table route_updated
-n012;n013
-
-Table best_candidate
-n009;n009
-n012;n013n012
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n012;n013;n013n012
-n009;n009;n009
-n013;n013;n013
-
-Table best_cost
-n009;4
-n012;8
-n013;4
-
-Table best_next_hop
-n009;n009
-n012;n013
-n013;n013
-
-Sent messages=========
-advertise n008 ==> n009 AT 1376153742137
-Content: n012;n008n013n012
-Received messages=========
-advertise n013 ==> n008 AT 1376153728606
-Content: n012;n013n012
-State for n008 | NR. 5:
-Table neighbour
-n009
-n013
-
-Table route_updated
-n014;n009
-
-Table best_candidate
-n009;n009
-n012;n013n012
-n013;n013
-n014;n009n014
-
-Table add_neighbour
-
-Table candidate
-n014;n009;n009n014
-n012;n013;n013n012
-n009;n009;n009
-n013;n013;n013
-
-Table best_cost
-n009;4
-n012;8
-n013;4
-n014;8
-
-Table best_next_hop
-n009;n009
-n012;n013
-n013;n013
-n014;n009
-
-Sent messages=========
-advertise n008 ==> n013 AT 1376153751247
-Content: n014;n008n009n014
-Received messages=========
-advertise n009 ==> n008 AT 1376153734782
-Content: n014;n009n014
 State for n008 | NR. 6:
 Table neighbour
 n009
-n013
+n007
 
 Table route_updated
-n011;n013
+n009;n009
 
 Table best_candidate
-n009;n009
-n011;n013n012n011
-n012;n013n012
-n013;n013
-n014;n009n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n011;n013;n013n012n011
-n014;n009;n009n014
-n012;n013;n013n012
 n009;n009;n009
-n013;n013;n013
+n007;n007;n007
 
 Table best_cost
-n009;4
-n011;12
-n012;8
-n013;4
-n014;8
+
+Table best_pref
 
 Table best_next_hop
-n009;n009
-n011;n013
-n012;n013
-n013;n013
-n014;n009
 
 Sent messages=========
-advertise n008 ==> n009 AT 1376153757961
-Content: n011;n008n013n012n011
 Received messages=========
-advertise n013 ==> n008 AT 1376153745194
-Content: n011;n013n012n011
+advertise n009 ==> n008 AT 1377019134347 UID:6
+Content: n009;n009
 State for n008 | NR. 7:
 Table neighbour
+n014
 n009
-n013
+n007
 
 Table route_updated
-n005;n009
 
 Table best_candidate
-n005;n009n010n005
-n009;n009
-n011;n013n012n011
-n012;n013n012
-n013;n013
-n014;n009n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n005;n009;n009n010n005
-n011;n013;n013n012n011
-n014;n009;n009n014
-n012;n013;n013n012
 n009;n009;n009
-n013;n013;n013
+n007;n007;n007
 
 Table best_cost
-n005;12
-n009;4
-n011;12
-n012;8
-n013;4
-n014;8
 
-Table best_next_hop
-n005;n009
-n009;n009
-n011;n013
-n012;n013
-n013;n013
-n014;n009
-
-Sent messages=========
-advertise n008 ==> n013 AT 1376153768048
-Content: n005;n008n009n010n005
-Received messages=========
-advertise n009 ==> n008 AT 1376153748459
-Content: n005;n009n010n005
-State for n008 | NR. 8:
-Table neighbour
-n009
-n013
-
-Table route_updated
-n006;n013
-
-Table best_candidate
-n005;n009n010n005
-n006;n013n012n011n006
-n009;n009
-n011;n013n012n011
-n012;n013n012
-n013;n013
-n014;n009n014
-
-Table add_neighbour
-
-Table candidate
-n006;n013;n013n012n011n006
-n005;n009;n009n010n005
-n011;n013;n013n012n011
-n014;n009;n009n014
-n012;n013;n013n012
-n009;n009;n009
-n013;n013;n013
-
-Table best_cost
-n005;12
-n006;16
-n009;4
-n011;12
-n012;8
-n013;4
-n014;8
-
-Table best_next_hop
-n005;n009
-n006;n013
-n009;n009
-n011;n013
-n012;n013
-n013;n013
-n014;n009
-
-Sent messages=========
-advertise n008 ==> n009 AT 1376153775172
-Content: n006;n008n013n012n011n006
-Received messages=========
-advertise n013 ==> n008 AT 1376153757605
-Content: n006;n013n012n011n006
-State for n008 | NR. 9:
-Table neighbour
-n009
-n013
-
-Table route_updated
-n015;n009
-
-Table best_candidate
-n005;n009n010n005
-n006;n013n012n011n006
-n009;n009
-n011;n013n012n011
-n012;n013n012
-n013;n013
-n014;n009n014
-n015;n009n010n015
-
-Table add_neighbour
-
-Table candidate
-n015;n009;n009n010n015
-n006;n013;n013n012n011n006
-n005;n009;n009n010n005
-n011;n013;n013n012n011
-n014;n009;n009n014
-n012;n013;n013n012
-n009;n009;n009
-n013;n013;n013
-
-Table best_cost
-n005;12
-n006;16
-n009;4
-n011;12
-n012;8
-n013;4
-n014;8
-n015;12
-
-Table best_next_hop
-n005;n009
-n006;n013
-n009;n009
-n011;n013
-n012;n013
-n013;n013
-n014;n009
-n015;n009
-
-Sent messages=========
-advertise n008 ==> n013 AT 1376153785474
-Content: n015;n008n009n010n015
-Received messages=========
-advertise n009 ==> n008 AT 1376153779175
-Content: n015;n009n010n015
-State for n008 | NR. 12:
-Table neighbour
-n009
-n013
-
-Table route_updated
-n004;n009
-
-Table best_candidate
-n004;n009n010n005n004
-n005;n009n010n005
-n006;n013n012n011n006
-n009;n009
-n011;n013n012n011
-n012;n013n012
-n013;n013
-n014;n009n014
-n015;n009n010n015
-
-Table add_neighbour
-
-Table candidate
-n004;n009;n009n010n005n004
-n015;n009;n009n010n015
-n006;n013;n013n012n011n006
-n005;n009;n009n010n005
-n011;n013;n013n012n011
-n014;n009;n009n014
-n012;n013;n013n012
-n009;n009;n009
-n013;n013;n013
-
-Table best_cost
-n004;16
-n005;12
-n006;16
-n009;4
-n011;12
-n012;8
-n013;4
-n014;8
-n015;12
-
-Table best_next_hop
-n004;n009
-n005;n009
-n006;n013
-n009;n009
-n011;n013
-n012;n013
-n013;n013
-n014;n009
-n015;n009
-
-Sent messages=========
-advertise n008 ==> n013 AT 1376153795402
-Content: n004;n008n009n010n005n004
-Received messages=========
-advertise n009 ==> n008 AT 1376153791383
-Content: n004;n009n010n005n004
-State for n008 | NR. 13:
-Table neighbour
-n009
-n013
-
-Table route_updated
-n003;n009
-
-Table best_candidate
-n003;n009n010n005n004n003
-n004;n009n010n005n004
-n005;n009n010n005
-n006;n013n012n011n006
-n009;n009
-n011;n013n012n011
-n012;n013n012
-n013;n013
-n014;n009n014
-n015;n009n010n015
-
-Table add_neighbour
-
-Table candidate
-n003;n009;n009n010n005n004n003
-n004;n009;n009n010n005n004
-n015;n009;n009n010n015
-n006;n013;n013n012n011n006
-n005;n009;n009n010n005
-n011;n013;n013n012n011
-n014;n009;n009n014
-n012;n013;n013n012
-n009;n009;n009
-n013;n013;n013
-
-Table best_cost
-n003;20
-n004;16
-n005;12
-n006;16
-n009;4
-n011;12
-n012;8
-n013;4
-n014;8
-n015;12
-
-Table best_next_hop
-n003;n009
-n004;n009
-n005;n009
-n006;n013
-n009;n009
-n011;n013
-n012;n013
-n013;n013
-n014;n009
-n015;n009
-
-Sent messages=========
-advertise n008 ==> n013 AT 1376153798741
-Content: n003;n008n009n010n005n004n003
-Received messages=========
-advertise n009 ==> n008 AT 1376153796083
-Content: n003;n009n010n005n004n003
-Instance n009 states================================State for n009 | NR. 0:
-Table neighbour
-n008
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n009 ==> n008 AT 1376153718760
-Content: n009;n009
+advertise n008 ==> n014 AT 1377019168331 UID:5
+Content: n008;n008
 Received messages=========
-State for n009 | NR. 1:
+State for n008 | NR. 10:
 Table neighbour
 n014
-n008
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n009 ==> n014 AT 1376153723168
-Content: n009;n009
-Received messages=========
-State for n009 | NR. 2:
-Table neighbour
-n010
-n014
-n008
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n009 ==> n010 AT 1376153727396
-Content: n009;n009
-Received messages=========
-State for n009 | NR. 3:
-Table neighbour
-n010
-n014
-n008
+n009
+n007
 
 Table route_updated
 n014;n014
 
 Table best_candidate
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
 n014;n014;n014
+n009;n009;n009
+n007;n007;n007
 
 Table best_cost
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n014;n014
 
 Sent messages=========
-advertise n009 ==> n010 AT 1376153734782
-Content: n014;n009n014
-advertise n009 ==> n008 AT 1376153734782
-Content: n014;n009n014
 Received messages=========
-advertise n014 ==> n009 AT 1376153718565
+advertise n014 ==> n008 AT 1377019171726 UID:25
 Content: n014;n014
-State for n009 | NR. 4:
+Instance n009 states================================State for n009 | NR. 4:
 Table neighbour
-n010
-n014
-n008
 
 Table route_updated
 n008;n008
 
 Table best_candidate
-n008;n008
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
 n008;n008;n008
-n014;n014;n014
 
 Table best_cost
-n008;4
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n008;n008
-n014;n014
 
 Sent messages=========
-advertise n009 ==> n010 AT 1376153740171
-Content: n008;n009n008
-advertise n009 ==> n014 AT 1376153740171
-Content: n008;n009n008
 Received messages=========
-advertise n008 ==> n009 AT 1376153724309
+advertise n008 ==> n009 AT 1377019131358 UID:4
 Content: n008;n008
 State for n009 | NR. 5:
 Table neighbour
-n010
-n014
 n008
 
 Table route_updated
-n005;n010
 
 Table best_candidate
-n005;n010n005
-n008;n008
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n005;n010;n010n005
 n008;n008;n008
-n014;n014;n014
 
 Table best_cost
-n005;8
-n008;4
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n005;n010
-n008;n008
-n014;n014
 
 Sent messages=========
-advertise n009 ==> n014 AT 1376153748459
-Content: n005;n009n010n005
-advertise n009 ==> n008 AT 1376153748459
-Content: n005;n009n010n005
+advertise n009 ==> n008 AT 1377019134347 UID:6
+Content: n009;n009
 Received messages=========
-advertise n010 ==> n009 AT 1376153736081
-Content: n005;n010n005
 State for n009 | NR. 6:
 Table neighbour
 n010
-n014
 n008
 
 Table route_updated
-n013;n008
 
 Table best_candidate
-n005;n010n005
-n008;n008
-n013;n008n013
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n013;n008;n008n013
-n005;n010;n010n005
 n008;n008;n008
-n014;n014;n014
 
 Table best_cost
-n005;8
-n008;4
-n013;8
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n005;n010
-n008;n008
-n013;n008
-n014;n014
 
 Sent messages=========
-advertise n009 ==> n010 AT 1376153754448
-Content: n013;n009n008n013
-advertise n009 ==> n014 AT 1376153754448
-Content: n013;n009n008n013
+advertise n009 ==> n010 AT 1377019137854 UID:7
+Content: n009;n009
 Received messages=========
-advertise n008 ==> n009 AT 1376153730250
-Content: n013;n008n013
-State for n009 | NR. 7:
-Table neighbour
-n010
-n014
-n008
-
-Table route_updated
-n010;n014
-
-Table best_candidate
-n005;n010n005
-n008;n008
-n010;n014n015n010
-n013;n008n013
-n014;n014
-
-Table add_neighbour
-
-Table candidate
-n010;n014;n014n015n010
-n013;n008;n008n013
-n005;n010;n010n005
-n008;n008;n008
-n014;n014;n014
-
-Table best_cost
-n005;8
-n008;4
-n010;12
-n013;8
-n014;4
-
-Table best_next_hop
-n005;n010
-n008;n008
-n010;n014
-n013;n008
-n014;n014
-
-Sent messages=========
-advertise n009 ==> n008 AT 1376153772878
-Content: n010;n009n014n015n010
-Received messages=========
-advertise n014 ==> n009 AT 1376153744256
-Content: n010;n014n015n010
-State for n009 | NR. 8:
-Table neighbour
-n010
-n014
-n008
-
-Table route_updated
-n015;n010
-
-Table best_candidate
-n005;n010n005
-n008;n008
-n010;n014n015n010
-n013;n008n013
-n014;n014
-n015;n010n015
-
-Table add_neighbour
-
-Table candidate
-n015;n010;n010n015
-n010;n014;n014n015n010
-n013;n008;n008n013
-n005;n010;n010n005
-n008;n008;n008
-n014;n014;n014
-
-Table best_cost
-n005;8
-n008;4
-n010;12
-n013;8
-n014;4
-n015;8
-
-Table best_next_hop
-n005;n010
-n008;n008
-n010;n014
-n013;n008
-n014;n014
-n015;n010
-
-Sent messages=========
-advertise n009 ==> n014 AT 1376153779175
-Content: n015;n009n010n015
-advertise n009 ==> n008 AT 1376153779175
-Content: n015;n009n010n015
-Received messages=========
-advertise n010 ==> n009 AT 1376153741388
-Content: n015;n010n015
 State for n009 | NR. 9:
 Table neighbour
 n010
-n014
 n008
 
 Table route_updated
-n012;n008
+n010;n010
 
 Table best_candidate
-n005;n010n005
-n008;n008
-n010;n014n015n010
-n012;n008n013n012
-n013;n008n013
-n014;n014
-n015;n010n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n012;n008;n008n013n012
-n015;n010;n010n015
-n010;n014;n014n015n010
-n013;n008;n008n013
-n005;n010;n010n005
+n010;n010;n010
 n008;n008;n008
-n014;n014;n014
 
 Table best_cost
-n005;8
-n008;4
-n010;12
-n012;12
-n013;8
-n014;4
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n005;n010
-n008;n008
-n010;n014
-n012;n008
-n013;n008
-n014;n014
-n015;n010
 
 Sent messages=========
-advertise n009 ==> n010 AT 1376153783911
-Content: n012;n009n008n013n012
-advertise n009 ==> n014 AT 1376153783911
-Content: n012;n009n008n013n012
 Received messages=========
-advertise n008 ==> n009 AT 1376153742137
-Content: n012;n008n013n012
+advertise n010 ==> n009 AT 1377019141172 UID:30
+Content: n010;n010
 State for n009 | NR. 10:
 Table neighbour
+n015
 n010
-n014
 n008
 
 Table route_updated
-n005;n014
 
 Table best_candidate
-n012;n008n013n012
-n015;n010n015
-n010;n014n015n010
-n013;n008n013
-n005;n010n005
-n008;n008
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n005;n014;n014n015n010n005
-n012;n008;n008n013n012
-n015;n010;n010n015
-n010;n014;n014n015n010
-n013;n008;n008n013
-n005;n010;n010n005
+n010;n010;n010
 n008;n008;n008
-n014;n014;n014
 
 Table best_cost
-n005;8
-n008;4
-n010;12
-n012;12
-n013;8
-n014;4
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n005;n010
-n008;n008
-n010;n014
-n012;n008
-n013;n008
-n014;n014
-n015;n010
 
 Sent messages=========
+advertise n009 ==> n015 AT 1377019175049 UID:8
+Content: n009;n009
 Received messages=========
-advertise n014 ==> n009 AT 1376153750498
-Content: n005;n014n015n010n005
-State for n009 | NR. 11:
+State for n009 | NR. 13:
 Table neighbour
+n015
 n010
-n014
 n008
 
 Table route_updated
-n004;n010
+n015;n015
 
 Table best_candidate
-n004;n010n005n004
-n012;n008n013n012
-n015;n010n015
-n010;n014n015n010
-n013;n008n013
-n005;n010n005
-n008;n008
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n004;n010;n010n005n004
-n005;n014;n014n015n010n005
-n012;n008;n008n013n012
-n015;n010;n010n015
-n010;n014;n014n015n010
-n013;n008;n008n013
-n005;n010;n010n005
+n015;n015;n015
+n010;n010;n010
 n008;n008;n008
-n014;n014;n014
 
 Table best_cost
-n004;12
-n005;8
-n008;4
-n010;12
-n012;12
-n013;8
-n014;4
-n015;8
+
+Table best_pref
 
 Table best_next_hop
-n004;n010
-n005;n010
-n008;n008
-n010;n014
-n012;n008
-n013;n008
-n014;n014
-n015;n010
 
 Sent messages=========
-advertise n009 ==> n014 AT 1376153791383
-Content: n004;n009n010n005n004
-advertise n009 ==> n008 AT 1376153791383
-Content: n004;n009n010n005n004
 Received messages=========
-advertise n010 ==> n009 AT 1376153754142
-Content: n004;n010n005n004
-State for n009 | NR. 12:
+advertise n015 ==> n009 AT 1377019178602 UID:28
+Content: n015;n015
+Instance n006 states================================State for n006 | NR. 13:
 Table neighbour
-n010
-n014
-n008
 
 Table route_updated
-n003;n010
-
-Table best_candidate
-n003;n010n005n004n003
-n004;n010n005n004
-n012;n008n013n012
-n015;n010n015
-n010;n014n015n010
-n013;n008n013
-n005;n010n005
-n008;n008
-n014;n014
-
-Table add_neighbour
-
-Table candidate
-n003;n010;n010n005n004n003
-n004;n010;n010n005n004
-n005;n014;n014n015n010n005
-n012;n008;n008n013n012
-n015;n010;n010n015
-n010;n014;n014n015n010
-n013;n008;n008n013
-n005;n010;n010n005
-n008;n008;n008
-n014;n014;n014
-
-Table best_cost
-n003;16
-n004;12
-n005;8
-n008;4
-n010;12
-n012;12
-n013;8
-n014;4
-n015;8
-
-Table best_next_hop
-n003;n010
-n004;n010
-n005;n010
-n008;n008
-n010;n014
-n012;n008
-n013;n008
-n014;n014
-n015;n010
-
-Sent messages=========
-advertise n009 ==> n014 AT 1376153796083
-Content: n003;n009n010n005n004n003
-advertise n009 ==> n008 AT 1376153796083
-Content: n003;n009n010n005n004n003
-Received messages=========
-advertise n010 ==> n009 AT 1376153780361
-Content: n003;n010n005n004n003
-Instance n006 states================================State for n006 | NR. 0:
-Table neighbour
-n011
-
-Table route_updated
+n005;n005
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
+n005;n005;n005
 
 Table best_cost
+
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n006 ==> n011 AT 1376153718379
-Content: n006;n006
 Received messages=========
-State for n006 | NR. 1:
-Table neighbour
-n001
-n011
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n006 ==> n001 AT 1376153722506
-Content: n006;n006
-Received messages=========
-State for n006 | NR. 2:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153727009
-Content: n006;n006
-Received messages=========
-State for n006 | NR. 3:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n001;n001
-
-Table best_candidate
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n001;n001;n001
-
-Table best_cost
-n001;4
-
-Table best_next_hop
-n001;n001
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153731986
-Content: n001;n006n001
-advertise n006 ==> n011 AT 1376153731986
-Content: n001;n006n001
-Received messages=========
-advertise n001 ==> n006 AT 1376153718133
-Content: n001;n001
-State for n006 | NR. 4:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n007;n007
-
-Table best_candidate
-n001;n001
-n007;n007
-
-Table add_neighbour
-
-Table candidate
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n007;4
-
-Table best_next_hop
-n001;n001
-n007;n007
-
-Sent messages=========
-advertise n006 ==> n001 AT 1376153738562
-Content: n007;n006n007
-advertise n006 ==> n011 AT 1376153738562
-Content: n007;n006n007
-Received messages=========
-advertise n007 ==> n006 AT 1376153718622
-Content: n007;n007
-State for n006 | NR. 5:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n011;n011
-
-Table best_candidate
-n001;n001
-n007;n007
-n011;n011
-
-Table add_neighbour
-
-Table candidate
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n007;4
-n011;4
-
-Table best_next_hop
-n001;n001
-n007;n007
-n011;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153745086
-Content: n011;n006n011
-advertise n006 ==> n001 AT 1376153745086
-Content: n011;n006n011
-Received messages=========
-advertise n011 ==> n006 AT 1376153719072
-Content: n011;n011
-State for n006 | NR. 6:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n002;n007
-
-Table best_candidate
-n001;n001
-n002;n007n002
-n007;n007
-n011;n011
-
-Table add_neighbour
-
-Table candidate
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n007;4
-n011;4
-
-Table best_next_hop
-n001;n001
-n002;n007
-n007;n007
-n011;n011
-
-Sent messages=========
-advertise n006 ==> n001 AT 1376153751269
-Content: n002;n006n007n002
-advertise n006 ==> n011 AT 1376153751269
-Content: n002;n006n007n002
-Received messages=========
-advertise n007 ==> n006 AT 1376153728988
-Content: n002;n007n002
-State for n006 | NR. 7:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n002;n001
-
-Table best_candidate
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n007;4
-n011;4
-
-Table best_next_hop
-n001;n001
-n002;n001
-n007;n007
-n011;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153758202
-Content: n002;n006n001n002
-advertise n006 ==> n011 AT 1376153758202
-Content: n002;n006n001n002
-Received messages=========
-advertise n001 ==> n006 AT 1376153740313
-Content: n002;n001n002
-State for n006 | NR. 8:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n012;n011
-
-Table best_candidate
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n007;4
-n011;4
-n012;8
-
-Table best_next_hop
-n001;n001
-n002;n001
-n007;n007
-n011;n011
-n012;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153766271
-Content: n012;n006n011n012
-advertise n006 ==> n001 AT 1376153766271
-Content: n012;n006n011n012
-Received messages=========
-advertise n011 ==> n006 AT 1376153735043
-Content: n012;n011n012
-State for n006 | NR. 9:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n013;n011
-
-Table best_candidate
-n013;n011n012n013
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n013;n011;n011n012n013
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n007;4
-n011;4
-n012;8
-n013;12
-
-Table best_next_hop
-n001;n001
-n002;n001
-n007;n007
-n011;n011
-n012;n011
-n013;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153777072
-Content: n013;n006n011n012n013
-advertise n006 ==> n001 AT 1376153777072
-Content: n013;n006n011n012n013
-Received messages=========
-advertise n011 ==> n006 AT 1376153740922
-Content: n013;n011n012n013
-State for n006 | NR. 10:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n003;n001
-
-Table best_candidate
-n003;n001n002n003
-n013;n011n012n013
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n003;n001;n001n002n003
-n013;n011;n011n012n013
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n003;12
-n007;4
-n011;4
-n012;8
-n013;12
-
-Table best_next_hop
-n001;n001
-n002;n001
-n003;n001
-n007;n007
-n011;n011
-n012;n011
-n013;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153782590
-Content: n003;n006n001n002n003
-advertise n006 ==> n011 AT 1376153782590
-Content: n003;n006n001n002n003
-Received messages=========
-advertise n001 ==> n006 AT 1376153748724
-Content: n003;n001n002n003
-State for n006 | NR. 11:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n003;n007
-
-Table best_candidate
-n003;n001n002n003
-n013;n011n012n013
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n003;n007;n007n002n003
-n003;n001;n001n002n003
-n013;n011;n011n012n013
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n003;12
-n007;4
-n011;4
-n012;8
-n013;12
-
-Table best_next_hop
-n001;n001
-n002;n001
-n003;n001
-n007;n007
-n011;n011
-n012;n011
-n013;n011
-
-Sent messages=========
-Received messages=========
-advertise n007 ==> n006 AT 1376153757135
-Content: n003;n007n002n003
-State for n006 | NR. 12:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n009;n011
-
-Table best_candidate
-n009;n011n012n013n008n009
-n003;n001n002n003
-n013;n011n012n013
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n009;n011;n011n012n013n008n009
-n003;n007;n007n002n003
-n003;n001;n001n002n003
-n013;n011;n011n012n013
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n003;12
-n007;4
-n009;20
-n011;4
-n012;8
-n013;12
-
-Table best_next_hop
-n001;n001
-n002;n001
-n003;n001
-n007;n007
-n009;n011
-n011;n011
-n012;n011
-n013;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153793457
-Content: n009;n006n011n012n013n008n009
-advertise n006 ==> n001 AT 1376153793457
-Content: n009;n006n011n012n013n008n009
-Received messages=========
-advertise n011 ==> n006 AT 1376153773505
-Content: n009;n011n012n013n008n009
-State for n006 | NR. 13:
-Table neighbour
-n007
-n001
-n011
-
-Table route_updated
-n007;n001
-
-Table best_candidate
-n009;n011n012n013n008n009
-n003;n001n002n003
-n013;n011n012n013
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
-
-Table add_neighbour
-
-Table candidate
-n007;n001;n001n002n007
-n009;n011;n011n012n013n008n009
-n003;n007;n007n002n003
-n003;n001;n001n002n003
-n013;n011;n011n012n013
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
-n011;n011;n011
-n007;n007;n007
-n001;n001;n001
-
-Table best_cost
-n001;4
-n002;8
-n003;12
-n007;4
-n009;20
-n011;4
-n012;8
-n013;12
-
-Table best_next_hop
-n001;n001
-n002;n001
-n003;n001
-n007;n007
-n009;n011
-n011;n011
-n012;n011
-n013;n011
-
-Sent messages=========
-Received messages=========
-advertise n001 ==> n006 AT 1376153756437
-Content: n007;n001n002n007
+advertise n005 ==> n006 AT 1377019101063 UID:1
+Content: n005;n005
 State for n006 | NR. 14:
 Table neighbour
-n007
-n001
-n011
+n005
 
 Table route_updated
-n008;n011
 
 Table best_candidate
-n008;n011n012n013n008
-n009;n011n012n013n008n009
-n003;n001n002n003
-n013;n011n012n013
-n012;n011n012
-n002;n001n002
-n011;n011
-n007;n007
-n001;n001
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n008;n011;n011n012n013n008
-n007;n001;n001n002n007
-n009;n011;n011n012n013n008n009
-n003;n007;n007n002n003
-n003;n001;n001n002n003
-n013;n011;n011n012n013
-n012;n011;n011n012
-n002;n001;n001n002
-n002;n007;n007n002
+n005;n005;n005
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n006 ==> n005 AT 1377019104371 UID:9
+Content: n006;n006
+Received messages=========
+State for n006 | NR. 15:
+Table neighbour
+n012
+n005
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n005;n005;n005
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n006 ==> n012 AT 1377019115307 UID:10
+Content: n006;n006
+Received messages=========
+State for n006 | NR. 18:
+Table neighbour
+n012
+n005
+
+Table route_updated
+n012;n012
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n012;n012;n012
+n005;n005;n005
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n012 ==> n006 AT 1377019120055 UID:15
+Content: n012;n012
+Instance n007 states================================State for n007 | NR. 0:
+Table neighbour
+n008
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n007 ==> n008 AT 1377019123632 UID:11
+Content: n007;n007
+Received messages=========
+State for n007 | NR. 3:
+Table neighbour
+n008
+
+Table route_updated
+n008;n008
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n008;n008;n008
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n008 ==> n007 AT 1377019126950 UID:3
+Content: n008;n008
+State for n007 | NR. 4:
+Table neighbour
+n013
+n008
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n008;n008;n008
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n007 ==> n013 AT 1377019160983 UID:12
+Content: n007;n007
+Received messages=========
+State for n007 | NR. 7:
+Table neighbour
+n013
+n008
+
+Table route_updated
+n013;n013
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n013;n013;n013
+n008;n008;n008
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n013 ==> n007 AT 1377019165128 UID:32
+Content: n013;n013
+Instance n004 states================================State for n004 | NR. 7:
+Table neighbour
+
+Table route_updated
+n003;n003
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n003;n003;n003
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n003 ==> n004 AT 1377019067871 UID:21
+Content: n003;n003
+State for n004 | NR. 8:
+Table neighbour
+n003
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n003;n003;n003
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n004 ==> n003 AT 1377019072027 UID:13
+Content: n004;n004
+Received messages=========
+State for n004 | NR. 9:
+Table neighbour
+n005
+n003
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n003;n003;n003
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n004 ==> n005 AT 1377019093856 UID:14
+Content: n004;n004
+Received messages=========
+State for n004 | NR. 12:
+Table neighbour
+n005
+n003
+
+Table route_updated
+n005;n005
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n005;n005;n005
+n003;n003;n003
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n005 ==> n004 AT 1377019097868 UID:0
+Content: n005;n005
+Instance n012 states================================State for n012 | NR. 16:
+Table neighbour
+
+Table route_updated
+n006;n006
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n006;n006;n006
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n006 ==> n012 AT 1377019115307 UID:10
+Content: n006;n006
+State for n012 | NR. 17:
+Table neighbour
+n006
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n006;n006;n006
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n012 ==> n006 AT 1377019120055 UID:15
+Content: n012;n012
+Received messages=========
+State for n012 | NR. 18:
+Table neighbour
+n006
+
+Table route_updated
+n011;n011
+
+Table best_candidate
+
+Table policy
+
+Table candidate
 n011;n011;n011
-n007;n007;n007
+n006;n006;n006
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n011 ==> n012 AT 1377019152570 UID:24
+Content: n011;n011
+State for n012 | NR. 19:
+Table neighbour
+n011
+n006
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n011;n011;n011
+n006;n006;n006
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n012 ==> n011 AT 1377019157066 UID:16
+Content: n012;n012
+Received messages=========
+Instance n002 states================================State for n002 | NR. 1:
+Table neighbour
+
+Table route_updated
+n001;n001
+
+Table best_candidate
+
+Table policy
+
+Table candidate
 n001;n001;n001
 
 Table best_cost
-n001;4
-n002;8
-n003;12
-n007;4
-n008;16
-n009;20
-n011;4
-n012;8
-n013;12
 
-Table best_next_hop
-n001;n001
-n002;n001
-n003;n001
-n007;n007
-n008;n011
-n009;n011
-n011;n011
-n012;n011
-n013;n011
-
-Sent messages=========
-advertise n006 ==> n007 AT 1376153802287
-Content: n008;n006n011n012n013n008
-advertise n006 ==> n001 AT 1376153802287
-Content: n008;n006n011n012n013n008
-Received messages=========
-advertise n011 ==> n006 AT 1376153759744
-Content: n008;n011n012n013n008
-Instance n007 states================================State for n007 | NR. 0:
-Table neighbour
-n006
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n007 ==> n006 AT 1376153718622
-Content: n007;n007
 Received messages=========
-State for n007 | NR. 1:
-Table neighbour
-n002
-n006
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153722700
-Content: n007;n007
-Received messages=========
-State for n007 | NR. 2:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n002;n002
-
-Table best_candidate
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n002;n002;n002
-
-Table best_cost
-n002;4
-
-Table best_next_hop
-n002;n002
-
-Sent messages=========
-advertise n007 ==> n006 AT 1376153728988
-Content: n002;n007n002
-Received messages=========
-advertise n002 ==> n007 AT 1376153718655
-Content: n002;n002
-State for n007 | NR. 3:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n006;n006
-
-Table best_candidate
-n002;n002
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n002;4
-n006;4
-
-Table best_next_hop
-n002;n002
-n006;n006
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153742657
-Content: n006;n007n006
-Received messages=========
-advertise n006 ==> n007 AT 1376153727009
-Content: n006;n006
-State for n007 | NR. 4:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n001;n006
-
-Table best_candidate
-n001;n006n001
-n002;n002
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n006;4
-
-Table best_next_hop
-n001;n006
-n002;n002
-n006;n006
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153748652
-Content: n001;n007n006n001
-Received messages=========
-advertise n006 ==> n007 AT 1376153731986
-Content: n001;n006n001
-State for n007 | NR. 5:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n003;n002
-
-Table best_candidate
-n001;n006n001
-n002;n002
-n003;n002n003
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n006;4
-
-Table best_next_hop
-n001;n006
-n002;n002
-n003;n002
-n006;n006
-
-Sent messages=========
-advertise n007 ==> n006 AT 1376153757135
-Content: n003;n007n002n003
-Received messages=========
-advertise n002 ==> n007 AT 1376153734310
-Content: n003;n002n003
-State for n007 | NR. 6:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n011;n006
-
-Table best_candidate
-n001;n006n001
-n002;n002
-n003;n002n003
-n006;n006
-n011;n006n011
-
-Table add_neighbour
-
-Table candidate
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n006;4
-n011;8
-
-Table best_next_hop
-n001;n006
-n002;n002
-n003;n002
-n006;n006
-n011;n006
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153762806
-Content: n011;n007n006n011
-Received messages=========
-advertise n006 ==> n007 AT 1376153745086
-Content: n011;n006n011
-State for n007 | NR. 7:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n001;n002
-
-Table best_candidate
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n006;4
-n011;8
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n006;n006
-n011;n006
-
-Sent messages=========
-advertise n007 ==> n006 AT 1376153769053
-Content: n001;n007n002n001
-Received messages=========
-advertise n002 ==> n007 AT 1376153747461
-Content: n001;n002n001
-State for n007 | NR. 8:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n004;n002
-
-Table best_candidate
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n006;4
-n011;8
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n006;n006
-n011;n006
-
-Sent messages=========
-advertise n007 ==> n006 AT 1376153775133
-Content: n004;n007n002n003n004
-Received messages=========
-advertise n002 ==> n007 AT 1376153753252
-Content: n004;n002n003n004
-State for n007 | NR. 9:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n002;n006
-
-Table best_candidate
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n002;n006;n006n001n002
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n006;4
-n011;8
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n006;n006
-n011;n006
-
-Sent messages=========
-Received messages=========
-advertise n006 ==> n007 AT 1376153758202
-Content: n002;n006n001n002
-State for n007 | NR. 10:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n006;n002
-
-Table best_candidate
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n006;n002;n002n001n006
-n002;n006;n006n001n002
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n006;4
-n011;8
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n006;n006
-n011;n006
-
-Sent messages=========
-Received messages=========
-advertise n002 ==> n007 AT 1376153760169
-Content: n006;n002n001n006
-State for n007 | NR. 11:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n005;n002
-
-Table best_candidate
-n005;n002n003n004n005
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n005;n002;n002n003n004n005
-n006;n002;n002n001n006
-n002;n006;n006n001n002
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n005;16
-n006;4
-n011;8
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n005;n002
-n006;n006
-n011;n006
-
-Sent messages=========
-advertise n007 ==> n006 AT 1376153786627
-Content: n005;n007n002n003n004n005
-Received messages=========
-advertise n002 ==> n007 AT 1376153771722
-Content: n005;n002n003n004n005
-State for n007 | NR. 12:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n013;n006
-
-Table best_candidate
-n013;n006n011n012n013
-n005;n002n003n004n005
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n013;n006;n006n011n012n013
-n005;n002;n002n003n004n005
-n006;n002;n002n001n006
-n002;n006;n006n001n002
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n005;16
-n006;4
-n011;8
-n013;16
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n005;n002
-n006;n006
-n011;n006
-n013;n006
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153793444
-Content: n013;n007n006n011n012n013
-Received messages=========
-advertise n006 ==> n007 AT 1376153777072
-Content: n013;n006n011n012n013
-State for n007 | NR. 13:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n009;n006
-
-Table best_candidate
-n009;n006n011n012n013n008n009
-n013;n006n011n012n013
-n005;n002n003n004n005
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n009;n006;n006n011n012n013n008n009
-n013;n006;n006n011n012n013
-n005;n002;n002n003n004n005
-n006;n002;n002n001n006
-n002;n006;n006n001n002
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n005;16
-n006;4
-n009;24
-n011;8
-n013;16
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n005;n002
-n006;n006
-n009;n006
-n011;n006
-n013;n006
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153801605
-Content: n009;n007n006n011n012n013n008n009
-Received messages=========
-advertise n006 ==> n007 AT 1376153793457
-Content: n009;n006n011n012n013n008n009
-State for n007 | NR. 15:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n008;n006
-
-Table best_candidate
-n008;n006n011n012n013n008
-n009;n006n011n012n013n008n009
-n013;n006n011n012n013
-n005;n002n003n004n005
-n004;n002n003n004
-n001;n002n001
-n011;n006n011
-n003;n002n003
-n006;n006
-n002;n002
-
-Table add_neighbour
-
-Table candidate
-n008;n006;n006n011n012n013n008
-n009;n006;n006n011n012n013n008n009
-n013;n006;n006n011n012n013
-n005;n002;n002n003n004n005
-n006;n002;n002n001n006
-n002;n006;n006n001n002
-n004;n002;n002n003n004
-n001;n002;n002n001
-n011;n006;n006n011
-n003;n002;n002n003
-n001;n006;n006n001
-n006;n006;n006
-n002;n002;n002
-
-Table best_cost
-n001;8
-n002;4
-n003;8
-n004;12
-n005;16
-n006;4
-n008;20
-n009;24
-n011;8
-n013;16
-
-Table best_next_hop
-n001;n002
-n002;n002
-n003;n002
-n004;n002
-n005;n002
-n006;n006
-n008;n006
-n009;n006
-n011;n006
-n013;n006
-
-Sent messages=========
-advertise n007 ==> n002 AT 1376153807443
-Content: n008;n007n006n011n012n013n008
-Received messages=========
-advertise n006 ==> n007 AT 1376153802287
-Content: n008;n006n011n012n013n008
-Instance n004 states================================State for n004 | NR. 0:
-Table neighbour
-n005
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n004 ==> n005 AT 1376153718395
-Content: n004;n004
-Received messages=========
-State for n004 | NR. 1:
-Table neighbour
-n003
-n005
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n004 ==> n003 AT 1376153722379
-Content: n004;n004
-Received messages=========
-State for n004 | NR. 2:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n005;n005
-
-Table best_candidate
-n005;n005
-
-Table add_neighbour
-
-Table candidate
-n005;n005;n005
-
-Table best_cost
-n005;4
-
-Table best_next_hop
-n005;n005
-
-Sent messages=========
-advertise n004 ==> n003 AT 1376153728889
-Content: n005;n004n005
-Received messages=========
-advertise n005 ==> n004 AT 1376153722386
-Content: n005;n005
-State for n004 | NR. 3:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n003;n003
-
-Table best_candidate
-n003;n003
-n005;n005
-
-Table add_neighbour
-
-Table candidate
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n003;4
-n005;4
-
-Table best_next_hop
-n003;n003
-n005;n005
-
-Sent messages=========
-advertise n004 ==> n005 AT 1376153734442
-Content: n003;n004n003
-Received messages=========
-advertise n003 ==> n004 AT 1376153722938
-Content: n003;n003
-State for n004 | NR. 4:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n010;n005
-
-Table best_candidate
-n003;n003
-n005;n005
-n010;n005n010
-
-Table add_neighbour
-
-Table candidate
-n010;n005;n005n010
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n003;4
-n005;4
-n010;8
-
-Table best_next_hop
-n003;n003
-n005;n005
-n010;n005
-
-Sent messages=========
-advertise n004 ==> n003 AT 1376153740548
-Content: n010;n004n005n010
-Received messages=========
-advertise n005 ==> n004 AT 1376153728828
-Content: n010;n005n010
-State for n004 | NR. 5:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n002;n003
-
-Table best_candidate
-n002;n003n002
-n003;n003
-n005;n005
-n010;n005n010
-
-Table add_neighbour
-
-Table candidate
-n002;n003;n003n002
-n010;n005;n005n010
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n002;8
-n003;4
-n005;4
-n010;8
-
-Table best_next_hop
-n002;n003
-n003;n003
-n005;n005
-n010;n005
-
-Sent messages=========
-advertise n004 ==> n005 AT 1376153747123
-Content: n002;n004n003n002
-Received messages=========
-advertise n003 ==> n004 AT 1376153734609
-Content: n002;n003n002
-State for n004 | NR. 6:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n015;n005
-
-Table best_candidate
-n002;n003n002
-n003;n003
-n005;n005
-n010;n005n010
-n015;n005n010n015
-
-Table add_neighbour
-
-Table candidate
-n015;n005;n005n010n015
-n002;n003;n003n002
-n010;n005;n005n010
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n002;8
-n003;4
-n005;4
-n010;8
-n015;12
-
-Table best_next_hop
-n002;n003
-n003;n003
-n005;n005
-n010;n005
-n015;n005
-
-Sent messages=========
-advertise n004 ==> n003 AT 1376153758292
-Content: n015;n004n005n010n015
-Received messages=========
-advertise n005 ==> n004 AT 1376153753205
-Content: n015;n005n010n015
-State for n004 | NR. 7:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n007;n003
-
-Table best_candidate
-n002;n003n002
-n003;n003
-n005;n005
-n007;n003n002n007
-n010;n005n010
-n015;n005n010n015
-
-Table add_neighbour
-
-Table candidate
-n007;n003;n003n002n007
-n015;n005;n005n010n015
-n002;n003;n003n002
-n010;n005;n005n010
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n002;8
-n003;4
-n005;4
-n007;12
-n010;8
-n015;12
-
-Table best_next_hop
-n002;n003
-n003;n003
-n005;n005
-n007;n003
-n010;n005
-n015;n005
-
-Sent messages=========
-advertise n004 ==> n005 AT 1376153764321
-Content: n007;n004n003n002n007
-Received messages=========
-advertise n003 ==> n004 AT 1376153757087
-Content: n007;n003n002n007
-State for n004 | NR. 15:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n012;n005
-
-Table best_candidate
-n002;n003n002
-n003;n003
-n005;n005
-n007;n003n002n007
-n010;n005n010
-n012;n005n010n009n008n013n012
-n015;n005n010n015
-
-Table add_neighbour
-
-Table candidate
-n012;n005;n005n010n009n008n013n012
-n007;n003;n003n002n007
-n015;n005;n005n010n015
-n002;n003;n003n002
-n010;n005;n005n010
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n002;8
-n003;4
-n005;4
-n007;12
-n010;8
-n012;24
-n015;12
-
-Table best_next_hop
-n002;n003
-n003;n003
-n005;n005
-n007;n003
-n010;n005
-n012;n005
-n015;n005
-
-Sent messages=========
-advertise n004 ==> n003 AT 1376153807263
-Content: n012;n004n005n010n009n008n013n012
-Received messages=========
-advertise n005 ==> n004 AT 1376153804743
-Content: n012;n005n010n009n008n013n012
-State for n004 | NR. 16:
-Table neighbour
-n003
-n005
-
-Table route_updated
-n009;n003
-
-Table best_candidate
-n002;n003n002
-n003;n003
-n005;n005
-n007;n003n002n007
-n009;n003n002n007n006n011n012n013n008n009
-n010;n005n010
-n012;n005n010n009n008n013n012
-n015;n005n010n015
-
-Table add_neighbour
-
-Table candidate
-n009;n003;n003n002n007n006n011n012n013n008n009
-n012;n005;n005n010n009n008n013n012
-n007;n003;n003n002n007
-n015;n005;n005n010n015
-n002;n003;n003n002
-n010;n005;n005n010
-n003;n003;n003
-n005;n005;n005
-
-Table best_cost
-n002;8
-n003;4
-n005;4
-n007;12
-n009;36
-n010;8
-n012;24
-n015;12
-
-Table best_next_hop
-n002;n003
-n003;n003
-n005;n005
-n007;n003
-n009;n003
-n010;n005
-n012;n005
-n015;n005
-
-Sent messages=========
-advertise n004 ==> n005 AT 1376153809214
-Content: n009;n004n003n002n007n006n011n012n013n008n009
-Received messages=========
-advertise n003 ==> n004 AT 1376153806574
-Content: n009;n003n002n007n006n011n012n013n008n009
-Instance n012 states================================State for n012 | NR. 0:
-Table neighbour
-n013
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n012 ==> n013 AT 1376153717769
-Content: n012;n012
-Received messages=========
-State for n012 | NR. 1:
-Table neighbour
-n011
-n013
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n012 ==> n011 AT 1376153721256
-Content: n012;n012
-Received messages=========
-State for n012 | NR. 2:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n013;n013
-
-Table best_candidate
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n013;n013;n013
-
-Table best_cost
-n013;4
-
-Table best_next_hop
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n011 AT 1376153727840
-Content: n013;n012n013
-Received messages=========
-advertise n013 ==> n012 AT 1376153722072
-Content: n013;n013
-State for n012 | NR. 3:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n011;n011
-
-Table best_candidate
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n011;4
-n013;4
-
-Table best_next_hop
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n013 AT 1376153732954
-Content: n011;n012n011
-Received messages=========
-advertise n011 ==> n012 AT 1376153723662
-Content: n011;n011
-State for n012 | NR. 4:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n006;n011
-
-Table best_candidate
-n006;n011n006
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n006;n011;n011n006
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n006;8
-n011;4
-n013;4
-
-Table best_next_hop
-n006;n011
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n013 AT 1376153739669
-Content: n006;n012n011n006
-Received messages=========
-advertise n011 ==> n012 AT 1376153729771
-Content: n006;n011n006
-State for n012 | NR. 5:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n008;n013
-
-Table best_candidate
-n006;n011n006
-n008;n013n008
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n008;n013;n013n008
-n006;n011;n011n006
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n006;8
-n008;8
-n011;4
-n013;4
-
-Table best_next_hop
-n006;n011
-n008;n013
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n011 AT 1376153746103
-Content: n008;n012n013n008
-Received messages=========
-advertise n013 ==> n012 AT 1376153733957
-Content: n008;n013n008
-State for n012 | NR. 6:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n001;n011
-
-Table best_candidate
-n001;n011n006n001
-n006;n011n006
-n008;n013n008
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n001;n011;n011n006n001
-n008;n013;n013n008
-n006;n011;n011n006
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n001;12
-n006;8
-n008;8
-n011;4
-n013;4
-
-Table best_next_hop
-n001;n011
-n006;n011
-n008;n013
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n013 AT 1376153752159
-Content: n001;n012n011n006n001
-Received messages=========
-advertise n011 ==> n012 AT 1376153747140
-Content: n001;n011n006n001
-State for n012 | NR. 7:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n009;n013
-
-Table best_candidate
-n001;n011n006n001
-n006;n011n006
-n008;n013n008
-n009;n013n008n009
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n009;n013;n013n008n009
-n001;n011;n011n006n001
-n008;n013;n013n008
-n006;n011;n011n006
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n001;12
-n006;8
-n008;8
-n009;12
-n011;4
-n013;4
-
-Table best_next_hop
-n001;n011
-n006;n011
-n008;n013
-n009;n013
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n011 AT 1376153759271
-Content: n009;n012n013n008n009
-Received messages=========
-advertise n013 ==> n012 AT 1376153751086
-Content: n009;n013n008n009
-State for n012 | NR. 8:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n007;n011
-
-Table best_candidate
-n001;n011n006n001
-n006;n011n006
-n007;n011n006n007
-n008;n013n008
-n009;n013n008n009
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n007;n011;n011n006n007
-n009;n013;n013n008n009
-n001;n011;n011n006n001
-n008;n013;n013n008
-n006;n011;n011n006
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n001;12
-n006;8
-n007;12
-n008;8
-n009;12
-n011;4
-n013;4
-
-Table best_next_hop
-n001;n011
-n006;n011
-n007;n011
-n008;n013
-n009;n013
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n013 AT 1376153765640
-Content: n007;n012n011n006n007
-Received messages=========
-advertise n011 ==> n012 AT 1376153752952
-Content: n007;n011n006n007
-State for n012 | NR. 9:
-Table neighbour
-n011
-n013
-
-Table route_updated
-n002;n011
-
-Table best_candidate
-n001;n011n006n001
-n002;n011n006n007n002
-n006;n011n006
-n007;n011n006n007
-n008;n013n008
-n009;n013n008n009
-n011;n011
-n013;n013
-
-Table add_neighbour
-
-Table candidate
-n002;n011;n011n006n007n002
-n007;n011;n011n006n007
-n009;n013;n013n008n009
-n001;n011;n011n006n001
-n008;n013;n013n008
-n006;n011;n011n006
-n011;n011;n011
-n013;n013;n013
-
-Table best_cost
-n001;12
-n002;16
-n006;8
-n007;12
-n008;8
-n009;12
-n011;4
-n013;4
-
-Table best_next_hop
-n001;n011
-n002;n011
-n006;n011
-n007;n011
-n008;n013
-n009;n013
-n011;n011
-n013;n013
-
-Sent messages=========
-advertise n012 ==> n013 AT 1376153772535
-Content: n002;n012n011n006n007n002
-Received messages=========
-advertise n011 ==> n012 AT 1376153765680
-Content: n002;n011n006n007n002
-Instance n002 states================================State for n002 | NR. 0:
-Table neighbour
-n007
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n002 ==> n007 AT 1376153718655
-Content: n002;n002
-Received messages=========
-State for n002 | NR. 1:
-Table neighbour
-n001
-n007
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n002 ==> n001 AT 1376153723898
-Content: n002;n002
-Received messages=========
+advertise n001 ==> n002 AT 1377019053556 UID:22
+Content: n001;n001
 State for n002 | NR. 2:
 Table neighbour
-n003
 n001
-n007
 
 Table route_updated
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
+n001;n001;n001
 
 Table best_cost
+
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n002 ==> n003 AT 1376153728129
+advertise n002 ==> n001 AT 1377019056678 UID:17
 Content: n002;n002
 Received messages=========
 State for n002 | NR. 3:
 Table neighbour
 n003
 n001
-n007
 
 Table route_updated
-n003;n003
 
 Table best_candidate
-n003;n003
 
-Table add_neighbour
-
-Table candidate
-n003;n003;n003
-
-Table best_cost
-n003;4
-
-Table best_next_hop
-n003;n003
-
-Sent messages=========
-advertise n002 ==> n001 AT 1376153734310
-Content: n003;n002n003
-advertise n002 ==> n007 AT 1376153734310
-Content: n003;n002n003
-Received messages=========
-advertise n003 ==> n002 AT 1376153718639
-Content: n003;n003
-State for n002 | NR. 4:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n007;n007
-
-Table best_candidate
-n003;n003
-n007;n007
-
-Table add_neighbour
-
-Table candidate
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n003;4
-n007;4
-
-Table best_next_hop
-n003;n003
-n007;n007
-
-Sent messages=========
-advertise n002 ==> n003 AT 1376153740765
-Content: n007;n002n007
-advertise n002 ==> n001 AT 1376153740765
-Content: n007;n002n007
-Received messages=========
-advertise n007 ==> n002 AT 1376153722700
-Content: n007;n007
-State for n002 | NR. 5:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n001;n001
-
-Table best_candidate
-n001;n001
-n003;n003
-n007;n007
-
-Table add_neighbour
+Table policy
 
 Table candidate
 n001;n001;n001
-n007;n007;n007
-n003;n003;n003
 
 Table best_cost
-n001;4
-n003;4
-n007;4
+
+Table best_pref
 
 Table best_next_hop
-n001;n001
-n003;n003
-n007;n007
 
 Sent messages=========
-advertise n002 ==> n003 AT 1376153747461
-Content: n001;n002n001
-advertise n002 ==> n007 AT 1376153747461
-Content: n001;n002n001
+advertise n002 ==> n003 AT 1377019060366 UID:18
+Content: n002;n002
 Received messages=========
-advertise n001 ==> n002 AT 1376153724833
-Content: n001;n001
 State for n002 | NR. 6:
 Table neighbour
 n003
 n001
-n007
 
 Table route_updated
-n004;n003
+n003;n003
 
 Table best_candidate
-n001;n001
-n003;n003
-n004;n003n004
-n007;n007
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
 n003;n003;n003
+n001;n001;n001
 
 Table best_cost
-n001;4
-n003;4
-n004;8
-n007;4
+
+Table best_pref
 
 Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n007;n007
 
 Sent messages=========
-advertise n002 ==> n001 AT 1376153753252
-Content: n004;n002n003n004
-advertise n002 ==> n007 AT 1376153753252
-Content: n004;n002n003n004
 Received messages=========
-advertise n003 ==> n002 AT 1376153729219
-Content: n004;n003n004
+advertise n003 ==> n002 AT 1377019063219 UID:20
+Content: n003;n003
 State for n002 | NR. 7:
 Table neighbour
+n005
 n003
 n001
-n007
 
 Table route_updated
-n006;n001
 
 Table best_candidate
-n001;n001
-n003;n003
-n004;n003n004
-n006;n001n006
-n007;n007
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
 n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n006;8
-n007;4
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n006;n001
-n007;n007
-
-Sent messages=========
-advertise n002 ==> n003 AT 1376153760169
-Content: n006;n002n001n006
-advertise n002 ==> n007 AT 1376153760169
-Content: n006;n002n001n006
-Received messages=========
-advertise n001 ==> n002 AT 1376153732353
-Content: n006;n001n006
-State for n002 | NR. 8:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n005;n003
-
-Table best_candidate
-n001;n001
-n003;n003
-n004;n003n004
-n005;n003n004n005
-n006;n001n006
-n007;n007
-
-Table add_neighbour
-
-Table candidate
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
 n001;n001;n001
-n007;n007;n007
-n003;n003;n003
 
 Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
 
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-
-Sent messages=========
-advertise n002 ==> n001 AT 1376153771722
-Content: n005;n002n003n004n005
-advertise n002 ==> n007 AT 1376153771722
-Content: n005;n002n003n004n005
-Received messages=========
-advertise n003 ==> n002 AT 1376153740220
-Content: n005;n003n004n005
-State for n002 | NR. 9:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n006;n007
-
-Table best_candidate
-n005;n003n004n005
-n006;n001n006
-n004;n003n004
-n001;n001
-n007;n007
-n003;n003
-
-Table add_neighbour
-
-Table candidate
-n006;n007;n007n006
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-
-Sent messages=========
-Received messages=========
-advertise n007 ==> n002 AT 1376153742657
-Content: n006;n007n006
-State for n002 | NR. 10:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n011;n007
-
-Table best_candidate
-n011;n007n006n011
-n005;n003n004n005
-n006;n001n006
-n004;n003n004
-n001;n001
-n007;n007
-n003;n003
-
-Table add_neighbour
-
-Table candidate
-n011;n007;n007n006n011
-n006;n007;n007n006
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
-n011;12
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-n011;n007
-
-Sent messages=========
-advertise n002 ==> n003 AT 1376153782214
-Content: n011;n002n007n006n011
-advertise n002 ==> n001 AT 1376153782214
-Content: n011;n002n007n006n011
-Received messages=========
-advertise n007 ==> n002 AT 1376153762806
-Content: n011;n007n006n011
-State for n002 | NR. 11:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n001;n007
-
-Table best_candidate
-n011;n007n006n011
-n005;n003n004n005
-n006;n001n006
-n004;n003n004
-n001;n001
-n007;n007
-n003;n003
-
-Table add_neighbour
-
-Table candidate
-n001;n007;n007n006n001
-n011;n007;n007n006n011
-n006;n007;n007n006
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
-n011;12
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-n011;n007
-
-Sent messages=========
-Received messages=========
-advertise n007 ==> n002 AT 1376153748652
-Content: n001;n007n006n001
-State for n002 | NR. 13:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n013;n007
-
-Table best_candidate
-n013;n007n006n011n012n013
-n011;n007n006n011
-n005;n003n004n005
-n006;n001n006
-n004;n003n004
-n001;n001
-n007;n007
-n003;n003
-
-Table add_neighbour
-
-Table candidate
-n013;n007;n007n006n011n012n013
-n001;n007;n007n006n001
-n011;n007;n007n006n011
-n006;n007;n007n006
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
-n011;12
-n013;20
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-n011;n007
-n013;n007
-
-Sent messages=========
-advertise n002 ==> n003 AT 1376153799235
-Content: n013;n002n007n006n011n012n013
-advertise n002 ==> n001 AT 1376153799235
-Content: n013;n002n007n006n011n012n013
-Received messages=========
-advertise n007 ==> n002 AT 1376153793444
-Content: n013;n007n006n011n012n013
-State for n002 | NR. 14:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n009;n007
-
-Table best_candidate
-n009;n007n006n011n012n013n008n009
-n013;n007n006n011n012n013
-n011;n007n006n011
-n005;n003n004n005
-n006;n001n006
-n004;n003n004
-n001;n001
-n007;n007
-n003;n003
-
-Table add_neighbour
-
-Table candidate
-n009;n007;n007n006n011n012n013n008n009
-n013;n007;n007n006n011n012n013
-n001;n007;n007n006n001
-n011;n007;n007n006n011
-n006;n007;n007n006
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
-n009;28
-n011;12
-n013;20
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-n009;n007
-n011;n007
-n013;n007
-
-Sent messages=========
-advertise n002 ==> n003 AT 1376153802874
-Content: n009;n002n007n006n011n012n013n008n009
-advertise n002 ==> n001 AT 1376153802874
-Content: n009;n002n007n006n011n012n013n008n009
-Received messages=========
-advertise n007 ==> n002 AT 1376153801605
-Content: n009;n007n006n011n012n013n008n009
-State for n002 | NR. 16:
-Table neighbour
-n003
-n001
-n007
-
-Table route_updated
-n008;n007
-
-Table best_candidate
-n008;n007n006n011n012n013n008
-n009;n007n006n011n012n013n008n009
-n013;n007n006n011n012n013
-n011;n007n006n011
-n005;n003n004n005
-n006;n001n006
-n004;n003n004
-n001;n001
-n007;n007
-n003;n003
-
-Table add_neighbour
-
-Table candidate
-n008;n007;n007n006n011n012n013n008
-n009;n007;n007n006n011n012n013n008n009
-n013;n007;n007n006n011n012n013
-n001;n007;n007n006n001
-n011;n007;n007n006n011
-n006;n007;n007n006
-n005;n003;n003n004n005
-n006;n001;n001n006
-n004;n003;n003n004
-n001;n001;n001
-n007;n007;n007
-n003;n003;n003
-
-Table best_cost
-n001;4
-n003;4
-n004;8
-n005;12
-n006;8
-n007;4
-n008;24
-n009;28
-n011;12
-n013;20
-
-Table best_next_hop
-n001;n001
-n003;n003
-n004;n003
-n005;n003
-n006;n001
-n007;n007
-n008;n007
-n009;n007
-n011;n007
-n013;n007
-
-Sent messages=========
-advertise n002 ==> n003 AT 1376153808968
-Content: n008;n002n007n006n011n012n013n008
-advertise n002 ==> n001 AT 1376153808968
-Content: n008;n002n007n006n011n012n013n008
-Received messages=========
-advertise n007 ==> n002 AT 1376153807443
-Content: n008;n007n006n011n012n013n008
-Instance n003 states================================State for n003 | NR. 0:
-Table neighbour
-n002
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n003 ==> n002 AT 1376153718639
-Content: n003;n003
-Received messages=========
-State for n003 | NR. 1:
-Table neighbour
-n004
-n002
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n003 ==> n004 AT 1376153722938
-Content: n003;n003
-Received messages=========
-State for n003 | NR. 2:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n004;n004
-
-Table best_candidate
-n004;n004
-
-Table add_neighbour
-
-Table candidate
-n004;n004;n004
-
-Table best_cost
-n004;4
-
-Table best_next_hop
-n004;n004
-
-Sent messages=========
-advertise n003 ==> n002 AT 1376153729219
-Content: n004;n003n004
-Received messages=========
-advertise n004 ==> n003 AT 1376153722379
-Content: n004;n004
-State for n003 | NR. 3:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n002;n002
-
-Table best_candidate
-n002;n002
-n004;n004
-
-Table add_neighbour
-
-Table candidate
-n002;n002;n002
-n004;n004;n004
-
-Table best_cost
-n002;4
-n004;4
-
-Table best_next_hop
-n002;n002
-n004;n004
-
-Sent messages=========
-advertise n003 ==> n004 AT 1376153734609
-Content: n002;n003n002
-Received messages=========
-advertise n002 ==> n003 AT 1376153728129
+advertise n002 ==> n005 AT 1377019108725 UID:19
 Content: n002;n002
-State for n003 | NR. 4:
+Received messages=========
+State for n002 | NR. 18:
 Table neighbour
-n004
-n002
+n005
+n003
+n001
 
 Table route_updated
-n005;n004
+n005;n005
 
 Table best_candidate
-n002;n002
-n004;n004
-n005;n004n005
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n005;n004;n004n005
-n002;n002;n002
-n004;n004;n004
+n005;n005;n005
+n003;n003;n003
+n001;n001;n001
 
 Table best_cost
-n002;4
-n004;4
-n005;8
+
+Table best_pref
 
 Table best_next_hop
-n002;n002
-n004;n004
-n005;n004
 
 Sent messages=========
-advertise n003 ==> n002 AT 1376153740220
-Content: n005;n003n004n005
 Received messages=========
-advertise n004 ==> n003 AT 1376153728889
-Content: n005;n004n005
+advertise n005 ==> n002 AT 1377019111803 UID:2
+Content: n005;n005
+Instance n003 states================================State for n003 | NR. 4:
+Table neighbour
+
+Table route_updated
+n002;n002
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n002;n002;n002
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n002 ==> n003 AT 1377019060366 UID:18
+Content: n002;n002
 State for n003 | NR. 5:
 Table neighbour
-n004
 n002
 
 Table route_updated
-n010;n004
 
 Table best_candidate
-n002;n002
-n004;n004
-n005;n004n005
-n010;n004n005n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n010;n004;n004n005n010
-n005;n004;n004n005
 n002;n002;n002
-n004;n004;n004
 
 Table best_cost
-n002;4
-n004;4
-n005;8
-n010;12
+
+Table best_pref
 
 Table best_next_hop
-n002;n002
-n004;n004
-n005;n004
-n010;n004
 
 Sent messages=========
-advertise n003 ==> n002 AT 1376153746745
-Content: n010;n003n004n005n010
+advertise n003 ==> n002 AT 1377019063219 UID:20
+Content: n003;n003
 Received messages=========
-advertise n004 ==> n003 AT 1376153740548
-Content: n010;n004n005n010
 State for n003 | NR. 6:
 Table neighbour
 n004
 n002
 
 Table route_updated
-n007;n002
 
 Table best_candidate
-n002;n002
-n004;n004
-n005;n004n005
-n007;n002n007
-n010;n004n005n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
 n002;n002;n002
-n004;n004;n004
 
 Table best_cost
-n002;4
-n004;4
-n005;8
-n007;8
-n010;12
+
+Table best_pref
 
 Table best_next_hop
-n002;n002
-n004;n004
-n005;n004
-n007;n002
-n010;n004
 
 Sent messages=========
-advertise n003 ==> n004 AT 1376153757087
-Content: n007;n003n002n007
+advertise n003 ==> n004 AT 1377019067871 UID:21
+Content: n003;n003
 Received messages=========
-advertise n002 ==> n003 AT 1376153740765
-Content: n007;n002n007
-State for n003 | NR. 7:
+State for n003 | NR. 9:
 Table neighbour
 n004
 n002
 
 Table route_updated
-n001;n002
+n004;n004
 
 Table best_candidate
-n001;n002n001
-n002;n002
-n004;n004
-n005;n004n005
-n007;n002n007
-n010;n004n005n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n001;n002;n002n001
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
-n002;n002;n002
 n004;n004;n004
+n002;n002;n002
 
 Table best_cost
-n001;8
-n002;4
-n004;4
-n005;8
-n007;8
-n010;12
+
+Table best_pref
 
 Table best_next_hop
-n001;n002
-n002;n002
-n004;n004
-n005;n004
-n007;n002
-n010;n004
 
 Sent messages=========
-advertise n003 ==> n004 AT 1376153762660
-Content: n001;n003n002n001
 Received messages=========
-advertise n002 ==> n003 AT 1376153747461
-Content: n001;n002n001
-State for n003 | NR. 8:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n006;n002
-
-Table best_candidate
-n001;n002n001
-n002;n002
-n004;n004
-n005;n004n005
-n006;n002n001n006
-n007;n002n007
-n010;n004n005n010
-
-Table add_neighbour
-
-Table candidate
-n006;n002;n002n001n006
-n001;n002;n002n001
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
-n002;n002;n002
-n004;n004;n004
-
-Table best_cost
-n001;8
-n002;4
-n004;4
-n005;8
-n006;12
-n007;8
-n010;12
-
-Table best_next_hop
-n001;n002
-n002;n002
-n004;n004
-n005;n004
-n006;n002
-n007;n002
-n010;n004
-
-Sent messages=========
-advertise n003 ==> n004 AT 1376153772446
-Content: n006;n003n002n001n006
-Received messages=========
-advertise n002 ==> n003 AT 1376153760169
-Content: n006;n002n001n006
-State for n003 | NR. 11:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n011;n002
-
-Table best_candidate
-n001;n002n001
-n002;n002
-n004;n004
-n005;n004n005
-n006;n002n001n006
-n007;n002n007
-n010;n004n005n010
-n011;n002n007n006n011
-
-Table add_neighbour
-
-Table candidate
-n011;n002;n002n007n006n011
-n006;n002;n002n001n006
-n001;n002;n002n001
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
-n002;n002;n002
-n004;n004;n004
-
-Table best_cost
-n001;8
-n002;4
-n004;4
-n005;8
-n006;12
-n007;8
-n010;12
-n011;16
-
-Table best_next_hop
-n001;n002
-n002;n002
-n004;n004
-n005;n004
-n006;n002
-n007;n002
-n010;n004
-n011;n002
-
-Sent messages=========
-advertise n003 ==> n004 AT 1376153787287
-Content: n011;n003n002n007n006n011
-Received messages=========
-advertise n002 ==> n003 AT 1376153782214
-Content: n011;n002n007n006n011
-State for n003 | NR. 14:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n013;n002
-
-Table best_candidate
-n001;n002n001
-n002;n002
-n004;n004
-n005;n004n005
-n006;n002n001n006
-n007;n002n007
-n010;n004n005n010
-n011;n002n007n006n011
-n013;n002n007n006n011n012n013
-
-Table add_neighbour
-
-Table candidate
-n013;n002;n002n007n006n011n012n013
-n011;n002;n002n007n006n011
-n006;n002;n002n001n006
-n001;n002;n002n001
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
-n002;n002;n002
-n004;n004;n004
-
-Table best_cost
-n001;8
-n002;4
-n004;4
-n005;8
-n006;12
-n007;8
-n010;12
-n011;16
-n013;24
-
-Table best_next_hop
-n001;n002
-n002;n002
-n004;n004
-n005;n004
-n006;n002
-n007;n002
-n010;n004
-n011;n002
-n013;n002
-
-Sent messages=========
-advertise n003 ==> n004 AT 1376153801418
-Content: n013;n003n002n007n006n011n012n013
-Received messages=========
-advertise n002 ==> n003 AT 1376153799235
-Content: n013;n002n007n006n011n012n013
-State for n003 | NR. 15:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n009;n002
-
-Table best_candidate
-n001;n002n001
-n002;n002
-n004;n004
-n005;n004n005
-n006;n002n001n006
-n007;n002n007
-n009;n002n007n006n011n012n013n008n009
-n010;n004n005n010
-n011;n002n007n006n011
-n013;n002n007n006n011n012n013
-
-Table add_neighbour
-
-Table candidate
-n009;n002;n002n007n006n011n012n013n008n009
-n013;n002;n002n007n006n011n012n013
-n011;n002;n002n007n006n011
-n006;n002;n002n001n006
-n001;n002;n002n001
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
-n002;n002;n002
-n004;n004;n004
-
-Table best_cost
-n001;8
-n002;4
-n004;4
-n005;8
-n006;12
-n007;8
-n009;32
-n010;12
-n011;16
-n013;24
-
-Table best_next_hop
-n001;n002
-n002;n002
-n004;n004
-n005;n004
-n006;n002
-n007;n002
-n009;n002
-n010;n004
-n011;n002
-n013;n002
-
-Sent messages=========
-advertise n003 ==> n004 AT 1376153806574
-Content: n009;n003n002n007n006n011n012n013n008n009
-Received messages=========
-advertise n002 ==> n003 AT 1376153802874
-Content: n009;n002n007n006n011n012n013n008n009
-State for n003 | NR. 16:
-Table neighbour
-n004
-n002
-
-Table route_updated
-n012;n004
-
-Table best_candidate
-n001;n002n001
-n002;n002
-n004;n004
-n005;n004n005
-n006;n002n001n006
-n007;n002n007
-n009;n002n007n006n011n012n013n008n009
-n010;n004n005n010
-n011;n002n007n006n011
-n012;n004n005n010n009n008n013n012
-n013;n002n007n006n011n012n013
-
-Table add_neighbour
-
-Table candidate
-n012;n004;n004n005n010n009n008n013n012
-n009;n002;n002n007n006n011n012n013n008n009
-n013;n002;n002n007n006n011n012n013
-n011;n002;n002n007n006n011
-n006;n002;n002n001n006
-n001;n002;n002n001
-n007;n002;n002n007
-n010;n004;n004n005n010
-n005;n004;n004n005
-n002;n002;n002
-n004;n004;n004
-
-Table best_cost
-n001;8
-n002;4
-n004;4
-n005;8
-n006;12
-n007;8
-n009;32
-n010;12
-n011;16
-n012;28
-n013;24
-
-Table best_next_hop
-n001;n002
-n002;n002
-n004;n004
-n005;n004
-n006;n002
-n007;n002
-n009;n002
-n010;n004
-n011;n002
-n012;n004
-n013;n002
-
-Sent messages=========
-advertise n003 ==> n002 AT 1376153808694
-Content: n012;n003n004n005n010n009n008n013n012
-Received messages=========
-advertise n004 ==> n003 AT 1376153807263
-Content: n012;n004n005n010n009n008n013n012
+advertise n004 ==> n003 AT 1377019072027 UID:13
+Content: n004;n004
 Instance n001 states================================State for n001 | NR. 0:
 Table neighbour
-n006
+n002
 
 Table route_updated
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
 
 Table best_cost
 
+Table best_pref
+
 Table best_next_hop
 
 Sent messages=========
-advertise n001 ==> n006 AT 1376153718133
+advertise n001 ==> n002 AT 1377019053556 UID:22
 Content: n001;n001
 Received messages=========
-State for n001 | NR. 1:
-Table neighbour
-n002
-n006
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n001 ==> n002 AT 1376153724833
-Content: n001;n001
-Received messages=========
-State for n001 | NR. 2:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n006;n006
-
-Table best_candidate
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n006;n006;n006
-
-Table best_cost
-n006;4
-
-Table best_next_hop
-n006;n006
-
-Sent messages=========
-advertise n001 ==> n002 AT 1376153732353
-Content: n006;n001n006
-Received messages=========
-advertise n006 ==> n001 AT 1376153722506
-Content: n006;n006
 State for n001 | NR. 3:
 Table neighbour
 n002
-n006
 
 Table route_updated
 n002;n002
 
 Table best_candidate
-n002;n002
-n006;n006
 
-Table add_neighbour
+Table policy
 
 Table candidate
 n002;n002;n002
-n006;n006;n006
 
 Table best_cost
-n002;4
-n006;4
+
+Table best_pref
 
 Table best_next_hop
-n002;n002
-n006;n006
 
 Sent messages=========
-advertise n001 ==> n006 AT 1376153740313
-Content: n002;n001n002
 Received messages=========
-advertise n002 ==> n001 AT 1376153723898
+advertise n002 ==> n001 AT 1377019056678 UID:17
 Content: n002;n002
-State for n001 | NR. 4:
+Instance n011 states================================State for n011 | NR. 10:
 Table neighbour
-n002
-n006
 
 Table route_updated
-n003;n002
-
-Table best_candidate
-n002;n002
-n003;n002n003
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n003;n002;n002n003
-n002;n002;n002
-n006;n006;n006
-
-Table best_cost
-n002;4
-n003;8
-n006;4
-
-Table best_next_hop
-n002;n002
-n003;n002
-n006;n006
-
-Sent messages=========
-advertise n001 ==> n006 AT 1376153748724
-Content: n003;n001n002n003
-Received messages=========
-advertise n002 ==> n001 AT 1376153734310
-Content: n003;n002n003
-State for n001 | NR. 5:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n007;n002
-
-Table best_candidate
-n002;n002
-n003;n002n003
-n006;n006
-n007;n002n007
-
-Table add_neighbour
-
-Table candidate
-n007;n002;n002n007
-n003;n002;n002n003
-n002;n002;n002
-n006;n006;n006
-
-Table best_cost
-n002;4
-n003;8
-n006;4
-n007;8
-
-Table best_next_hop
-n002;n002
-n003;n002
-n006;n006
-n007;n002
-
-Sent messages=========
-advertise n001 ==> n006 AT 1376153756437
-Content: n007;n001n002n007
-Received messages=========
-advertise n002 ==> n001 AT 1376153740765
-Content: n007;n002n007
-State for n001 | NR. 6:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n007;n006
-
-Table best_candidate
-n007;n002n007
-n003;n002n003
-n002;n002
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n007;n006;n006n007
-n007;n002;n002n007
-n003;n002;n002n003
-n002;n002;n002
-n006;n006;n006
-
-Table best_cost
-n002;4
-n003;8
-n006;4
-n007;8
-
-Table best_next_hop
-n002;n002
-n003;n002
-n006;n006
-n007;n002
-
-Sent messages=========
-Received messages=========
-advertise n006 ==> n001 AT 1376153738562
-Content: n007;n006n007
-State for n001 | NR. 7:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n011;n006
-
-Table best_candidate
-n011;n006n011
-n007;n002n007
-n003;n002n003
-n002;n002
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n011;n006;n006n011
-n007;n006;n006n007
-n007;n002;n002n007
-n003;n002;n002n003
-n002;n002;n002
-n006;n006;n006
-
-Table best_cost
-n002;4
-n003;8
-n006;4
-n007;8
-n011;8
-
-Table best_next_hop
-n002;n002
-n003;n002
-n006;n006
-n007;n002
-n011;n006
-
-Sent messages=========
-advertise n001 ==> n002 AT 1376153796074
-Content: n011;n001n006n011
-Received messages=========
-advertise n006 ==> n001 AT 1376153745086
-Content: n011;n006n011
-State for n001 | NR. 8:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n002;n006
-
-Table best_candidate
-n011;n006n011
-n007;n002n007
-n003;n002n003
-n002;n002
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n002;n006;n006n007n002
-n011;n006;n006n011
-n007;n006;n006n007
-n007;n002;n002n007
-n003;n002;n002n003
-n002;n002;n002
-n006;n006;n006
-
-Table best_cost
-n002;4
-n003;8
-n006;4
-n007;8
-n011;8
-
-Table best_next_hop
-n002;n002
-n003;n002
-n006;n006
-n007;n002
-n011;n006
-
-Sent messages=========
-Received messages=========
-advertise n006 ==> n001 AT 1376153751269
-Content: n002;n006n007n002
-State for n001 | NR. 9:
-Table neighbour
-n002
-n006
-
-Table route_updated
-n004;n002
-
-Table best_candidate
-n004;n002n003n004
-n011;n006n011
-n007;n002n007
-n003;n002n003
-n002;n002
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n004;n002;n002n003n004
-n002;n006;n006n007n002
-n011;n006;n006n011
-n007;n006;n006n007
-n007;n002;n002n007
-n003;n002;n002n003
-n002;n002;n002
-n006;n006;n006
-
-Table best_cost
-n002;4
-n003;8
-n004;12
-n006;4
-n007;8
-n011;8
-
-Table best_next_hop
-n002;n002
-n003;n002
-n004;n002
-n006;n006
-n007;n002
-n011;n006
-
-Sent messages=========
-advertise n001 ==> n006 AT 1376153800104
-Content: n004;n001n002n003n004
-Received messages=========
-advertise n002 ==> n001 AT 1376153753252
-Content: n004;n002n003n004
-Instance n011 states================================State for n011 | NR. 0:
-Table neighbour
-n006
-
-Table route_updated
+n010;n010
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
+n010;n010;n010
 
 Table best_cost
+
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n011 ==> n006 AT 1376153719072
-Content: n011;n011
 Received messages=========
-State for n011 | NR. 1:
-Table neighbour
-n012
-n006
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n011 ==> n012 AT 1376153723662
-Content: n011;n011
-Received messages=========
-State for n011 | NR. 2:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n006;n006
-
-Table best_candidate
-n006;n006
-
-Table add_neighbour
-
-Table candidate
-n006;n006;n006
-
-Table best_cost
-n006;4
-
-Table best_next_hop
-n006;n006
-
-Sent messages=========
-advertise n011 ==> n012 AT 1376153729771
-Content: n006;n011n006
-Received messages=========
-advertise n006 ==> n011 AT 1376153718379
-Content: n006;n006
-State for n011 | NR. 3:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n012;n012
-
-Table best_candidate
-n006;n006
-n012;n012
-
-Table add_neighbour
-
-Table candidate
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n006;4
-n012;4
-
-Table best_next_hop
-n006;n006
-n012;n012
-
-Sent messages=========
-advertise n011 ==> n006 AT 1376153735043
-Content: n012;n011n012
-Received messages=========
-advertise n012 ==> n011 AT 1376153721256
-Content: n012;n012
-State for n011 | NR. 4:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n013;n012
-
-Table best_candidate
-n006;n006
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n006;4
-n012;4
-n013;8
-
-Table best_next_hop
-n006;n006
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n006 AT 1376153740922
-Content: n013;n011n012n013
-Received messages=========
-advertise n012 ==> n011 AT 1376153727840
-Content: n013;n012n013
-State for n011 | NR. 5:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n001;n006
-
-Table best_candidate
-n001;n006n001
-n006;n006
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n001;n006;n006n001
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n001;8
-n006;4
-n012;4
-n013;8
-
-Table best_next_hop
-n001;n006
-n006;n006
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n012 AT 1376153747140
-Content: n001;n011n006n001
-Received messages=========
-advertise n006 ==> n011 AT 1376153731986
-Content: n001;n006n001
-State for n011 | NR. 6:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n007;n006
-
-Table best_candidate
-n001;n006n001
-n006;n006
-n007;n006n007
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n007;n006;n006n007
-n001;n006;n006n001
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n001;8
-n006;4
-n007;8
-n012;4
-n013;8
-
-Table best_next_hop
-n001;n006
-n006;n006
-n007;n006
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n012 AT 1376153752952
-Content: n007;n011n006n007
-Received messages=========
-advertise n006 ==> n011 AT 1376153738562
-Content: n007;n006n007
-State for n011 | NR. 7:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n008;n012
-
-Table best_candidate
-n001;n006n001
-n006;n006
-n007;n006n007
-n008;n012n013n008
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n008;n012;n012n013n008
-n007;n006;n006n007
-n001;n006;n006n001
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n001;8
-n006;4
-n007;8
-n008;12
-n012;4
-n013;8
-
-Table best_next_hop
-n001;n006
-n006;n006
-n007;n006
-n008;n012
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n006 AT 1376153759744
-Content: n008;n011n012n013n008
-Received messages=========
-advertise n012 ==> n011 AT 1376153746103
-Content: n008;n012n013n008
-State for n011 | NR. 8:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n002;n006
-
-Table best_candidate
-n001;n006n001
-n002;n006n007n002
-n006;n006
-n007;n006n007
-n008;n012n013n008
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n002;n006;n006n007n002
-n008;n012;n012n013n008
-n007;n006;n006n007
-n001;n006;n006n001
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n001;8
-n002;12
-n006;4
-n007;8
-n008;12
-n012;4
-n013;8
-
-Table best_next_hop
-n001;n006
-n002;n006
-n006;n006
-n007;n006
-n008;n012
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n012 AT 1376153765680
-Content: n002;n011n006n007n002
-Received messages=========
-advertise n006 ==> n011 AT 1376153751269
-Content: n002;n006n007n002
-State for n011 | NR. 9:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n009;n012
-
-Table best_candidate
-n001;n006n001
-n002;n006n007n002
-n006;n006
-n007;n006n007
-n008;n012n013n008
-n009;n012n013n008n009
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n009;n012;n012n013n008n009
-n002;n006;n006n007n002
-n008;n012;n012n013n008
-n007;n006;n006n007
-n001;n006;n006n001
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n001;8
-n002;12
-n006;4
-n007;8
-n008;12
-n009;16
-n012;4
-n013;8
-
-Table best_next_hop
-n001;n006
-n002;n006
-n006;n006
-n007;n006
-n008;n012
-n009;n012
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n006 AT 1376153773505
-Content: n009;n011n012n013n008n009
-Received messages=========
-advertise n012 ==> n011 AT 1376153759271
-Content: n009;n012n013n008n009
-State for n011 | NR. 10:
-Table neighbour
-n012
-n006
-
-Table route_updated
-n002;n006
-
-Table best_candidate
-n001;n006n001
-n002;n006n001n002
-n006;n006
-n007;n006n007
-n008;n012n013n008
-n009;n012n013n008n009
-n012;n012
-n013;n012n013
-
-Table add_neighbour
-
-Table candidate
-n002;n006;n006n001n002
-n009;n012;n012n013n008n009
-n008;n012;n012n013n008
-n007;n006;n006n007
-n001;n006;n006n001
-n013;n012;n012n013
-n012;n012;n012
-n006;n006;n006
-
-Table best_cost
-n001;8
-n002;12
-n006;4
-n007;8
-n008;12
-n009;16
-n012;4
-n013;8
-
-Table best_next_hop
-n001;n006
-n002;n006
-n006;n006
-n007;n006
-n008;n012
-n009;n012
-n012;n012
-n013;n012
-
-Sent messages=========
-advertise n011 ==> n012 AT 1376153779740
-Content: n002;n011n006n001n002
-Received messages=========
-advertise n006 ==> n011 AT 1376153758202
-Content: n002;n006n001n002
+advertise n010 ==> n011 AT 1377019144882 UID:31
+Content: n010;n010
 State for n011 | NR. 11:
 Table neighbour
+n010
+
+Table route_updated
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n010;n010;n010
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n011 ==> n010 AT 1377019148234 UID:23
+Content: n011;n011
+Received messages=========
+State for n011 | NR. 12:
+Table neighbour
 n012
-n006
+n010
 
 Table route_updated
-n003;n006
 
 Table best_candidate
-n001;n006n001
-n002;n006n001n002
-n003;n006n001n002n003
-n006;n006
-n007;n006n007
-n008;n012n013n008
-n009;n012n013n008n009
-n012;n012
-n013;n012n013
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n003;n006;n006n001n002n003
-n002;n006;n006n001n002
-n009;n012;n012n013n008n009
-n008;n012;n012n013n008
-n007;n006;n006n007
-n001;n006;n006n001
-n013;n012;n012n013
+n010;n010;n010
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+advertise n011 ==> n012 AT 1377019152570 UID:24
+Content: n011;n011
+Received messages=========
+State for n011 | NR. 20:
+Table neighbour
+n012
+n010
+
+Table route_updated
+n012;n012
+
+Table best_candidate
+
+Table policy
+
+Table candidate
 n012;n012;n012
-n006;n006;n006
+n010;n010;n010
 
 Table best_cost
-n001;8
-n002;12
-n003;16
-n006;4
-n007;8
-n008;12
-n009;16
-n012;4
-n013;8
+
+Table best_pref
 
 Table best_next_hop
-n001;n006
-n002;n006
-n003;n006
-n006;n006
-n007;n006
-n008;n012
-n009;n012
-n012;n012
-n013;n012
 
 Sent messages=========
-advertise n011 ==> n012 AT 1376153790182
-Content: n003;n011n006n001n002n003
 Received messages=========
-advertise n006 ==> n011 AT 1376153782590
-Content: n003;n006n001n002n003
-Instance n014 states================================State for n014 | NR. 0:
+advertise n012 ==> n011 AT 1377019157066 UID:16
+Content: n012;n012
+Instance n014 states================================State for n014 | NR. 8:
 Table neighbour
-n009
 
 Table route_updated
+n008;n008
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
+n008;n008;n008
 
 Table best_cost
+
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n014 ==> n009 AT 1376153718565
-Content: n014;n014
 Received messages=========
-State for n014 | NR. 1:
-Table neighbour
-n015
-n009
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n014 ==> n015 AT 1376153722663
-Content: n014;n014
-Received messages=========
-State for n014 | NR. 2:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n015;n015
-
-Table best_candidate
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n015;n015;n015
-
-Table best_cost
-n015;4
-
-Table best_next_hop
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n009 AT 1376153728815
-Content: n015;n014n015
-Received messages=========
-advertise n015 ==> n014 AT 1376153722869
-Content: n015;n015
-State for n014 | NR. 3:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n009;n009
-
-Table best_candidate
-n009;n009
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n009;4
-n015;4
-
-Table best_next_hop
-n009;n009
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n015 AT 1376153738371
-Content: n009;n014n009
-Received messages=========
-advertise n009 ==> n014 AT 1376153723168
-Content: n009;n009
-State for n014 | NR. 4:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n010;n015
-
-Table best_candidate
-n009;n009
-n010;n015n010
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n009;4
-n010;8
-n015;4
-
-Table best_next_hop
-n009;n009
-n010;n015
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n009 AT 1376153744256
-Content: n010;n014n015n010
-Received messages=========
-advertise n015 ==> n014 AT 1376153729533
-Content: n010;n015n010
-State for n014 | NR. 5:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n005;n015
-
-Table best_candidate
-n005;n015n010n005
-n009;n009
-n010;n015n010
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n005;12
-n009;4
-n010;8
-n015;4
-
-Table best_next_hop
-n005;n015
-n009;n009
-n010;n015
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n009 AT 1376153750498
-Content: n005;n014n015n010n005
-Received messages=========
-advertise n015 ==> n014 AT 1376153741381
-Content: n005;n015n010n005
-State for n014 | NR. 6:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n008;n009
-
-Table best_candidate
-n005;n015n010n005
-n008;n009n008
-n009;n009
-n010;n015n010
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n005;12
-n008;8
-n009;4
-n010;8
-n015;4
-
-Table best_next_hop
-n005;n015
-n008;n009
-n009;n009
-n010;n015
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n015 AT 1376153757038
-Content: n008;n014n009n008
-Received messages=========
-advertise n009 ==> n014 AT 1376153740171
-Content: n008;n009n008
-State for n014 | NR. 7:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n005;n009
-
-Table best_candidate
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n005;12
-n008;8
-n009;4
-n010;8
-n015;4
-
-Table best_next_hop
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n015 AT 1376153762537
-Content: n005;n014n009n010n005
-Received messages=========
-advertise n009 ==> n014 AT 1376153748459
-Content: n005;n009n010n005
-State for n014 | NR. 8:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n009;n015
-
-Table best_candidate
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n005;12
-n008;8
-n009;4
-n010;8
-n015;4
-
-Table best_next_hop
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n015;n015
-
-Sent messages=========
-Received messages=========
-advertise n015 ==> n014 AT 1376153754370
-Content: n009;n015n010n009
+advertise n008 ==> n014 AT 1377019168331 UID:5
+Content: n008;n008
 State for n014 | NR. 9:
 Table neighbour
-n015
-n009
+n008
 
 Table route_updated
-n013;n009
 
 Table best_candidate
-n013;n009n008n013
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n013;n009;n009n008n013
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
+n008;n008;n008
 
 Table best_cost
-n005;12
-n008;8
-n009;4
-n010;8
-n013;12
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n013;n009
-n015;n015
 
 Sent messages=========
-advertise n014 ==> n015 AT 1376153775841
-Content: n013;n014n009n008n013
+advertise n014 ==> n008 AT 1377019171726 UID:25
+Content: n014;n014
 Received messages=========
-advertise n009 ==> n014 AT 1376153754448
-Content: n013;n009n008n013
 State for n014 | NR. 10:
 Table neighbour
-n015
-n009
+n013
+n008
 
 Table route_updated
-n015;n009
 
 Table best_candidate
-n013;n009n008n013
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n015;n009;n009n010n015
-n013;n009;n009n008n013
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
+n008;n008;n008
 
 Table best_cost
-n005;12
-n008;8
-n009;4
-n010;8
-n013;12
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n013;n009
-n015;n015
 
 Sent messages=========
+advertise n014 ==> n013 AT 1377019182008 UID:26
+Content: n014;n014
 Received messages=========
-advertise n009 ==> n014 AT 1376153779175
-Content: n015;n009n010n015
-State for n014 | NR. 11:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n012;n009
-
-Table best_candidate
-n012;n009n008n013n012
-n013;n009n008n013
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n012;n009;n009n008n013n012
-n015;n009;n009n010n015
-n013;n009;n009n008n013
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n005;12
-n008;8
-n009;4
-n010;8
-n012;16
-n013;12
-n015;4
-
-Table best_next_hop
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n012;n009
-n013;n009
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n015 AT 1376153787173
-Content: n012;n014n009n008n013n012
-Received messages=========
-advertise n009 ==> n014 AT 1376153783911
-Content: n012;n009n008n013n012
-State for n014 | NR. 12:
-Table neighbour
-n015
-n009
-
-Table route_updated
-n004;n009
-
-Table best_candidate
-n004;n009n010n005n004
-n012;n009n008n013n012
-n013;n009n008n013
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n004;n009;n009n010n005n004
-n012;n009;n009n008n013n012
-n015;n009;n009n010n015
-n013;n009;n009n008n013
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
-
-Table best_cost
-n004;16
-n005;12
-n008;8
-n009;4
-n010;8
-n012;16
-n013;12
-n015;4
-
-Table best_next_hop
-n004;n009
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n012;n009
-n013;n009
-n015;n015
-
-Sent messages=========
-advertise n014 ==> n015 AT 1376153795337
-Content: n004;n014n009n010n005n004
-Received messages=========
-advertise n009 ==> n014 AT 1376153791383
-Content: n004;n009n010n005n004
 State for n014 | NR. 13:
 Table neighbour
-n015
-n009
+n013
+n008
 
 Table route_updated
-n003;n009
+n013;n013
 
 Table best_candidate
-n003;n009n010n005n004n003
-n004;n009n010n005n004
-n012;n009n008n013n012
-n013;n009n008n013
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n003;n009;n009n010n005n004n003
-n004;n009;n009n010n005n004
-n012;n009;n009n008n013n012
-n015;n009;n009n010n015
-n013;n009;n009n008n013
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
-n015;n015;n015
+n013;n013;n013
+n008;n008;n008
 
 Table best_cost
-n003;20
-n004;16
-n005;12
-n008;8
-n009;4
-n010;8
-n012;16
-n013;12
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n003;n009
-n004;n009
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n012;n009
-n013;n009
-n015;n015
 
 Sent messages=========
-advertise n014 ==> n015 AT 1376153798440
-Content: n003;n014n009n010n005n004n003
 Received messages=========
-advertise n009 ==> n014 AT 1376153796083
-Content: n003;n009n010n005n004n003
-State for n014 | NR. 17:
+advertise n013 ==> n014 AT 1377019186408 UID:33
+Content: n013;n013
+State for n014 | NR. 14:
+Table neighbour
+n013
+n008
+
+Table route_updated
+n015;n015
+
+Table best_candidate
+
+Table policy
+
+Table candidate
+n015;n015;n015
+n013;n013;n013
+n008;n008;n008
+
+Table best_cost
+
+Table best_pref
+
+Table best_next_hop
+
+Sent messages=========
+Received messages=========
+advertise n015 ==> n014 AT 1377019189963 UID:29
+Content: n015;n015
+State for n014 | NR. 15:
 Table neighbour
 n015
-n009
+n013
+n008
 
 Table route_updated
-n012;n015
 
 Table best_candidate
-n003;n009n010n005n004n003
-n004;n009n010n005n004
-n012;n009n008n013n012
-n013;n009n008n013
-n005;n009n010n005
-n008;n009n008
-n010;n015n010
-n009;n009
-n015;n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n012;n015;n015n010n009n008n013n012
-n003;n009;n009n010n005n004n003
-n004;n009;n009n010n005n004
-n012;n009;n009n008n013n012
-n015;n009;n009n010n015
-n013;n009;n009n008n013
-n009;n015;n015n010n009
-n005;n009;n009n010n005
-n008;n009;n009n008
-n005;n015;n015n010n005
-n010;n015;n015n010
-n009;n009;n009
 n015;n015;n015
+n013;n013;n013
+n008;n008;n008
 
 Table best_cost
-n003;20
-n004;16
-n005;12
-n008;8
-n009;4
-n010;8
-n012;16
-n013;12
-n015;4
 
-Table best_next_hop
-n003;n009
-n004;n009
-n005;n009
-n008;n009
-n009;n009
-n010;n015
-n012;n009
-n013;n009
-n015;n015
-
-Sent messages=========
-Received messages=========
-advertise n015 ==> n014 AT 1376153805330
-Content: n012;n015n010n009n008n013n012
-Instance n015 states================================State for n015 | NR. 0:
-Table neighbour
-n010
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n015 ==> n010 AT 1376153718650
-Content: n015;n015
-Received messages=========
-State for n015 | NR. 1:
-Table neighbour
-n014
-n010
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153722869
-Content: n015;n015
-Received messages=========
-State for n015 | NR. 2:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n010;n010
-
-Table best_candidate
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n010;n010;n010
-
-Table best_cost
-n010;4
-
-Table best_next_hop
-n010;n010
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153729533
-Content: n010;n015n010
-Received messages=========
-advertise n010 ==> n015 AT 1376153721491
-Content: n010;n010
-State for n015 | NR. 3:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n014;n014
-
-Table best_candidate
-n010;n010
-n014;n014
-
-Table add_neighbour
-
-Table candidate
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n010;4
-n014;4
-
-Table best_next_hop
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n010 AT 1376153735154
-Content: n014;n015n014
-Received messages=========
-advertise n014 ==> n015 AT 1376153722663
+advertise n014 ==> n015 AT 1377019194007 UID:27
 Content: n014;n014
-State for n015 | NR. 4:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n005;n010
-
-Table best_candidate
-n005;n010n005
-n010;n010
-n014;n014
-
-Table add_neighbour
-
-Table candidate
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n005;8
-n010;4
-n014;4
-
-Table best_next_hop
-n005;n010
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153741381
-Content: n005;n015n010n005
 Received messages=========
-advertise n010 ==> n015 AT 1376153736081
-Content: n005;n010n005
-State for n015 | NR. 5:
+Instance n015 states================================State for n015 | NR. 11:
 Table neighbour
-n014
-n010
 
 Table route_updated
-n009;n014
+n009;n009
 
 Table best_candidate
-n005;n010n005
-n009;n014n009
-n010;n010
-n014;n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
+n009;n009;n009
 
 Table best_cost
-n005;8
-n009;8
-n010;4
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n005;n010
-n009;n014
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n010 AT 1376153748190
-Content: n009;n015n014n009
-Received messages=========
-advertise n014 ==> n015 AT 1376153738371
-Content: n009;n014n009
-State for n015 | NR. 6:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n009;n010
-
-Table best_candidate
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n005;8
-n009;8
-n010;4
-n014;4
-
-Table best_next_hop
-n005;n010
-n009;n010
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153754370
-Content: n009;n015n010n009
-Received messages=========
-advertise n010 ==> n015 AT 1376153748231
-Content: n009;n010n009
-State for n015 | NR. 7:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n004;n010
-
-Table best_candidate
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n004;12
-n005;8
-n009;8
-n010;4
-n014;4
-
-Table best_next_hop
-n004;n010
-n005;n010
-n009;n010
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153760836
-Content: n004;n015n010n005n004
-Received messages=========
-advertise n010 ==> n015 AT 1376153754142
-Content: n004;n010n005n004
-State for n015 | NR. 8:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n008;n014
-
-Table best_candidate
-n008;n014n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n014;4
-
-Table best_next_hop
-n004;n010
-n005;n010
-n008;n014
-n009;n010
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n010 AT 1376153769183
-Content: n008;n015n014n009n008
-Received messages=========
-advertise n014 ==> n015 AT 1376153757038
-Content: n008;n014n009n008
-State for n015 | NR. 9:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n014;n010
-
-Table best_candidate
-n008;n014n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n014;4
-
-Table best_next_hop
-n004;n010
-n005;n010
-n008;n014
-n009;n010
-n010;n010
-n014;n014
 
 Sent messages=========
 Received messages=========
-advertise n010 ==> n015 AT 1376153760349
-Content: n014;n010n009n014
-State for n015 | NR. 10:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n005;n014
-
-Table best_candidate
-n008;n014n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n014;4
-
-Table best_next_hop
-n004;n010
-n005;n010
-n008;n014
-n009;n010
-n010;n010
-n014;n014
-
-Sent messages=========
-Received messages=========
-advertise n014 ==> n015 AT 1376153762537
-Content: n005;n014n009n010n005
-State for n015 | NR. 11:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n008;n010
-
-Table best_candidate
-n008;n010n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n008;n010;n010n009n008
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n014;4
-
-Table best_next_hop
-n004;n010
-n005;n010
-n008;n010
-n009;n010
-n010;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153786126
-Content: n008;n015n010n009n008
-Received messages=========
-advertise n010 ==> n015 AT 1376153774420
-Content: n008;n010n009n008
+advertise n009 ==> n015 AT 1377019175049 UID:8
+Content: n009;n009
 State for n015 | NR. 12:
 Table neighbour
-n014
-n010
+n009
 
 Table route_updated
-n003;n010
 
 Table best_candidate
-n003;n010n005n004n003
-n008;n010n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n003;n010;n010n005n004n003
-n008;n010;n010n009n008
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
+n009;n009;n009
 
 Table best_cost
-n003;16
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n003;n010
-n004;n010
-n005;n010
-n008;n010
-n009;n010
-n010;n010
-n014;n014
 
 Sent messages=========
-advertise n015 ==> n014 AT 1376153791952
-Content: n003;n015n010n005n004n003
+advertise n015 ==> n009 AT 1377019178602 UID:28
+Content: n015;n015
 Received messages=========
-advertise n010 ==> n015 AT 1376153780361
-Content: n003;n010n005n004n003
 State for n015 | NR. 13:
 Table neighbour
 n014
-n010
+n009
 
 Table route_updated
-n013;n010
 
 Table best_candidate
-n013;n010n009n008n013
-n003;n010n005n004n003
-n008;n010n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n013;n010;n010n009n008n013
-n003;n010;n010n005n004n003
-n008;n010;n010n009n008
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
+n009;n009;n009
 
 Table best_cost
-n003;16
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n013;16
-n014;4
+
+Table best_pref
 
 Table best_next_hop
-n003;n010
-n004;n010
-n005;n010
-n008;n010
-n009;n010
-n010;n010
-n013;n010
-n014;n014
 
 Sent messages=========
-advertise n015 ==> n014 AT 1376153796653
-Content: n013;n015n010n009n008n013
+advertise n015 ==> n014 AT 1377019189963 UID:29
+Content: n015;n015
 Received messages=========
-advertise n010 ==> n015 AT 1376153787532
-Content: n013;n010n009n008n013
-State for n015 | NR. 14:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n004;n014
-
-Table best_candidate
-n013;n010n009n008n013
-n003;n010n005n004n003
-n008;n010n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n004;n014;n014n009n010n005n004
-n013;n010;n010n009n008n013
-n003;n010;n010n005n004n003
-n008;n010;n010n009n008
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n003;16
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n013;16
-n014;4
-
-Table best_next_hop
-n003;n010
-n004;n010
-n005;n010
-n008;n010
-n009;n010
-n010;n010
-n013;n010
-n014;n014
-
-Sent messages=========
-Received messages=========
-advertise n014 ==> n015 AT 1376153795337
-Content: n004;n014n009n010n005n004
-State for n015 | NR. 15:
-Table neighbour
-n014
-n010
-
-Table route_updated
-n003;n014
-
-Table best_candidate
-n013;n010n009n008n013
-n003;n010n005n004n003
-n008;n010n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
-
-Table add_neighbour
-
-Table candidate
-n003;n014;n014n009n010n005n004n003
-n004;n014;n014n009n010n005n004
-n013;n010;n010n009n008n013
-n003;n010;n010n005n004n003
-n008;n010;n010n009n008
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
-n014;n014;n014
-n010;n010;n010
-
-Table best_cost
-n003;16
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n013;16
-n014;4
-
-Table best_next_hop
-n003;n010
-n004;n010
-n005;n010
-n008;n010
-n009;n010
-n010;n010
-n013;n010
-n014;n014
-
-Sent messages=========
-Received messages=========
-advertise n014 ==> n015 AT 1376153798440
-Content: n003;n014n009n010n005n004n003
 State for n015 | NR. 16:
 Table neighbour
 n014
-n010
+n009
 
 Table route_updated
-n012;n010
+n014;n014
 
 Table best_candidate
-n012;n010n009n008n013n012
-n013;n010n009n008n013
-n003;n010n005n004n003
-n008;n010n009n008
-n004;n010n005n004
-n009;n010n009
-n005;n010n005
-n014;n014
-n010;n010
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n012;n010;n010n009n008n013n012
-n003;n014;n014n009n010n005n004n003
-n004;n014;n014n009n010n005n004
-n013;n010;n010n009n008n013
-n003;n010;n010n005n004n003
-n008;n010;n010n009n008
-n005;n014;n014n009n010n005
-n014;n010;n010n009n014
-n008;n014;n014n009n008
-n004;n010;n010n005n004
-n009;n010;n010n009
-n009;n014;n014n009
-n005;n010;n010n005
 n014;n014;n014
-n010;n010;n010
+n009;n009;n009
 
 Table best_cost
-n003;16
-n004;12
-n005;8
-n008;12
-n009;8
-n010;4
-n012;20
-n013;16
-n014;4
 
-Table best_next_hop
-n003;n010
-n004;n010
-n005;n010
-n008;n010
-n009;n010
-n010;n010
-n012;n010
-n013;n010
-n014;n014
-
-Sent messages=========
-advertise n015 ==> n014 AT 1376153805330
-Content: n012;n015n010n009n008n013n012
-Received messages=========
-advertise n010 ==> n015 AT 1376153803339
-Content: n012;n010n009n008n013n012
-Instance n010 states================================State for n010 | NR. 0:
-Table neighbour
-n005
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n010 ==> n005 AT 1376153718217
-Content: n010;n010
 Received messages=========
-State for n010 | NR. 1:
+advertise n014 ==> n015 AT 1377019194007 UID:27
+Content: n014;n014
+Instance n010 states================================State for n010 | NR. 7:
 Table neighbour
-n015
-n005
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n010 ==> n015 AT 1376153721491
-Content: n010;n010
-Received messages=========
-State for n010 | NR. 2:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n010 ==> n009 AT 1376153725982
-Content: n010;n010
-Received messages=========
-State for n010 | NR. 3:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-n005;n005
-
-Table best_candidate
-n005;n005
-
-Table add_neighbour
-
-Table candidate
-n005;n005;n005
-
-Table best_cost
-n005;4
-
-Table best_next_hop
-n005;n005
-
-Sent messages=========
-advertise n010 ==> n009 AT 1376153736081
-Content: n005;n010n005
-advertise n010 ==> n015 AT 1376153736081
-Content: n005;n010n005
-Received messages=========
-advertise n005 ==> n010 AT 1376153718395
-Content: n005;n005
-State for n010 | NR. 4:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-n015;n015
-
-Table best_candidate
-n005;n005
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n015;n015;n015
-n005;n005;n005
-
-Table best_cost
-n005;4
-n015;4
-
-Table best_next_hop
-n005;n005
-n015;n015
-
-Sent messages=========
-advertise n010 ==> n009 AT 1376153741388
-Content: n015;n010n015
-advertise n010 ==> n005 AT 1376153741388
-Content: n015;n010n015
-Received messages=========
-advertise n015 ==> n010 AT 1376153718650
-Content: n015;n015
-State for n010 | NR. 5:
-Table neighbour
-n009
-n015
-n005
 
 Table route_updated
 n009;n009
 
 Table best_candidate
-n005;n005
-n009;n009
-n015;n015
 
-Table add_neighbour
+Table policy
 
 Table candidate
 n009;n009;n009
-n015;n015;n015
-n005;n005;n005
 
 Table best_cost
-n005;4
-n009;4
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n005;n005
-n009;n009
-n015;n015
 
 Sent messages=========
-advertise n010 ==> n015 AT 1376153748231
-Content: n009;n010n009
-advertise n010 ==> n005 AT 1376153748231
-Content: n009;n010n009
 Received messages=========
-advertise n009 ==> n010 AT 1376153727396
+advertise n009 ==> n010 AT 1377019137854 UID:7
 Content: n009;n009
-State for n010 | NR. 6:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-n004;n005
-
-Table best_candidate
-n004;n005n004
-n005;n005
-n009;n009
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n004;n005;n005n004
-n009;n009;n009
-n015;n015;n015
-n005;n005;n005
-
-Table best_cost
-n004;8
-n005;4
-n009;4
-n015;4
-
-Table best_next_hop
-n004;n005
-n005;n005
-n009;n009
-n015;n015
-
-Sent messages=========
-advertise n010 ==> n009 AT 1376153754142
-Content: n004;n010n005n004
-advertise n010 ==> n015 AT 1376153754142
-Content: n004;n010n005n004
-Received messages=========
-advertise n005 ==> n010 AT 1376153734339
-Content: n004;n005n004
-State for n010 | NR. 7:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-n014;n009
-
-Table best_candidate
-n004;n005n004
-n005;n005
-n009;n009
-n014;n009n014
-n015;n015
-
-Table add_neighbour
-
-Table candidate
-n014;n009;n009n014
-n004;n005;n005n004
-n009;n009;n009
-n015;n015;n015
-n005;n005;n005
-
-Table best_cost
-n004;8
-n005;4
-n009;4
-n014;8
-n015;4
-
-Table best_next_hop
-n004;n005
-n005;n005
-n009;n009
-n014;n009
-n015;n015
-
-Sent messages=========
-advertise n010 ==> n015 AT 1376153760349
-Content: n014;n010n009n014
-advertise n010 ==> n005 AT 1376153760349
-Content: n014;n010n009n014
-Received messages=========
-advertise n009 ==> n010 AT 1376153734782
-Content: n014;n009n014
 State for n010 | NR. 8:
 Table neighbour
 n009
-n015
-n005
 
 Table route_updated
-n014;n015
 
 Table best_candidate
-n014;n009n014
-n004;n005n004
-n009;n009
-n015;n015
-n005;n005
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n014;n015;n015n014
-n014;n009;n009n014
-n004;n005;n005n004
 n009;n009;n009
-n015;n015;n015
-n005;n005;n005
 
 Table best_cost
-n004;8
-n005;4
-n009;4
-n014;8
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n004;n005
-n005;n005
-n009;n009
-n014;n009
-n015;n015
 
 Sent messages=========
+advertise n010 ==> n009 AT 1377019141172 UID:30
+Content: n010;n010
 Received messages=========
-advertise n015 ==> n010 AT 1376153735154
-Content: n014;n015n014
 State for n010 | NR. 9:
 Table neighbour
+n011
 n009
-n015
-n005
 
 Table route_updated
-n008;n009
 
 Table best_candidate
-n008;n009n008
-n014;n009n014
-n004;n005n004
-n009;n009
-n015;n015
-n005;n005
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n008;n009;n009n008
-n014;n015;n015n014
-n014;n009;n009n014
-n004;n005;n005n004
 n009;n009;n009
-n015;n015;n015
-n005;n005;n005
 
 Table best_cost
-n004;8
-n005;4
-n008;8
-n009;4
-n014;8
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n004;n005
-n005;n005
-n008;n009
-n009;n009
-n014;n009
-n015;n015
 
 Sent messages=========
-advertise n010 ==> n015 AT 1376153774420
-Content: n008;n010n009n008
-advertise n010 ==> n005 AT 1376153774420
-Content: n008;n010n009n008
+advertise n010 ==> n011 AT 1377019144882 UID:31
+Content: n010;n010
 Received messages=========
-advertise n009 ==> n010 AT 1376153740171
-Content: n008;n009n008
-State for n010 | NR. 10:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-n003;n005
-
-Table best_candidate
-n003;n005n004n003
-n008;n009n008
-n014;n009n014
-n004;n005n004
-n009;n009
-n015;n015
-n005;n005
-
-Table add_neighbour
-
-Table candidate
-n003;n005;n005n004n003
-n008;n009;n009n008
-n014;n015;n015n014
-n014;n009;n009n014
-n004;n005;n005n004
-n009;n009;n009
-n015;n015;n015
-n005;n005;n005
-
-Table best_cost
-n003;12
-n004;8
-n005;4
-n008;8
-n009;4
-n014;8
-n015;4
-
-Table best_next_hop
-n003;n005
-n004;n005
-n005;n005
-n008;n009
-n009;n009
-n014;n009
-n015;n015
-
-Sent messages=========
-advertise n010 ==> n009 AT 1376153780361
-Content: n003;n010n005n004n003
-advertise n010 ==> n015 AT 1376153780361
-Content: n003;n010n005n004n003
-Received messages=========
-advertise n005 ==> n010 AT 1376153747239
-Content: n003;n005n004n003
-State for n010 | NR. 11:
-Table neighbour
-n009
-n015
-n005
-
-Table route_updated
-n009;n015
-
-Table best_candidate
-n003;n005n004n003
-n008;n009n008
-n014;n009n014
-n004;n005n004
-n009;n009
-n015;n015
-n005;n005
-
-Table add_neighbour
-
-Table candidate
-n009;n015;n015n014n009
-n003;n005;n005n004n003
-n008;n009;n009n008
-n014;n015;n015n014
-n014;n009;n009n014
-n004;n005;n005n004
-n009;n009;n009
-n015;n015;n015
-n005;n005;n005
-
-Table best_cost
-n003;12
-n004;8
-n005;4
-n008;8
-n009;4
-n014;8
-n015;4
-
-Table best_next_hop
-n003;n005
-n004;n005
-n005;n005
-n008;n009
-n009;n009
-n014;n009
-n015;n015
-
-Sent messages=========
-Received messages=========
-advertise n015 ==> n010 AT 1376153748190
-Content: n009;n015n014n009
 State for n010 | NR. 12:
 Table neighbour
+n011
 n009
-n015
-n005
 
 Table route_updated
-n013;n009
+n011;n011
 
 Table best_candidate
-n013;n009n008n013
-n003;n005n004n003
-n008;n009n008
-n014;n009n014
-n004;n005n004
-n009;n009
-n015;n015
-n005;n005
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n013;n009;n009n008n013
-n009;n015;n015n014n009
-n003;n005;n005n004n003
-n008;n009;n009n008
-n014;n015;n015n014
-n014;n009;n009n014
-n004;n005;n005n004
+n011;n011;n011
 n009;n009;n009
-n015;n015;n015
-n005;n005;n005
 
 Table best_cost
-n003;12
-n004;8
-n005;4
-n008;8
-n009;4
-n013;12
-n014;8
-n015;4
+
+Table best_pref
 
 Table best_next_hop
-n003;n005
-n004;n005
-n005;n005
-n008;n009
-n009;n009
-n013;n009
-n014;n009
-n015;n015
 
 Sent messages=========
-advertise n010 ==> n015 AT 1376153787532
-Content: n013;n010n009n008n013
-advertise n010 ==> n005 AT 1376153787532
-Content: n013;n010n009n008n013
 Received messages=========
-advertise n009 ==> n010 AT 1376153754448
-Content: n013;n009n008n013
-State for n010 | NR. 13:
+advertise n011 ==> n010 AT 1377019148234 UID:23
+Content: n011;n011
+Instance n013 states================================State for n013 | NR. 5:
 Table neighbour
-n009
-n015
-n005
 
 Table route_updated
-n012;n009
-
-Table best_candidate
-n012;n009n008n013n012
-n013;n009n008n013
-n003;n005n004n003
-n008;n009n008
-n014;n009n014
-n004;n005n004
-n009;n009
-n015;n015
-n005;n005
-
-Table add_neighbour
-
-Table candidate
-n012;n009;n009n008n013n012
-n013;n009;n009n008n013
-n009;n015;n015n014n009
-n003;n005;n005n004n003
-n008;n009;n009n008
-n014;n015;n015n014
-n014;n009;n009n014
-n004;n005;n005n004
-n009;n009;n009
-n015;n015;n015
-n005;n005;n005
-
-Table best_cost
-n003;12
-n004;8
-n005;4
-n008;8
-n009;4
-n012;16
-n013;12
-n014;8
-n015;4
-
-Table best_next_hop
-n003;n005
-n004;n005
-n005;n005
-n008;n009
-n009;n009
-n012;n009
-n013;n009
-n014;n009
-n015;n015
-
-Sent messages=========
-advertise n010 ==> n015 AT 1376153803339
-Content: n012;n010n009n008n013n012
-advertise n010 ==> n005 AT 1376153803339
-Content: n012;n010n009n008n013n012
-Received messages=========
-advertise n009 ==> n010 AT 1376153783911
-Content: n012;n009n008n013n012
-Instance n013 states================================State for n013 | NR. 0:
-Table neighbour
-n008
-
-Table route_updated
+n007;n007
 
 Table best_candidate
 
-Table add_neighbour
+Table policy
 
 Table candidate
+n007;n007;n007
 
 Table best_cost
+
+Table best_pref
 
 Table best_next_hop
 
 Sent messages=========
-advertise n013 ==> n008 AT 1376153718269
-Content: n013;n013
 Received messages=========
-State for n013 | NR. 1:
-Table neighbour
-n012
-n008
-
-Table route_updated
-
-Table best_candidate
-
-Table add_neighbour
-
-Table candidate
-
-Table best_cost
-
-Table best_next_hop
-
-Sent messages=========
-advertise n013 ==> n012 AT 1376153722072
-Content: n013;n013
-Received messages=========
-State for n013 | NR. 2:
-Table neighbour
-n012
-n008
-
-Table route_updated
-n012;n012
-
-Table best_candidate
-n012;n012
-
-Table add_neighbour
-
-Table candidate
-n012;n012;n012
-
-Table best_cost
-n012;4
-
-Table best_next_hop
-n012;n012
-
-Sent messages=========
-advertise n013 ==> n008 AT 1376153728606
-Content: n012;n013n012
-Received messages=========
-advertise n012 ==> n013 AT 1376153717769
-Content: n012;n012
-State for n013 | NR. 3:
-Table neighbour
-n012
-n008
-
-Table route_updated
-n008;n008
-
-Table best_candidate
-n008;n008
-n012;n012
-
-Table add_neighbour
-
-Table candidate
-n008;n008;n008
-n012;n012;n012
-
-Table best_cost
-n008;4
-n012;4
-
-Table best_next_hop
-n008;n008
-n012;n012
-
-Sent messages=========
-advertise n013 ==> n012 AT 1376153733957
-Content: n008;n013n008
-Received messages=========
-advertise n008 ==> n013 AT 1376153719902
-Content: n008;n008
-State for n013 | NR. 4:
-Table neighbour
-n012
-n008
-
-Table route_updated
-n011;n012
-
-Table best_candidate
-n008;n008
-n011;n012n011
-n012;n012
-
-Table add_neighbour
-
-Table candidate
-n011;n012;n012n011
-n008;n008;n008
-n012;n012;n012
-
-Table best_cost
-n008;4
-n011;8
-n012;4
-
-Table best_next_hop
-n008;n008
-n011;n012
-n012;n012
-
-Sent messages=========
-advertise n013 ==> n008 AT 1376153745194
-Content: n011;n013n012n011
-Received messages=========
-advertise n012 ==> n013 AT 1376153732954
-Content: n011;n012n011
-State for n013 | NR. 5:
-Table neighbour
-n012
-n008
-
-Table route_updated
-n009;n008
-
-Table best_candidate
-n008;n008
-n009;n008n009
-n011;n012n011
-n012;n012
-
-Table add_neighbour
-
-Table candidate
-n009;n008;n008n009
-n011;n012;n012n011
-n008;n008;n008
-n012;n012;n012
-
-Table best_cost
-n008;4
-n009;8
-n011;8
-n012;4
-
-Table best_next_hop
-n008;n008
-n009;n008
-n011;n012
-n012;n012
-
-Sent messages=========
-advertise n013 ==> n012 AT 1376153751086
-Content: n009;n013n008n009
-Received messages=========
-advertise n008 ==> n013 AT 1376153736224
-Content: n009;n008n009
+advertise n007 ==> n013 AT 1377019160983 UID:12
+Content: n007;n007
 State for n013 | NR. 6:
 Table neighbour
-n012
-n008
+n007
 
 Table route_updated
-n006;n012
 
 Table best_candidate
-n006;n012n011n006
-n008;n008
-n009;n008n009
-n011;n012n011
-n012;n012
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n006;n012;n012n011n006
-n009;n008;n008n009
-n011;n012;n012n011
-n008;n008;n008
-n012;n012;n012
+n007;n007;n007
 
 Table best_cost
-n006;12
-n008;4
-n009;8
-n011;8
-n012;4
+
+Table best_pref
 
 Table best_next_hop
-n006;n012
-n008;n008
-n009;n008
-n011;n012
-n012;n012
 
 Sent messages=========
-advertise n013 ==> n008 AT 1376153757605
-Content: n006;n013n012n011n006
+advertise n013 ==> n007 AT 1377019165128 UID:32
+Content: n013;n013
 Received messages=========
-advertise n012 ==> n013 AT 1376153739669
-Content: n006;n012n011n006
-State for n013 | NR. 7:
+State for n013 | NR. 11:
 Table neighbour
-n012
-n008
+n007
 
 Table route_updated
-n014;n008
+n014;n014
 
 Table best_candidate
-n006;n012n011n006
-n008;n008
-n009;n008n009
-n011;n012n011
-n012;n012
-n014;n008n009n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n014;n008;n008n009n014
-n006;n012;n012n011n006
-n009;n008;n008n009
-n011;n012;n012n011
-n008;n008;n008
-n012;n012;n012
+n014;n014;n014
+n007;n007;n007
 
 Table best_cost
-n006;12
-n008;4
-n009;8
-n011;8
-n012;4
-n014;12
+
+Table best_pref
 
 Table best_next_hop
-n006;n012
-n008;n008
-n009;n008
-n011;n012
-n012;n012
-n014;n008
 
 Sent messages=========
-advertise n013 ==> n012 AT 1376153763120
-Content: n014;n013n008n009n014
 Received messages=========
-advertise n008 ==> n013 AT 1376153751247
-Content: n014;n008n009n014
-State for n013 | NR. 8:
+advertise n014 ==> n013 AT 1377019182008 UID:26
+Content: n014;n014
+State for n013 | NR. 12:
 Table neighbour
-n012
-n008
+n014
+n007
 
 Table route_updated
-n001;n012
 
 Table best_candidate
-n001;n012n011n006n001
-n006;n012n011n006
-n008;n008
-n009;n008n009
-n011;n012n011
-n012;n012
-n014;n008n009n014
 
-Table add_neighbour
+Table policy
 
 Table candidate
-n001;n012;n012n011n006n001
-n014;n008;n008n009n014
-n006;n012;n012n011n006
-n009;n008;n008n009
-n011;n012;n012n011
-n008;n008;n008
-n012;n012;n012
+n014;n014;n014
+n007;n007;n007
 
 Table best_cost
-n001;16
-n006;12
-n008;4
-n009;8
-n011;8
-n012;4
-n014;12
+
+Table best_pref
 
 Table best_next_hop
-n001;n012
-n006;n012
-n008;n008
-n009;n008
-n011;n012
-n012;n012
-n014;n008
 
 Sent messages=========
-advertise n013 ==> n008 AT 1376153768724
-Content: n001;n013n012n011n006n001
+advertise n013 ==> n014 AT 1377019186408 UID:33
+Content: n013;n013
 Received messages=========
-advertise n012 ==> n013 AT 1376153752159
-Content: n001;n012n011n006n001
-State for n013 | NR. 10:
-Table neighbour
-n012
-n008
-
-Table route_updated
-n002;n012
-
-Table best_candidate
-n001;n012n011n006n001
-n002;n012n011n006n007n002
-n006;n012n011n006
-n008;n008
-n009;n008n009
-n011;n012n011
-n012;n012
-n014;n008n009n014
-
-Table add_neighbour
-
-Table candidate
-n002;n012;n012n011n006n007n002
-n001;n012;n012n011n006n001
-n014;n008;n008n009n014
-n006;n012;n012n011n006
-n009;n008;n008n009
-n011;n012;n012n011
-n008;n008;n008
-n012;n012;n012
-
-Table best_cost
-n001;16
-n002;20
-n006;12
-n008;4
-n009;8
-n011;8
-n012;4
-n014;12
-
-Table best_next_hop
-n001;n012
-n002;n012
-n006;n012
-n008;n008
-n009;n008
-n011;n012
-n012;n012
-n014;n008
-
-Sent messages=========
-advertise n013 ==> n008 AT 1376153778398
-Content: n002;n013n012n011n006n007n002
-Received messages=========
-advertise n012 ==> n013 AT 1376153772535
-Content: n002;n012n011n006n007n002

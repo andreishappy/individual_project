@@ -1,22 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <doc>
   <nodes>
 
-    <node id="n001" x="10" y="30"/>
-    <node id="n002" x="20" y="30"/>
-<!--    <node id="n003" x="30" y="30"/>
-    <node id="n004" x="40" y="30"/>
-    <node id="n005" x="50" y="30"/>
-    <node id="n006" x="10" y="20"/>
-    <node id="n007" x="20" y="20"/>
-    <node id="n008" x="30" y="20"/>
-    <node id="n009" x="40" y="20"/>
-    <node id="n010" x="50" y="20"/>
-    <node id="n011" x="10" y="10"/>
-    <node id="n012" x="20" y="10"/>
-    <node id="n013" x="30" y="10"/>
-    <node id="n014" x="40" y="10"/>
-    <node id="n015" x="50" y="10"/>
-    <node id="n016" x="10" y="40"/>
+    <node id="n001" x="-255" y="-44"/>
+    <node id="n002" x="-140" y="-45"/>
+    <node id="n003" x="-51" y="-46"/>
+    <node id="n004" x="56" y="-46"/>
+    <node id="n005" x="-181" y="-118"/>
+    <node id="n006" x="-262" y="72"/>
+    <node id="n007" x="57" y="153"/>
+    <node id="n008" x="222" y="152"/>
+    <node id="n009" x="161" y="66"/>
+    <node id="n010" x="44" y="74"/>
+    <node id="n011" x="-65" y="73"/>
+    <node id="n012" x="-163" y="75"/>
+    <node id="n013" x="-79" y="238"/>
+    <node id="n014" x="60" y="226"/>
+    <node id="n015" x="140" y="226"/>
+<!--<node id="n016" x="10" y="40"/>
     <node id="n017" x="20" y="40"/>
     <node id="n018" x="20" y="10"/>
     <node id="n019" x="30" y="10"/>
@@ -108,32 +109,11 @@
     <node id="n100" x="30" y="10"/>
 -->
 
-
   </nodes>
 
-  <rule filename="/homes/ap3012/individual_project/home/no_ssh_versions/BGP_v2.dsmr" />
+  <rule filename="/homes/ap3012/individual_project/home/no_ssh_versions/BGP_v2.dsmr"/>
 
   <hosts>
-
-    <host hostname="corona30.doc.ic.ac.uk" username="ap3012"
-	  password="">
-    </host>
-
-    <host hostname="corona29.doc.ic.ac.uk" username="ap3012"
-	  password="">
-    </host>
-
-    <host hostname="corona31.doc.ic.ac.uk" username="ap3012"
-	  password="">
-    </host>
-
-    <host hostname="corona32.doc.ic.ac.uk" username="ap3012"
-	  password="">
-    </host>
-
-
-
-
   </hosts>
 
   <pre_inputs>
@@ -143,30 +123,31 @@
     <input instance="n001" type="csv" table_name="start" csv_file="csv_attempt"/>-->
   </pre_inputs>
   
-  <post_inputs />
+  <post_inputs/>
 
   <topology>
 
-    <link node1="n001" node2="n002" />
-<!--    <link node1="n002" node2="n003" />
-    <link node1="n003" node2="n004" />
-    <link node1="n004" node2="n005" />
-    <link node1="n005" node2="n006" />
-    <link node1="n002" node2="n005" />
+    <link node1="n001" node2="n002"/>
+    <link node1="n002" node2="n003"/>
+    <link node1="n003" node2="n004"/>
+    <link node1="n004" node2="n005"/>
+    <link node1="n005" node2="n006"/>
+    <link node1="n002" node2="n005"/>
 
 
-    <link node1="n006" node2="n012" />
-    <link node1="n007" node2="n008" />
-    <link node1="n008" node2="n009" />
-    <link node1="n009" node2="n010" />
-    <link node1="n010" node2="n011" />
-    <link node1="n011" node2="n012" />
+    <link node1="n006" node2="n012"/>
+    <link node1="n007" node2="n008"/>
+    <link node1="n008" node2="n009"/>
+    <link node1="n009" node2="n010"/>
+    <link node1="n010" node2="n011"/>
+    <link node1="n011" node2="n012"/>
 
-    <link node1="n007" node2="n013" />
-    <link node1="n008" node2="n014" />
-    <link node1="n009" node2="n015" />
-    <link node1="n014" node2="n013" />
-    <link node1="n015" node2="n014" /> -->
+    <link node1="n007" node2="n013"/>
+    <link node1="n008" node2="n014"/>
+    <link node1="n009" node2="n015"/>
+    <link node1="n014" node2="n013"/>
+    <link node1="n015" node2="n014"/>
+
   </topology>
   <limit lim="2000"> </limit>
 </doc>

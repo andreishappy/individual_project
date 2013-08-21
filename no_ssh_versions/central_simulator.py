@@ -17,7 +17,10 @@ from lxml.etree import *
 
 class Simulator:
 
-    def __init__(self,config_file):
+    def __init__(self,config_file, parallel_topology):
+        #Decides if the insertions are parallel
+        self.parallel_topology = parallel_topology
+
         self.config = MyXMLParser(config_file)
         #List of all the instances to start
         self.nodes = self.config.nodes
@@ -76,7 +79,12 @@ class Simulator:
         self.insert_list(self.pre_inputs)
        
         #Set the topology
-        self.set_topology()
+        if self.parallel_topology:
+            self.set_topology_parallel()
+            time.sleep(10)
+        else:
+            self.set_topology_sequential()
+
 
         #Do post inputs
         self.insert_list(self.post_inputs)
@@ -111,6 +119,7 @@ class Simulator:
     #==== HELPER FUNCTIONS FOR SIMULATION ====
     #=========================================
     def start_nodes(self):
+        print "Starting Engines"
         for instance in self.nodes:
             cmd = 'dsmengine -namespace andrei -instance {0} {1}'\
                    .format(instance,self.rule)
@@ -124,7 +133,7 @@ class Simulator:
                                               executable = '/bin/bash')
 
             #Set the stdout and stderr streams not to block
-            fcntl.fcntl(self.process_dict[instance].stdout.fileno(), fcntl.F_SETFL, os.O_NONBLOCK)
+            #fcntl.fcntl(self.process_dict[instance].stdout.fileno(), fcntl.F_SETFL, os.O_NONBLOCK)
             fcntl.fcntl(self.process_dict[instance].stderr.fileno(), fcntl.F_SETFL, os.O_NONBLOCK)
 
         
@@ -135,7 +144,6 @@ class Simulator:
                 try:
                     l = self.process_dict[instance].stderr.readline()
                     if 'DSMEngine engine started'.format(instance) in l:
-                        print l
                         self.started += 1
                         
                     if 'exiting' in l:
@@ -146,8 +154,50 @@ class Simulator:
     
 
     #PARALLEL TOPOLOGY - NETWORK OVERLOADS -> MESSAGES LOST
-    '''
-    def set_topology(self):
+    def set_topology_parallel(self):
+        '''process_dict = {}
+        for link in self.links:
+            for insert in [(link[0],link[1]),(link[1],link[0])]:
+                cmd = 'tuple insert andrei {0} neighbour to_add={1}'\
+                      .format(insert[0],insert[1])
+                print 'Calling: {0}'.format(cmd)
+                
+                process_dict[insert] = subprocess.Popen(cmd, shell=True,\
+                                                        stdout=subprocess.PIPE,\
+                                                        stderr=subprocess.PIPE,\
+                                                        executable = '/bin/bash')
+        
+                fcntl.fcntl(process_dict[insert].stdout.fileno(), fcntl.F_SETFL, os.O_NONBLOCK)
+    
+        started = 0
+        to_start = len(process_dict)
+        while started != to_start:
+            for insert in process_dict:
+                try:
+                    l = process_dict[insert].stdout.readline()
+                except IOError:
+                    continue
+
+                #FAIL
+                if 'Tuples NOT sent' in l:
+                    cmd = 'tuple insert andrei {0} neighbour to_add={1}'\
+                          .format(insert[0],insert[1])
+                    
+                    print "LINK FAILED: {0}".format(insert)
+
+                    process_dict[insert] = subprocess.Popen(cmd, shell=True,\
+                                                            stdout=subprocess.PIPE,\
+                                                            stderr=subprocess.PIPE,\
+                                                            executable = '/bin/bash')
+                    fcntl.fcntl(process_dict[insert].stdout.fileno(), fcntl.F_SETFL, os.O_NONBLOCK)
+
+                #SUCCESS
+                if 'Tuples sent' in l:
+                    started += 1
+                    print "LINK INSERTED: {0} {1}/{2} DONE".format(insert,started,to_start)
+                    time.sleep(30)
+        print "INSERTS DONE"
+        '''
         inserters = []
         for link in self.links:
             to_insert = [(link[0],link[1]),(link[1],link[0])]
@@ -160,8 +210,7 @@ class Simulator:
         
         for inserter in inserters:
             inserter.join()
-            ''' 
-
+            
     def insert_list(self,lis):
         for inp in lis:
             if inp['type'] == 'csv':
@@ -217,7 +266,7 @@ class Simulator:
                     continue
        
     #SEQUETIAL TOPOLOGY - WORKS
-    def set_topology(self):
+    def set_topology_sequential(self):
         for link in self.links:
             to_insert = [(link[0],link[1]),(link[1],link[0])]
             for insert in to_insert:
@@ -243,7 +292,7 @@ class Simulator:
                         if 'Tuples NOT sent' in line:
                            print "LINK FAILED: {0}".format(insert)
                            continue
-    
+                                                                                   
 
     def make_xml(self):
         result = Element('result')
@@ -265,12 +314,16 @@ if __name__ == "__main__":
                      help="xml file to load configuration")
     '''                 
 
+    parser.add_option("-p", "--parallel_topology", action="store_true",\
+                      dest = 'parallel_topology', default=False,\
+                      help="make the topology inserting parallel")
+
     (options,args) = parser.parse_args()
     if len(args) != 1:
         print "Need to supply config file"
         exit(-1)
-    
+
     config = args[0]
-    simulator = Simulator(config)
+    simulator = Simulator(config,options.parallel_topology)
     
     simulator.run_simulation()

@@ -1,11 +1,11 @@
 <doc>
   <nodes>
 
-    <node id="n001" x="10" y="30"/>
-    <node id="n002" x="20" y="30"/>
-    <node id="n003" x="30" y="30"/>
-    <node id="n004" x="40" y="30"/>
-    <node id="n005" x="50" y="30"/>
+    <node id="n001" x="240" y="300"/>
+    <node id="n002" x="380" y="300"/>
+    <node id="n003" x="490" y="300"/>
+    <node id="n004" x="380" y="600"/>
+    <node id="n005" x="490" y="600"/>
 
   </nodes>
 

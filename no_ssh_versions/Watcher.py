@@ -13,7 +13,7 @@ class WatcherMonitor():
     def converged(self):
         time_since_last = time.time() - self.last_evaluation
         #print time_since_last
-        return time_since_last >= 30
+        return time_since_last >= 10
 
     def evaluation_done(self):
         self.evaluations += 1
@@ -90,6 +90,13 @@ class Watcher(Thread):
         for instance in self.process_dict:
             self.out_buffer[instance] = ''
             self.err_buffer[instance] = ''
+        #END CENTRAL_SIMULATOR ==================
+
+        #LINE BUFFER SHOULD SPEED UP LOGGING FOR ENGINES
+        self.line_buffer = {}
+        for instance in process_dict:
+            self.line_buffer[instance] = ''
+
 
     def converged(self):
         time_since_last = time.time() - self.last_evaluation
@@ -102,11 +109,23 @@ class Watcher(Thread):
         while not self.stopped and not self.monitor.hit_limit():
             #start_of_loop = time.time()
             for instance in self.process_dict:
+                if self.process_dict[instance].poll() != None:
+                    print "Instance {0} terminated".format(instance)
+
                 try:
                     #ONLY LOOKING AT STDERR
-                    l = self.process_dict[instance].stderr.readline()
-                    
-                    self.analyse(l,instance)
+                    lines = self.process_dict[instance].stderr.read(2048)
+                    lines = lines.splitlines(True)
+                   
+                    if self.line_buffer[instance] != '':
+                        lines[0] = self.line_buffer[instance] + lines[0]
+                        self.line_buffer[instance] = ''
+
+                    for l in lines:
+                        if l.find('\n') != -1: #full line
+                            self.analyse(l,instance)
+                        else: #partial line add to the buffer
+                            self.line_buffer[instance] = l
                 except IOError:
                     pass
             #end_of_loop = time.time()

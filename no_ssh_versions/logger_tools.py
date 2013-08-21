@@ -34,11 +34,13 @@ class Message:
         self.dest = destination
         self.time = timestamp
         self.content = content
+        self.will_be_lost = 1
+        self.unique_id = None
 
     def __str__(self):
         #If you want to see the full header
-        result = "{0} {2} ==> {3} AT {4}\n"\
-                 .format(self.table_name,self.state_nr,self.src,self.dest,self.time)
+        result = "{0} {2} ==> {3} AT {4} UID:{5}\n"\
+                 .format(self.table_name,self.state_nr,self.src,self.dest,self.time,self.unique_id)
         result += "Content: {0}".format(self.content)
         return result
 
