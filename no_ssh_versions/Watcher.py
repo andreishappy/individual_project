@@ -76,11 +76,12 @@ class Watcher(Thread):
         #Terminates the infinite work loop
         self.stopped = False
 
+        '''
         #Put the logs in files
         self.open_files = {}
         for instance in process_dict:
             self.open_files[instance] = open("engine-{0}".format(instance),'w')
-
+            '''
         #END FROM THREAD_2_CAPTURE
 
         #FROM CENTRAL_SIMULATOR ==================

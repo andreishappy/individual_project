@@ -12,8 +12,6 @@ from Inserter import Inserter
 import fcntl
 import os
 import string
-from result_to_xml import *
-from lxml.etree import *
 
 class Simulator:
 
@@ -21,13 +19,7 @@ class Simulator:
         #The file to which the output should be written
         self.output = output
 
-        #Read config file and pass it to xml parser
-        f = open(config_file)
-        xml = f.read()
-
-
-        self.config = MyXMLParser(xml)
-        f.close()
+        self.config = MyXMLParser(config_file)
                 
         #List of all the instances to start
         self.nodes = self.config.nodes
@@ -132,8 +124,7 @@ class Simulator:
                    
 
             #print "Calling command {0}".format(cmd)
-            with self.lock:
-                self.process_dict[instance] = subprocess.Popen(cmd, shell=True,\
+            self.process_dict[instance] = subprocess.Popen(cmd, shell=True,\
                                               stdout=subprocess.PIPE,\
                                               stderr=subprocess.PIPE,\
                                               executable = '/bin/bash')
@@ -150,6 +141,7 @@ class Simulator:
                 instance = ins[0]
                 try:
                     l = self.process_dict[instance].stderr.readline()
+
                     if 'DSMEngine engine started'.format(instance) in l:
                         self.started += 1
                         
@@ -175,10 +167,8 @@ class Simulator:
     def input_pre(self):
         print "DOING: inputs before topology"
         inserters = []
-        print self.pre_inputs
         for inp in self.pre_inputs:
             #Create the csv file
-            print "Creating csv{0}".format(inp['instance'])
             f = open('csv{0}'.format(inp['instance']),'w')
             f.write(inp['var_names'] + '\n')
             for row in inp['rows']:
@@ -315,8 +305,6 @@ class Simulator:
         #Dictionary : node -> neighbour list
         dic = {}
 
-        print self.topology
-
         for link in self.topology:
             #Add node -> neighbour to dict
             if link[0] in dic:
@@ -333,11 +321,9 @@ class Simulator:
         files = []
         #create a CSV file and give it to an inserter
         for node in dic:
-            print "working on " + node
             f = open('csv{0}'.format(node), 'w')
             f.write('to_add\n')
-            for neighbour in dic[node]:
-                print "adding " + neighbour
+            for neighbour in dic[node]:                
                 f.write(neighbour + '\n')
             f.close()
 
@@ -404,6 +390,9 @@ class Simulator:
         self.result = tostring(result, xml_declaration=True, pretty_print=True)
 
 if __name__ == "__main__":
+    #Add DSMEngine to the loadpath
+    os.environ['PATH'] += ':/homes/ap3012/individual_project/unzipped22/bin'
+
     parser = OptionParser()
     '''MAYBE LATER
     parser.add_option("-c", "--config", dest="config",\
@@ -417,6 +406,13 @@ if __name__ == "__main__":
 
     config = args[0]
     output = args[1]
+    if config[0] == '"':
+        config = config[1,len(config-1)]
+    if output[0] == '"':
+        output = output[1,len(output-1)]
+
+    time.sleep(5)
     simulator = Simulator(config,output)
     
     simulator.run_simulation()
+    time.sleep(5)

@@ -3,6 +3,17 @@ from lxml.etree import *
 def state_xml(state_dict):
     pass
 
+
+def append_messages_lost(messages_lost_elem,lost_list):
+    for mess in lost_list:
+        mess_elem = Element('message')
+        mess_elem.attrib['from'] = mess.src
+        mess_elem.attrib['to'] = mess.dest
+        mess_elem.attrib['type'] = mess.table_name
+        mess_elem.attrib['state_nr'] = str(mess.state_nr)
+        mess_elem.attrib['content'] = mess.content
+        messages_lost_elem.append(mess_elem)
+
 #Takes in list of dicts and outputs elemment
 def do_declarations(dic_list,tag):
     result = Element(tag)

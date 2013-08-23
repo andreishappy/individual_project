@@ -48,6 +48,19 @@ def two_way_recurse(node_state_dict, node_state_list, current_time):
   
         current_time += 1
 
+def find_lost_messages(node_state_dict):
+    result = []
+    for node in node_state_dict:
+        state_list = node_state_dict[node]
+        for state in state_list:
+            for sent_message in state.sent:
+                if sent_message.will_be_lost == 1:
+                    sent_message.state_nr = state.state_nr
+                    result.append(sent_message)
+
+    #Now sort them
+    return sorted(result, key=lambda x: x.state_nr)
+
 
 #Changes the dict in place
 def lamport_transformation(node_state_dict):
@@ -88,6 +101,10 @@ def lamport_transformation(node_state_dict):
                 unique_id += 1
     print "Messages Received {0}".format(messages_received)
     print "Messages Sent {0}".format(messages_sent)
+
+    messages_lost = find_lost_messages(node_state_dict)
+    return messages_lost, messages_received, messages_sent
+
 if __name__ == '__main__':
 
     A = []

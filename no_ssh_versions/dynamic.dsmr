@@ -1,0 +1,16 @@
+//Declarations
+system peers(char[128] node, char[64] relationship);
+
+input add_neighbour(char[128] to_add);
+input delete_neighbour(char[128] to_delete);
+
+persistent neighbour(char[128] neighbour);
+persistent should_delete(char[128] neighbour);
+//Rules
+neighbour(N) if add_neighbour(N);
+should_delete(N) if delete_neighbour(N);
+
+block;
+
+neighbour(N) if prev neighbour(N), not should_delete(N);
+

@@ -1,18 +1,15 @@
 from threading import *
 import subprocess
 
-class LinkInserter(Thread):
-    def __init__(self, link):
+class Inserter(Thread):
+    def __init__(self, cmd):
         Thread.__init__(self)
-        self.insert = link
+        self.cmd = cmd
 
     def run(self):
-        cmd = 'tuple insert andrei {0} add_neighbour to_add={1}'\
-               .format(self.insert[0],self.insert[1])
-
         success = False
         while not success:
-            p = subprocess.Popen(cmd, shell=True,
+            p = subprocess.Popen(self.cmd, shell=True,
                                  stderr=subprocess.PIPE,\
                                  stdout=subprocess.PIPE,\
                                  executable = '/bin/bash')
@@ -22,11 +19,11 @@ class LinkInserter(Thread):
             stdout = stdout.splitlines()
             for line in stdout:
                 if 'Tuples sent' in line:
-                    print "LINK INSERTED: {0}".format(self.insert)
+                    print "INSERTED: {0}".format(self.cmd)
                     success = True
                     continue
                 if 'Tuples NOT sent' in line:
-                    print "LINK FAILED: {0}".format(self.insert)
+                    print "FAILED: {0}".format(self.cmd)
                     continue
                              
 

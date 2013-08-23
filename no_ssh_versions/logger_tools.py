@@ -48,7 +48,8 @@ class Message:
         return self.table_name == other.table_name and \
                self.src == other.src and \
                self.dest == other.dest and \
-               self.time == other.time
+               self.time == other.time and \
+               self.content == other.content
 
 class State:
     def __init__(self,instance,state_nr):
