@@ -1,0 +1,36 @@
+system peers(char[128] node, char[64] relationship);
+persistent latest_messages(char[128] neighbor, double neigh_l, double mine_l);
+persistent messages_received(char[128] neigh, double neigh_l, double mine_l);
+// Location of the robot, only the coordinate in x axis will be stored as the 
+// robots are considered to move in a straight line
+input location_input(double l);
+// Locations of the neighbors 
+transport transport_location(double neigh_l, double mine_l);
+persistent messages_sent(char[128] neigh, double neigh_l, double mine_l);
+persistent no_messages_sent(int no_messages);
+persistent neighbour(char[128] neighbour);
+
+
+neighbour("robot_1") if peers("edge_1","Self");
+neighbour("robot_3") if peers("edge_2","Self");
+
+
+// send the initial location to all the neighbors
+transport_location(l,-1)@neighbor if location_input(l), peers(neighbor, "Neighbor");
+messages_sent(neighbor,l,-1) if location_input(l), peers(neighbor, "Neighbor");
+
+// store all the messages I received for checking - not actual use
+messages_received(src,l,mine_l) if transport_location(l,mine_l)@src;
+messages_received(src,l,mine_l) if prev messages_received(src,l,mine_l);
+
+// store the nodes that just sent their location
+latest_messages(src,src_l,mine_l) if transport_location(src_l,mine_l)@src;
+
+// let the new neighbors know my location
+transport_location(mine_l,neighbor_l)@neighbor if location_input(mine_l), latest_messages(neighbor,neighbor_l,mine_neigh_l): mine_neigh_l == -1;
+messages_sent(neighbor,mine_l,neighbor_l) if location_input(mine_l), latest_messages(neighbor,neighbor_l,mine_neigh_l): mine_neigh_l == -1;
+
+messages_sent(neighbor,mine_l,neigh_l) if prev messages_sent(neighbor,mine_l,neigh_l);
+
+block;
+no_messages_sent(COUNT(neighbor)) if messages_sent(neighbor,*,*);

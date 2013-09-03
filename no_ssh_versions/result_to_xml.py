@@ -14,6 +14,28 @@ def append_messages_lost(messages_lost_elem,lost_list):
         mess_elem.attrib['content'] = mess.content
         messages_lost_elem.append(mess_elem)
 
+def do_persistent_declarations(template_list):
+    #template list is a list of ([TableDicts],[IDs])
+    result = Element("table_declarations")
+    for template in template_list:
+        tables_elem = Element("tables")
+        result.append(tables_elem)
+        ids = template[1]
+        table_dicts = template[0]
+        
+        tables_elem.attrib['ids'] = ';'.join(ids)
+        for table_dict in table_dicts:
+            template_elem = Element('template')
+            tables_elem.append(template_elem)
+            template_elem.attrib['type'] = table_dict['name']
+            template_elem.attrib['separator'] = ';'
+            template_elem.attrib['columns'] = table_dict['columns']
+
+    return result
+
+
+
+
 #Takes in list of dicts and outputs elemment
 def do_declarations(dic_list,tag):
     result = Element(tag)

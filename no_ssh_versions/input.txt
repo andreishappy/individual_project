@@ -1,0 +1,5 @@
+robot_1 mobile_robots.dsmr, input tuple: 70.0
+robot_2 mobile_robots.dsmr, input tuple: 90.0 
+robot_3 mobile_robots.dsmr, input tuple: 120.0
+edge_1 edges_robots.dsmr, input tuple: 0.0
+edge_2 edges__robots.dsmr, input tuple: 200.0

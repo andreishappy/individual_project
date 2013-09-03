@@ -1,0 +1,17 @@
+import java.io.IOException;
+import java.io.StringReader;
+
+import com.ibm.watson.dsm.DSMException;
+import com.ibm.watson.dsm.engine.IRuleEngine;
+import com.ibm.watson.dsm.engine.TupleState;
+import com.ibm.watson.dsm.engine.app.DSMEngine;
+import com.ibm.watson.dsm.engine.parser.dsm.DSMDefinition;
+import com.ibm.watson.dsm.engine.parser.dsm.DSMParser;
+import com.ibm.watson.dsm.platform.ApplicationDescriptor;
+import com.ibm.watson.dsm.platform.IApplicationDescriptor;
+import com.ibm.watson.dsm.platform.tuples.IReadOnlyTupleStorage;
+import com.ibm.watson.dsm.platform.tuples.ITuple;
+import com.ibm.watson.dsm.platform.tuples.Tuple;
+
+class AndreiMode{
+    public static void action1(IRuleEngine,

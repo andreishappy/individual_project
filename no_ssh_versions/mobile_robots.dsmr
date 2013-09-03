@@ -1,0 +1,94 @@
+system peers(char[128] node, char[64] relationship);
+persistent latest_messages(char[128] neighbor, double neigh_l, double mine_l);
+persistent messages_received(char[128] neigh, double neigh_l, double mine_l);
+// Location of the robot: only the coordinate in x axis will be stored as the 
+// robots are considered to move in a straight line
+input location_input(double l);
+persistent location(double l);
+// Locations of the nodes that are sent in the network
+transport transport_location(double neigh_l, double mine_l);
+// Left and right neighbors
+persistent temp_right(int x); 
+persistent temp_left(int x); 
+persistent left_neighbor(char[128] neigh);
+persistent left_neighbor_loc(char[128] neigh, double l);
+persistent right_neighbor(char[128] neigh);
+persistent right_neighbor_loc(char[128] neigh, double l);
+persistent previous_location(double l);"
+persistent messages_sent(char[128] neigh, double neigh_l, double mine_l);
+persistent no_messages_sent(int no_messages);
+action action_robot(int unused, char[128] methodName, char[128] robot_id, double move);
+persistent shift(double my_shift);
+
+persistent neighbour(char[128] neighbour);
+
+// store in a persistent table the initial location
+location(l) if location_input(l);
+// send the initial location to all the neighbors with -1 that means the robot doesn't know its neighbor's location
+transport_location(l,-1)@neighbor if location_input(l), peers(neighbor, "Neighbor");
+
+messages_sent(neighbor,l,-1) if location_input(l), peers(neighbor, "Neighbor");
+
+
+// store all the messages I received for checking - not actual use
+messages_received(src,l,mine_l) if transport_location(l,mine_l)@src;
+messages_received(src,l,mine_l) if prev messages_received(src,l,mine_l);
+
+// store the nodes that just sent their location
+latest_messages(src,src_l,mine_l) if transport_location(src_l,mine_l)@src;
+
+
+// let the new neighbors know my location
+transport_location(mine_l,neighbor_l)@neighbor if location_input(mine_l), latest_messages(neighbor,neighbor_l,mine_neigh_l): mine_neigh_l == -1;
+
+messages_sent(neighbor,mine_l,neighbor_l) if location_input(mine_l), latest_messages(neighbor,neighbor_l,mine_neigh_l): mine_neigh_l == -1;
+
+// hardcode the left and right neighbors
+left_neighbor("edge_1") if peers("robot_1", "Self");
+left_neighbor("robot_1") if peers("robot_2", "Self");
+left_neighbor("robot_2") if peers("robot_3", "Self");
+right_neighbor("robot_2") if peers("robot_1", "Self");
+right_neighbor("robot_3") if peers("robot_2", "Self");
+right_neighbor("edge_2") if peers("robot_3", "Self");
+
+// FOR VISUALIZATION
+neighbour("edge_1") if peers("robot_1", "Self");
+neighbour("robot_1") if peers("robot_2", "Self");
+neighbour("robot_2") if peers("robot_3", "Self");
+neighbour("robot_2") if peers("robot_1", "Self");
+neighbour("robot_3") if peers("robot_2", "Self");
+neighbour("edge_2") if peers("robot_3", "Self");
+
+
+// store the neighbors' locations
+left_neighbor_loc(src,left_l) if transport_location(left_l,*)@src, left_neighbor(src);
+right_neighbor_loc(src,right_l) if transport_location(right_l,*)@src, right_neighbor(src);
+left_neighbor_loc(src,left_l) if not transport_location(*,*)@src, prev left_neighbor_loc(src,left_l);
+right_neighbor_loc(src,right_l) if not transport_location(*,*)@src, prev right_neighbor_loc(src,right_l);
+
+// calculate new location if necessary
+block;"
+temp_right(COUNT(x)) if right_neighbor_loc(x,*); 
+temp_left(COUNT(x)) if left_neighbor_loc(x,*); 
+
+location(l) if prev location(l), temp_left(left_count), temp_right(right_count) : left_count == 0 || right_count == 0; 
+location((l1/2)+(l2/2)) if left_neighbor_loc(left,l1), right_neighbor_loc(right,l2), prev location(l) : ABS(l-l1/2-l2/2) > 1.5;
+location(l) if left_neighbor_loc(left,l1), right_neighbor_loc(right,l2), prev location(l) : ABS(l-l1/2-l2/2) <= 1.5;		 
+
+shift(new_l-l) if prev location(l), location(new_l): new_l != l;
+
+block;
+action_robot(1,"lejosPC_classes.action_middle.action", my_id, my_shift) if shift(my_shift), peers(my_id, "Self");
+	
+// Send the robot's location if it has changed to my neighbors
+previous_location(l) if prev location(l);
+transport_location(newl,left_l)@neighbor if location(newl), previous_location(l), left_neighbor_loc(neighbor,left_l): newl != l;
+transport_location(newl,right_l)@neighbor if location(newl), previous_location(l), right_neighbor_loc(neighbor,right_l): newl != l;
+
+messages_sent(neighbor,newl,left_l) if location(newl), previous_location(l), left_neighbor_loc(neighbor,left_l): newl != l;
+messages_sent(neighbor,newl,right_l) if location(newl), previous_location(l), right_neighbor_loc(neighbor,right_l): newl != l;
+
+messages_sent(neighbor,mine_l,neigh_l) if prev messages_sent(neighbor,mine_l,neigh_l);
+
+block;
+no_messages_sent(COUNT(neighbor)) if messages_sent(neighbor,*,*);

@@ -13,7 +13,7 @@ class WatcherMonitor():
     def converged(self):
         time_since_last = time.time() - self.last_evaluation
         #print time_since_last
-        return time_since_last >= 10
+        return time_since_last >= 20
 
     def evaluation_done(self):
         self.evaluations += 1
@@ -23,16 +23,19 @@ class WatcherMonitor():
         return self.evaluations >= self.limit
 
 class Watcher(Thread):
-    def __init__(self,process_dict,config,monitor,persistent_names_dict):
+    def __init__(self,process_dict,config,monitor,pers_dict_list,\
+                     transport_dict_list):
         Thread.__init__(self)
         self.monitor = monitor
 
-        #So that only persistent tables are logged
-        self.persistent_names = []
-        for table in persistent_names_dict:
-            self.persistent_names.append(table['name'])
+        #Dict: node_id -> persistent table names (capture content)
+        #self.node_to_persistent = node_to_persistent
 
-        self.rule = config.rule
+        self.pers_tables = []
+        for table in pers_dict_list:
+            self.pers_tables.append(table['name'])
+
+
         #self.limit = config.limit
         #self.evaluations = 0
         self.stopped = False
@@ -54,7 +57,11 @@ class Watcher(Thread):
         self.current_received_messages = {}
         self.receiving = {}
         self.receive_buffer = {}
-        self.transport_names = get_transport_table_name_list(self.rule)
+        
+        self.transport_names = []
+        for table in transport_dict_list:
+            self.transport_names.append(table['name'])
+
         #print "TRANSPORT NAMES {0}".format(self.transport_names)
         for instance in process_dict:
             self.current_received_messages[instance] = []
@@ -76,12 +83,12 @@ class Watcher(Thread):
         #Terminates the infinite work loop
         self.stopped = False
 
-        '''
+        
         #Put the logs in files
         self.open_files = {}
         for instance in process_dict:
             self.open_files[instance] = open("engine-{0}".format(instance),'w')
-            '''
+            
         #END FROM THREAD_2_CAPTURE
 
         #FROM CENTRAL_SIMULATOR ==================
@@ -135,9 +142,9 @@ class Watcher(Thread):
 
     def analyse(self,l,instance):
         #WRITE TO DISK
-        '''self.open_files[instance].write(l)
+        self.open_files[instance].write(l)
         self.open_files[instance].flush()
-        '''                     
+                             
         #CHECK IF THE LISTENER EXITS
         if 'exiting' in l:
             print 'Instance {0} listener exited' 
@@ -149,6 +156,7 @@ class Watcher(Thread):
             self.state_buffer[instance] += l
 
         if self.receiving[instance]:
+            #print "Receiving {0}".format(instance)
             self.receive_buffer[instance] += l
  
         #Star of state logging FOUND
@@ -169,7 +177,7 @@ class Watcher(Thread):
                                            self.state_nr[instance],\
                                            self.current_sent_messages[instance],\
                                            self.current_received_messages[instance],\
-                                           self.persistent_names)
+                                           self.pers_tables)
                                     
             self.current_sent_messages[instance] = []
             self.current_received_messages[instance] = []
@@ -199,9 +207,9 @@ class Watcher(Thread):
                                     
         #Logging received messages STARTED
         elif 'FINE: Appending tuples' in l and \
-                has_transport_table(l, self.transport_names)\
-                and not self.monitor.hit_limit():
-                
+              has_transport_table(l, self.transport_names)\
+              and not self.monitor.hit_limit():
+
             self.receiving[instance] = True
             self.receive_buffer[instance] += l
                                 

@@ -1,0 +1,18 @@
+input add_neighbour(char[128] to_add);
+persistent neighbour(char[128] neighbour);
+persistent a_b(char[128] a, char[128] b);
+persistent b_c(char[128] b, int c);
+persistent a_c(char[128] a, int c);
+transport advertise(char[128] path);
+system peers(char[128] instanceID, char[64] relationship);
+
+
+a_c(A,C) if a_b(A,B), b_c(B,C);
+
+
+
+neighbour(N) if add_neighbour(N);
+
+neighbour(N) if prev neighbour(N);
+
+advertise(Self)@N if add_neighbour(N), peers(Self,"Self");

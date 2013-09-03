@@ -1,0 +1,66 @@
+//Declarations
+//=======================================
+
+//Topology
+input add_neighbour(char[128] to_add);
+persistent neighbour(char[128] neighbour);
+input delete_neighbour(char[128] to_delete);
+input start(int dummy);
+
+//Colour Voting Algorithm
+input add_colour(char[128] colour);
+persistent neighbour_colour(char[128] neighbour, char[128] colour);
+persistent my_colour(char[128] colour);
+persistent num_reds(int num);
+persistent num_blues(int num);
+transport vote(char[128] colour);
+
+
+//Rules
+//==========================
+
+//Topology
+neighbour(N) if add_neighbour(N);
+neighbour(N) if prev neighbour(N), not delete_neighbour(N);
+
+//Colour voting algorithm
+my_colour(C) if add_colour(C);
+
+neighbour_colour(X,C) if 
+	vote(C)@X;
+neighbour_colour(X,C) if
+	prev neighbour_colour(X, C),
+	not vote(*)@X;
+
+block;
+
+num_reds(COUNT(X)) if
+	neighbour_colour(X,"red");
+num_blues(COUNT(X)) if
+	neighbour_colour(X,"blue");
+
+block;
+
+my_colour(C) if 
+        prev my_colour(C),
+	num_reds(Reds),
+	num_blues(Blues):
+	Reds <= Blues;
+my_colour("red") if
+	num_reds(Reds), 
+	num_blues(Blues): 
+	Reds > Blues;
+	
+/*my_colour("blue") if
+	num_reds(Reds), 
+	num_blues(Blues):
+	Reds < Blues;
+*/
+vote(C)@X if
+	my_colour(C), 
+	add_neighbour(X);
+
+vote(C)@X if
+	my_colour(C),
+	not prev my_colour(C),
+	neighbour(X);

@@ -53,7 +53,7 @@ class MyXMLParser:
                 input_result['rows'] = []
                 for row in inp:
                     input_result['rows'].append(row.attrib['content']) 
-                self.pre_inputs.append(input_result)
+            self.pre_inputs.append(input_result)
 
         for link in topology:
             link_result = (link.attrib['node1'],link.attrib['node2'])

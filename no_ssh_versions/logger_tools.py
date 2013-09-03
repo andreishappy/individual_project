@@ -18,7 +18,12 @@ st2 ='''FINE: Appending tuples TupleSet:TupleSetDescriptor: appDesc=andrei/id4, 
 Tuple[TupleEntry: value=id5, TupleEntry: value=id4, TupleEntry: value=id4, TupleEntry: value=id4, TupleEntry: value=2013-07-28 19:00:56.832]
 ]'''
 
-st3 ='''2013-07-29 16:18:53.015'''
+st3 ='''{advertise=TupleSet:TupleSetDescriptor: appDesc=andrei/n004, name=advertise, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=PATH, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=n002, TupleEntry: value=n004, TupleEntry: value=n001, TupleEntry: value=n004n001, TupleEntry: value=2013-09-01 16:26:31.383]
+Tuple[TupleEntry: value=n006, TupleEntry: value=n004, TupleEntry: value=n001, TupleEntry: value=n004n001, TupleEntry: value=2013-09-01 16:26:31.383]
+], withdraw=TupleSet:TupleSetDescriptor: appDesc=andrei/n004, name=withdraw, [ColumnDescriptor: name=DEST_INTERNAL_, type=String[128], ColumnDescriptor: name=SRC_INTERNAL_, type=String[128], ColumnDescriptor: name=DEST, type=String[128], ColumnDescriptor: name=TOC_INTERNAL_, type=Timestamp][
+Tuple[TupleEntry: value=n001, TupleEntry: value=n004, TupleEntry: value=n001, TupleEntry: value=2013-09-01 16:26:31.415]
+]}'''
 
 #Takes instance name at initialization
 class TupleEntry:
@@ -129,7 +134,7 @@ def get_table_dict(rule,typ):
 
     for line in f:
         #Example input add_neighbour(char [128] to_add, int cost)
-        if typ in line:
+        if typ + ' '  == line[0:len(typ)+1]:
             table_dict = {}
             result.append(table_dict)
             first_space = line.find(' ')
@@ -148,7 +153,6 @@ def get_table_dict(rule,typ):
                 if len(words) == 3:
                     words[0]+= words[1]#the type is currently lost
                     words[1] = words[2]
-                #print words
                 result_columns.append(words[1])
             table_dict['columns'] = ';'.join(result_columns)
 
@@ -208,6 +212,13 @@ def state_log_to_state(raw_state,instance,state_nr,sent,received,persistent_name
 #Returns a list of message objects in as many tables as present
 def sent_message_to_list(raw_message,state_nr):
     result = []
+    '''
+    table_specific_strings = raw_message.split('\n], ')
+    print "Table_specific_strings: {0}".format(table_specific_strings)
+
+    for table_specific_string in table_specific_strings:
+       ''' 
+
 
     transport_tables = string.split(raw_message[1:len(raw_message)],'\n], ')
     #Transport tables separated past this point
@@ -266,8 +277,8 @@ def sent_message_to_list(raw_message,state_nr):
                 message = Message(state_nr,table_name,src,dest,timestamp,content)
                 result.append(message)
         
-        return result
-
+    return result
+        
 def has_transport_table(line, tran_names):
     index_start = line.find('name=') + 5
     index_finish = line.find(', [')
@@ -276,7 +287,8 @@ def has_transport_table(line, tran_names):
 
 def received_messages_to_list(line,state_nr):
     #print 'line =====> ' +line
-
+    #print "RECEIVED MESSAGE"
+    #print "LINE : " + line
 
     result = []
 
@@ -341,6 +353,7 @@ def received_messages_to_list(line,state_nr):
 
 if __name__ == "__main__":
     
-    print get_table_dict('BGP_v2.dsmr','persistent')
+    for mess in sent_message_to_list(st3,2):
+        print mess
 
 
